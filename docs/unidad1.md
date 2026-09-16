@@ -1,39 +1,36 @@
-# MÓDULO PROFESIONAL: PROYECTO INTERMODULAR (PI)
-
-## SPRINT 1. Definición del reto, gestión de requisitos y herramientas de IA (3 semanas | 3 horas)
+# Sprint 1. Definición del reto, gestión de requisitos y herramientas de IA
 
 ---
 
-# SEMANA 1 — SESIÓN 1 (Viernes, 18 de septiembre de 2026 — 1 hora lectiva)
-### Bloque: De la idea al reto técnico: Análisis de necesidades, identificación de actores, ODS y uso ético de la Inteligencia Artificial (IA)
-* **Distribución horaria:** 20 minutos de marco metodológico y ético + 40 minutos de taller práctico de análisis y backlog.
-* **Criterios de Evaluación vinculados:** RA1.c, RA1.d, RA1.e, RA5.a, RA5.c, Anexo I (Bloques 1 y 3 de la Guía Oficial).
+## Semana 1. De la idea al reto técnico: Análisis de necesidades, identificación de actores, ODS y uso ético de la Inteligencia Artificial (IA)
 
 ---
 
-## PARTE I. SESIÓN TEÓRICA (20 MINUTOS): EL ANÁLISIS DEL RETO Y LA INGENIERÍA DE REQUISITOS
+### Día 1 - 1 sesión
 
-### 1. Caso práctico narrativo: La mesa de proyectos de AzaharTech
+#### Teoría. El análisis del reto y la ingeniería de requisitos
 
-Es viernes por la tarde en la sede de **AzaharTech** en Castellón de la Plana. Tras las intensas sesiones de la semana en Programación y Entornos de Desarrollo, la célula de trabajo se reúne para la sesión semanal de **Proyecto Intermodular**: el espacio reservado para la estrategia, la relación con el cliente y la gestión metodológica.
+#### 1. Caso guía en AzaharTech
 
-**Laia Claramunt**, supervisora de proyectos, conecta su portátil y muestra en el proyector dos documentos en paralelo: a la izquierda, el análisis del sistema de acceso por QR del **IES El Caminàs** (el caso guía modelado por el docente); a la derecha, el catálogo de la **bolsa de proyectos** donde cada equipo ha elegido su reto singular para el curso.
+Es viernes por la tarde en la sede de **AzaharTech** en Castellón de la Plana. Tras las intensas sesiones de la semana en Programación y Entornos de Desarrollo, el equipo de trabajo se reúne para la sesión semanal de **Proyecto Intermodular**: el espacio reservado para la estrategia, la relación con el cliente y la gestión metodológica.
+
+**Laia Claramunt**, supervisora de proyectos, conecta su portátil y muestra en el proyector dos documentos en paralelo: a la izquierda, el análisis del sistema de acceso por QR del **IES El Caminàs** (nuestro caso guía); a la derecha, el catálogo de la **bolsa de proyectos** donde cada equipo ha elegido su reto singular para el curso.
 
 Laia toma la palabra dirigiéndose a **Alba Torres**, **Pau Ferrer** y al nuevo estudiante:
 
 > *«Durante esta primera semana habéis aprendido a declarar variables en Java y a configurar vuestro entorno en IntelliJ con Git. Esas son las herramientas del artesano. Pero un ingeniero de software no empieza tirando líneas de código al azar; un ingeniero primero **escucha al cliente, analiza el problema y delimita el alcance de la solución**.*
 >
-> *Si el cliente nos pide un sistema para su negocio y nosotros le entregamos lo que creemos que necesita sin haber analizado a sus usuarios, el proyecto fracasará. Hoy aprenderemos a transformar una idea abstracta en un **reto técnico formal**, analizaremos los diferentes perfiles de usuario que interactuarán con el sistema, vincularemos el proyecto con los **Objetivos de Desarrollo Sostenible (ODS)** y utilizaremos la **Inteligencia Artificial de forma ética y transparente** como copiloto de análisis, registrando cada consulta en nuestro cuaderno de bitácora»*.
+> *Si el cliente nos pide un sistema para su negocio y nosotros le entregamos lo que creemos que necesita sin haber analizado a sus usuarios, el proyecto fracasará. Hoy aprenderemos a transformar una idea abstracta en un **reto técnico formal**, analizaremos los diferentes perfiles de usuario que interactuarán con el sistema, vincularemos el proyecto con los **Objetivos de Desarrollo Sostenible (ODS)** y utilizaremos la **Inteligencia Artificial de forma ética y transparente** como ayudante para el análisis, registrando cada consulta en nuestro cuaderno de bitácora»*.
 
 ---
 
-### 2. Fundamento metodológico: Del problema de negocio a la especificación técnica
+#### 2. Del problema de negocio a la especificación técnica
 
 ```
 ┌────────────────────────────────────────────────────────────────────────────────────────┐
 │                        EL CICLO DE ANÁLISIS DEL RETO (FASE INICIAL)                    │
 ├──────────────────────────┬─────────────────────────────┬───────────────────────────────┤
-│ 1. Problema Raíz         │ 2. Mapa de Actores          │ 3. Impacto y Sostenibilidad   │
+│ 1. Problema              │ 2. Actores                  │ 3. Sostenibilidad             │
 ├──────────────────────────┼─────────────────────────────┼───────────────────────────────┤
 │ ¿Qué ineficiencia, coste │ ¿Quiénes son los usuarios   │ ¿Cómo contribuye la solución  │
 │ o retraso sufre el       │ primarios, secundarios y    │ a la innovación y a los ODS   │
@@ -41,7 +38,7 @@ Laia toma la palabra dirigiéndose a **Alba Torres**, **Pau Ferrer** y al nuevo 
 └──────────────────────────┴─────────────────────────────┴───────────────────────────────┘
 ```
 
-#### A. Definición del problema y justificación de la digitalización (RA1.c)
+##### A. Definición del problema y justificación de la digitalización
 Todo proyecto de software viable responde a una necesidad real no resuelta o deficientemente gestionada:
 * **En el caso guía (IES El Caminàs):** El fichaje manual en papel genera aglomeraciones en conserjería, pérdida de tiempo lectivo y retraso en las alertas a las familias. La digitalización aporta inmediatez, trazabilidad y ahorro de papel.
 * **En vuestro proyecto propio de la bolsa de proyectos:** Debéis responder con precisión a tres preguntas:
@@ -49,61 +46,58 @@ Todo proyecto de software viable responde a una necesidad real no resuelta o def
     2. ¿Qué problemas operativos, económicos o de gestión genera esa situación?
     3. ¿Cómo resolverá vuestra aplicación ese problema (*To-Be*)?
 
-#### B. Identificación y mapa de actores (RA1.e)
+##### B. Identificación y mapa de actores
 Un **actor** es cualquier entidad externa (humana o máquina) que interactúa directamente con el software:
 1. **Usuarios primarios u operacionales:** Aquellos que utilizan la herramienta para su función principal diaria (*ej. el alumno que valida su QR o el operario que registra una entrada de stock*).
 2. **Usuarios administradores o de gestión:** Aquellos que configuran el sistema, dan de alta parámetros y extraen informes (*ej. el equipo directivo o el jefe de almacén*).
 3. **Sistemas externos:** Dispositivos periféricos o servicios web con los que la aplicación intercambia datos (*ej. pantallas HDMI, bases de datos externas o lectores ópticos*).
 
-#### C. Vinculación con los Objetivos de Desarrollo Sostenible (ODS - RA1.d)
+##### C. Vinculación con los Objetivos de Desarrollo Sostenible
 Siguiendo las directrices del Decreto de Formación Profesional de la Comunitat Valenciana, todo proyecto intermodular debe incorporar la dimensión social y ambiental alineada con los **ODS**:
-* **ODS 9 (Industria, Innovación e Infraestructura):** Modernización y digitalización de procesos productivos tradicionales.
-* **ODS 12 (Producción y Consumo Responsables):** Eliminación del consumo de papel y optimización de recursos energéticos.
-* **ODS 4 (Educación de Calidad) u ODS 8 (Trabajo Decente y Crecimiento Económico):** Mejora de la conciliación, control horario y transparencia laboral.
+* **ODS 9 (Industria, innovación e infraestructura).** Modernización y digitalización de procesos productivos tradicionales.
+* **ODS 12 (Producción y consumo responsables).** Eliminación del consumo de papel y optimización de recursos energéticos.
+* **ODS 4 (Educación de calidad) u ODS 8 (Trabajo decente y crecimiento económico).** Mejora de la conciliación, control horario y transparencia laboral.
 
-#### D. Uso ético y profesional de la Inteligencia Artificial (Anexo I, Bloque 1)
-En AzaharTech no se prohíbe la Inteligencia Artificial generativa (como ChatGPT, Claude o Copilot); **se exige su uso profesional y crítico**.
-* **Uso permitido:** Asistente para estructurar ideas, mejorar la redacción técnica de requisitos, proponer casos límite y contrastar vocabulario técnico.
-* **Uso prohibido:** Copiar y pegar ciegamente respuestas generadas sin contrastar su veracidad o delegar en la máquina la toma de decisiones del proyecto.
-* **El estándar del Prompt Log (Registro de IA):** Toda aportación de la IA debe documentarse en una tabla indicando la herramienta, la instrucción exacta (*prompt*) introducida y el criterio del estudiante para modificar o aceptar la respuesta.
+##### D. Uso ético y profesional de la Inteligencia Artificial
+En AzaharTech no se prohíbe la Inteligencia Artificial generativa (como ChatGPT, Claude o Mistral); **se exige su uso profesional y crítico**.
+* **Uso permitido.** Asistente para estructurar ideas, mejorar la redacción técnica de requisitos, proponer casos límite y contrastar vocabulario técnico.
+* **Uso prohibido.** Copiar y pegar ciegamente respuestas generadas sin contrastar su veracidad o delegar en la máquina la toma de decisiones del proyecto.
+* **El estándar del Prompt Log (Registro de IA).** Toda aportación de la IA debe documentarse en una tabla indicando la herramienta, la instrucción exacta (*prompt*) introducida y el criterio del estudiante para modificar o aceptar la respuesta.
 
 ---
+#### Teoría. El análisis del reto y la ingeniería de requisitos
+#### Laboratorio práctico guiado. Especificación del reto y sprint backlog 1
 
-## PARTE II. TALLER PRÁCTICO GUIADO (40 MINUTOS): ESPECIFICACIÓN DEL RETO Y SPRINT BACKLOG 1
-
-### Caso de laboratorio
 Laia Claramunt asigna las tareas de la sesión:
-> *«Durante los próximos cuarenta minutos, cada uno de vosotros va a crear el espacio oficial de Proyecto Intermodular en su repositorio de GitHub. Redactaréis el **documento formal de análisis del reto de vuestro proyecto propio** incluyendo el registro ético de IA, y crearéis el archivo **`sprint1-backlog.md`** que coordinará vuestras tareas entre Programación, Entornos de Desarrollo y Proyecto Intermodular»*.
+> *«Durante los próximos treinta minutos, cada uno de vosotros va a crear el espacio oficial de Proyecto Intermodular en su repositorio de GitHub. Redactaréis el **documento formal de análisis del reto de vuestro proyecto propio** incluyendo el registro ético de IA, y crearéis el archivo **`sprint1-backlog.md`** que coordinará vuestras tareas entre Programación, Entornos de Desarrollo y Proyecto Intermodular»*.
 
 ---
 
-### Procedimiento técnico paso a paso
-
-#### Paso 1. Estructuración del espacio de Proyecto Intermodular
+##### Paso 1. Estructuración del espacio de Proyecto Intermodular
 1. Abre tu proyecto en **IntelliJ IDEA**.
-2. Comprueba que dentro de tu carpeta individual (`azahartech/nombreEquipo/nombreEstudiante/`) dispones del directorio **`pi/`**.
+2. Comprueba que dentro de tu carpeta individual (`azahartech/nombre-equipo/apellidos-nombre/`) dispones del directorio **`pi/`**.
 3. Dentro de `pi/`, crea dos subcarpetas de trabajo:
     * **`pi/docs/`**: Para memorias técnicas, análisis y diagramas.
     * **`pi/backlog/`**: Para el seguimiento de sprints y tareas.
 
 ---
 
-#### Paso 2. Redacción del Documento de Análisis del Reto (`pi/docs/analisis-reto.md`)
-1. En `pi/docs/`, crea el archivo `analisis-reto.md`.
+##### Paso 2. Redacción del documento de análisis del proyecto (`pi/docs/analisis-proyecto.md`)
+1. En `pi/docs/`, crea el archivo `analisis-proyecto.md`.
 2. Redacta el documento aplicando la siguiente plantilla formal adaptada a **tu proyecto elegido de la bolsa de proyectos**:
 
 ```markdown
-# Documento de Análisis de Necesidades y Definición del Reto
+# Documento de análisis de necesidades y definición del proyecto
 **Consultora:** AzaharTech Software Consulting  
-**Proyecto Seleccionado:** [Nombre del Proyecto de la Bolsa de Proyectos]  
-**Cliente / Sector:** [Nombre de la Empresa o Sector Profesional]  
-**Desarrollador/a:** [Tus Apellidos, Tu Nombre]  
+**Proyecto Seleccionado:** [nombre del proyecto de la bolsa de proyectos]  
+**Cliente / Sector:** [nombre de la empresa o sector profesional]  
+**Desarrollador/a:** [tus apellidos, tu nombre]  
 **Fecha:** 18 de septiembre de 2026  
 **Versión:** 1.0  
 
 ---
 
-## 1. Contexto y Justificación del Problema
+## 1. Contexto y justificación del problema
 ### 1.1 Situación actual y problemática detectada
 [Describe el problema operativo de tu cliente. Qué procesos manuales lentos, pérdidas económicas o fallos de registro sufre actualmente su organización].
 
@@ -116,7 +110,7 @@ Laia Claramunt asigna las tareas de la sesión:
 
 ---
 
-## 2. Mapa de Actores y Usuarios del Sistema
+## 2. Actores y usuarios del sistema
 | Perfil de Usuario | Tipo de Actor | Función principal en la aplicación |
 | :--- | :---: | :--- |
 | **Operario / Cliente final** | Primario | Introduce los datos de la transacción o evento diario. |
@@ -125,7 +119,7 @@ Laia Claramunt asigna las tareas de la sesión:
 
 ---
 
-## 3. Registro Ético de Uso de Inteligencia Artificial (Prompt Log)
+## 3. Registro ético de uso de Inteligencia Artificial (Prompt Log)
 | Fecha | Herramienta | Objetivo de la consulta | Prompt introducido | Revisión crítica y ajuste aplicado |
 | :---: | :---: | :--- | :--- | :--- |
 | 18/09/2026 | ChatGPT / Claude | Estructurar requisitos funcionales | *"Actúa como analista y redacta 3 necesidades de software para..."* | Se adaptaron los requisitos al alcance secuencial del Sprint 1 y se eliminaron funciones innecesarias. |
@@ -133,21 +127,21 @@ Laia Claramunt asigna las tareas de la sesión:
 
 ---
 
-#### Paso 3. Creación del Sprint Backlog 1 (`pi/backlog/sprint1-backlog.md`)
+##### Paso 3. Creación del Sprint Backlog 1 (`pi/backlog/sprint1-backlog.md`)
 1. En la carpeta `pi/backlog/`, crea el archivo `sprint1-backlog.md`.
 2. Define la lista de tareas del **Sprint 1 (14 sep – 2 oct)** desglosada por los tres módulos:
 
 ```markdown
-# Sprint Backlog 1 — [Nombre de Tu Proyecto Propio]
+# Sprint Backlog 1 — [nombre de tu proyecto]
 **Periodo:** 14 de septiembre – 2 de octubre de 2026  
-**Responsable:** [Tu Nombre]  
+**Responsable:** [tu nombre]  
 
-## 🎯 Objetivo General del Sprint 1
-Construir el incremento base v0.1: definir el análisis técnico del reto, configurar el taller digital con Git/IntelliJ y programar el primer motor de cálculo secuencial en Java.
+## Objetivo general del Sprint 1
+Construir el incremento base v0.1: definir el análisis técnico del proyecto, configurar el taller digital con Git/IntelliJ y programar el primer motor de cálculo secuencial en Java.
 
 ---
 
-## 📋 Cuadro de Mando de Tareas
+## Tareas
 
 ### Módulo: Proyecto Intermodular (PI)
 - [x] T-PI-01: Redactar análisis de necesidades y mapa de actores (`pi/docs/analisis-reto.md`)
@@ -170,27 +164,10 @@ Construir el incremento base v0.1: definir el análisis técnico del reto, confi
 
 ---
 
-#### Paso 4. Confirmación y sincronización en GitHub
-1. Abre la terminal integrada de IntelliJ IDEA (`Alt + F12`) o la pestaña **Commit** (`Ctrl + K`).
-2. Verifica mediante `git status` que los dos archivos de PI están detectados.
-3. Confirma los cambios aplicando el estándar de **Conventional Commits**:
-   ```bash
-   git add pi/
-   git commit -m "docs(pi): definir analisis del reto del proyecto propio y sprint backlog 1"
-   git push
-   ```
-4. Accede a tu repositorio en GitHub desde el navegador y comprueba que la carpeta `pi/docs/` y `pi/backlog/` se visualizan correctamente con su formato Markdown maquetado.
+##### Paso 4. (Únicamente si los estudiantes ya lo han visto en ED) Confirmación y sincronización en GitHub
+1. Publica en GitHub (`commit` y `push`)
+2. Accede a tu repositorio en GitHub desde el navegador y comprueba que la carpeta `pi/docs/` y `pi/backlog/` se visualizan correctamente con su formato Markdown maquetado.
 
----
-
-### Resumen de la Sesión 1 de Proyecto Intermodular
-Al finalizar estos 60 minutos:
-* Has transformado la propuesta de la bolsa de proyectos en un **reto de ingeniería formal**.
-* Has identificado los **actores clave** y has vinculado el proyecto con los **ODS**.
-* Has utilizado la **IA de forma ética, documentada y transparente**.
-* Tu repositorio cuenta con el **Sprint Backlog 1** que coordina tu trabajo con Programación y Entornos de Desarrollo.
-
----
 ---
 
 # SEMANA 2 — SESIÓN 2 (Viernes, 25 de septiembre de 2026 — 1 hora lectiva)
