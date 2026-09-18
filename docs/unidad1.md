@@ -54,8 +54,8 @@ Un **actor** es cualquier entidad externa (humana o máquina) que interactúa di
 
 ##### C. Vinculación con los Objetivos de Desarrollo Sostenible
 Siguiendo las directrices del Decreto de Formación Profesional de la Comunitat Valenciana, todo proyecto intermodular debe incorporar la dimensión social y ambiental alineada con los **ODS**:
-* **ODS 9 (Industria, innovación e infraestructura).** Modernización y digitalización de procesos productivos tradicionales.
-* **ODS 12 (Producción y consumo responsables).** Eliminación del consumo de papel y optimización de recursos energéticos.
+* **ODS 9 (Industria, innovación e infraestructura).** Modernización y digitalización de procesos productivos tradicionales. 
+* **ODS 12 (Producción y consumo responsables).** Eliminación del consumo de papel y optimización de recursos energéticos. 
 * **ODS 4 (Educación de calidad) u ODS 8 (Trabajo decente y crecimiento económico).** Mejora de la conciliación, control horario y transparencia laboral.
 
 ##### D. Uso ético y profesional de la Inteligencia Artificial
@@ -144,20 +144,20 @@ Construir el incremento base v0.1: definir el análisis técnico del proyecto, c
 ## Tareas
 
 ### Módulo: Proyecto Intermodular (PI)
-- [x] T-PI-01: Redactar análisis de necesidades y mapa de actores (`pi/docs/analisis-reto.md`)
-- [x] T-PI-02: Registrar el uso ético de IA (*Prompt Log*)
-- [x] T-PI-03: Crear el Sprint Backlog 1 inicial
+- [ ] T-PI-01: Redactar análisis de necesidades y mapa de actores (`pi/docs/analisis-reto.md`)
+- [ ] T-PI-02: Registrar el uso ético de IA (*Prompt Log*)
+- [ ] T-PI-03: Crear el Sprint Backlog 1 inicial
 - [ ] T-PI-04: Elaborar diagrama de bloques funcional y viabilidad técnica (Semana 2)
 - [ ] T-PI-05: Consolidar dossier técnico y guion de demo v0.1 (Semana 3)
 
 ### Módulo: Entornos de Desarrollo (ED)
-- [x] T-ED-01: Instalar y verificar OpenJDK 21 e IntelliJ IDEA (`ed/docs/entorno.png`)
-- [x] T-ED-02: Crear estructura corporativa oficial y repositorio en GitHub
+- [ ] T-ED-01: Instalar y verificar OpenJDK 21 e IntelliJ IDEA (`ed/docs/entorno.png`)
+- [ ] T-ED-02: Crear estructura corporativa oficial y repositorio en GitHub
 - [ ] T-ED-03: Elaborar memoria técnica de marco Scrum (`ed/docs/marco-scrum.md`) (Semana 2)
 - [ ] T-ED-04: Auditar limpieza de repositorio y publicar tag `v0.1.0-sprint1` (Semana 3)
 
 ### Módulo: Programación (PR)
-- [x] T-PR-01: Declarar variables primitivas y lectura con Scanner (`pr/src/Reto1Variables.java`)
+- [ ] T-PR-01: Declarar variables primitivas y lectura con Scanner (`pr/src/ControlAccesoQR.java`)
 - [ ] T-PR-02: Implementar operadores aritméticos, módulo y casting (Semana 2)
 - [ ] T-PR-03: Integrar constantes `final` y salida formateada con `printf` (Semana 3)
 ```
