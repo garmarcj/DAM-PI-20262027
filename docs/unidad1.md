@@ -241,7 +241,7 @@ Un desarrollador profesional no diseña basándose en tutoriales anónimos o res
 3. Redacta el contenido aplicando la plantilla técnica estructurada para **tu proyecto propio**:
 
 ```markdown
-# Estudio de Viabilidad Técnica y Arquitectura del Sistema
+# Estudio de viabilidad técnica y arquitectura del sistema
 **Consultora:** AzaharTech Software Consulting  
 **Proyecto:** [nombre de tu proyecto propio]  
 **Desarrollador/a:** [tus apellidos, tu nombre]  
@@ -303,7 +303,7 @@ El sistema se descompone en tres subsistemas funcionales coordinados:
 # Sprint Backlog 1 — [Nombre de tu proyecto propio]
 **Estado al cierre de la Semana 2 (25 de septiembre de 2026)**
 
-## 📋 Cuadro de mando de tareas
+## Cuadro de mando de tareas
 
 ### Módulo: Proyecto Intermodular (PI)
 - [x] T-PI-01: Redactar análisis de necesidades y mapa de actores (`pi/docs/analisis-reto.md`)
