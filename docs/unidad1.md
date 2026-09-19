@@ -12,7 +12,7 @@
 
 #### 1. Caso guía en AzaharTech
 
-Es viernes por la tarde en la sede de **AzaharTech** en Castellón de la Plana. Tras las intensas sesiones de la semana en Programación y Entornos de Desarrollo, el equipo de trabajo se reúne para la sesión semanal de **Proyecto Intermodular**: el espacio reservado para la estrategia, la relación con el cliente y la gestión metodológica.
+Es viernes 19 de septiembre por la tarde en la sede de **AzaharTech** en Castellón de la Plana. Tras las intensas sesiones de la semana en Programación y Entornos de Desarrollo, el equipo de trabajo se reúne para la sesión semanal de **Proyecto Intermodular**: el espacio reservado para la estrategia, la relación con el cliente y la gestión metodológica.
 
 **Laia Claramunt**, supervisora de proyectos, conecta su portátil y muestra en el proyector dos documentos en paralelo: a la izquierda, el análisis del sistema de acceso por QR del **IES El Caminàs** (nuestro caso guía); a la derecha, el catálogo de la **bolsa de proyectos** donde cada equipo ha elegido su reto singular para el curso.
 
@@ -54,18 +54,19 @@ Un **actor** es cualquier entidad externa (humana o máquina) que interactúa di
 
 ##### C. Vinculación con los Objetivos de Desarrollo Sostenible
 Siguiendo las directrices del Decreto de Formación Profesional de la Comunitat Valenciana, todo proyecto intermodular debe incorporar la dimensión social y ambiental alineada con los **ODS**:
+
 * **ODS 9 (Industria, innovación e infraestructura).** Modernización y digitalización de procesos productivos tradicionales. 
 * **ODS 12 (Producción y consumo responsables).** Eliminación del consumo de papel y optimización de recursos energéticos. 
 * **ODS 4 (Educación de calidad) u ODS 8 (Trabajo decente y crecimiento económico).** Mejora de la conciliación, control horario y transparencia laboral.
 
 ##### D. Uso ético y profesional de la Inteligencia Artificial
 En AzaharTech no se prohíbe la Inteligencia Artificial generativa (como ChatGPT, Claude o Mistral); **se exige su uso profesional y crítico**.
+
 * **Uso permitido.** Asistente para estructurar ideas, mejorar la redacción técnica de requisitos, proponer casos límite y contrastar vocabulario técnico.
 * **Uso prohibido.** Copiar y pegar ciegamente respuestas generadas sin contrastar su veracidad o delegar en la máquina la toma de decisiones del proyecto.
 * **El estándar del Prompt Log (Registro de IA).** Toda aportación de la IA debe documentarse en una tabla indicando la herramienta, la instrucción exacta (*prompt*) introducida y el criterio del estudiante para modificar o aceptar la respuesta.
 
 ---
-#### Teoría. El análisis del reto y la ingeniería de requisitos
 #### Laboratorio práctico guiado. Especificación del reto y sprint backlog 1
 
 Laia Claramunt asigna las tareas de la sesión:
@@ -170,23 +171,22 @@ Construir el incremento base v0.1: definir el análisis técnico del proyecto, c
 
 ---
 
-# SEMANA 2 — SESIÓN 2 (Viernes, 25 de septiembre de 2026 — 1 hora lectiva)
-### Bloque: Arquitectura funcional del sistema: Diagrama de bloques (IPO), estudio de viabilidad técnica y búsqueda de fuentes oficiales
-* **Distribución horaria:** 20 minutos de teoría de arquitectura y viabilidad + 40 minutos de taller práctico de modelado.
-* **Criterios de Evaluación vinculados:** RA1.e, RA2.e, RA2.f, RA2.g, RA3.b, RA5.c, Anexo I (Bloque 3 de la Guía Oficial).
+## Semana 2. Arquitectura funcional del sistema: diagrama de bloques (IPO), estudio de viabilidad técnica y búsqueda de fuentes oficiales
 
 ---
 
-## PARTE I. SESIÓN TEÓRICA (20 MINUTOS): ARQUITECTURA DE BLOQUES Y VIABILIDAD
+### Día 2 - 1 sesión
 
-### 1. Caso práctico narrativo: El plano de la solución en AzaharTech
+#### Teoría. Arquitectura de bloques y viabilidad
 
-Es viernes 25 de septiembre. La célula de desarrollo de **AzaharTech** inicia su segunda sesión de Proyecto Intermodular. En la pantalla táctil de la sala, **Laia Claramunt** proyecta un esquema técnico del caso guía: el sistema del **IES El Caminàs**.
+#### 1. Caso guía en AzaharTech
+
+Es viernes 25 de septiembre por la tarde. El equipo de desarrollo de **AzaharTech** inicia su segunda sesión de Proyecto Intermodular. En la pantalla táctil de la sala, **Laia Claramunt** proyecta un esquema técnico del caso guía: el sistema del **IES El Caminàs**.
 
 El esquema no contiene código, sino tres grandes bloques conectados por líneas de flujo:
-1. Bloque de Captura (cámara del móvil del alumno y lector óptico).
-2. Bloque de Procesamiento Central (algoritmo en Java que valida la matrícula y calcula tiempos).
-3. Bloque de Salida y Notificación (pantalla HDMI del vestíbulo y volcado en log).
+1. Bloque de captura (cámara del móvil de la persona).
+2. Bloque de procesamiento central (algoritmo en Java que valida la entrada y calcula tiempos).
+3. Bloque de salida y notificación (pantalla del vestíbulo y volcado en log).
 
 Laia se gira hacia el equipo:
 
@@ -198,14 +198,14 @@ Laia se gira hacia el equipo:
 
 ---
 
-### 2. Fundamento metodológico: Arquitectura funcional y contraste de fuentes
+#### 2. Fundamento metodológico: arquitectura funcional y contraste de fuentes
 
 ```
 ┌────────────────────────────────────────────────────────────────────────────────────────┐
 │                        EL DIAGRAMA DE BLOQUES FUNCIONAL (IPO)                          │
 ├──────────────────────────┬─────────────────────────────┬───────────────────────────────┤
 │ BLOQUE DE ENTRADA        │ BLOQUE DE PROCESAMIENTO     │ BLOQUE DE SALIDA              │
-│ (Captura de datos)       │ (Lógica de Negocio)         │ (Resultados y Persistencia)   │
+│ (Captura de datos)       │ (Lógica de negocio)         │ (Resultados y persistencia)   │
 ├──────────────────────────┼─────────────────────────────┼───────────────────────────────┤
 │ Dispositivos de entrada, │ Módulos Java, cálculos      │ Pantallas de visualización,   │
 │ teclado, Scanner,        │ aritméticos, conversiones,  │ consolas de texto, tickets    │
@@ -213,30 +213,29 @@ Laia se gira hacia el equipo:
 └──────────────────────────┴─────────────────────────────┴───────────────────────────────┘
 ```
 
-#### A. El Diagrama de Bloques Funcional (RA1.e)
+##### A. El diagrama de bloques funcional
 Es la representación visual de más alto nivel de un sistema de software. Permite entender de un vistazo cómo fluyen los datos sin necesidad de descender al detalle del código fuente:
-* **Entradas:** Qué datos brutos recibe el sistema del exterior (*ej. DNI, lecturas térmicas, unidades demandadas*).
-* **Procesamiento:** Qué módulos de software transforman esos datos (*ej. motor de cálculo, cálculo de porcentajes, validadores de tokens*).
-* **Salidas:** Qué información útil entrega el sistema al usuario (*ej. pantallas informativas, informes formateados, comprobantes de acceso*).
 
-#### B. Estudio de Viabilidad Técnica (RA2.e, RA2.g)
+* **Entradas.** Qué datos brutos recibe el sistema del exterior (*por ejemplo: DNI, lecturas térmicas, unidades demandadas*).
+* **Procesamiento.** Qué módulos de software transforman esos datos (*por ejemplo: motor de cálculo, cálculo de porcentajes, validadores de tokens*).
+* **Salidas.** Qué información útil entrega el sistema al usuario (*por ejemplo: pantallas informativas, informes formateados, comprobantes de acceso*).
+
+##### B. Estudio de viabilidad técnica
 Evaluar la viabilidad de un proyecto significa certificar que la solución es realizable con los medios tecnológicos disponibles:
+
 1. **Viabilidad de Software:** Compatibilidad de versiones. En nuestro caso: Java OpenJDK 21 LTS como entorno de ejecución universal e IntelliJ IDEA Community como entorno de construcción.
 2. **Viabilidad de Hardware:** Requisitos mínimos de memoria RAM (mínimo 4 GB para la JVM), procesador y periféricos necesarios en el cliente.
 3. **Gestión de Restricciones Operativas:** Identificar qué tecnologías se aplican en cada sprint (*ej. en el Sprint 1 la persistencia se realiza estrictamente en memoria y consola; las bases de datos relacionales y el modelado avanzado se incorporarán en la Formación en Empresa*).
 
-#### C. Búsqueda y contraste de fuentes técnicas oficiales (Anexo I, Bloque 3)
+##### C. Búsqueda y contraste de fuentes técnicas oficiales
 Un desarrollador profesional no diseña basándose en tutoriales anónimos o respuestas de foros obsoletos. La guía oficial exige:
-* **Selección de fuentes primarias:** Documentación oficial de Oracle Java SE 21, estándares IEEE para documentación y especificaciones de la Comunitat Valenciana.
-* **Detección de información no contrastada:** Descartar soluciones que empleen librerías no oficiales o versiones obsoletas de Java (como Java 8 o Java 11) que no respeten las buenas prácticas actuales.
+
+* **Selección de fuentes primarias.** Documentación oficial de Oracle Java SE 21, estándares IEEE para documentación y especificaciones de la Comunitat Valenciana.
+* **Detección de información no contrastada.** Descartar soluciones que empleen librerías no oficiales o versiones obsoletas de Java (como Java 8 o Java 11) que no respeten las buenas prácticas actuales.
 
 ---
-
-## PARTE II. TALLER PRÁCTICO GUIADO (40 MINUTOS): MODELADO DE BLOQUES Y VIABILIDAD TÉCNICA
-
-### Procedimiento técnico paso a paso
-
-#### Paso 1. Redacción del Documento de Viabilidad y Arquitectura (`pi/docs/viabilidad-tecnica.md`)
+#### Laboratorio práctico guiado. Modelado de bloques y viabilidad técnica
+##### Paso 1. Redacción del documento de viabilidad y arquitectura (`pi/docs/viabilidad-tecnica.md`)
 1. Abre tu proyecto en IntelliJ IDEA y navega hasta la carpeta `pi/docs/`.
 2. Crea el archivo `viabilidad-tecnica.md`.
 3. Redacta el contenido aplicando la plantilla técnica estructurada para **tu proyecto propio**:
@@ -244,14 +243,14 @@ Un desarrollador profesional no diseña basándose en tutoriales anónimos o res
 ```markdown
 # Estudio de Viabilidad Técnica y Arquitectura del Sistema
 **Consultora:** AzaharTech Software Consulting  
-**Proyecto:** [Nombre de Tu Proyecto Propio]  
-**Desarrollador/a:** [Tus Apellidos, Tu Nombre]  
+**Proyecto:** [nombre de tu proyecto propio]  
+**Desarrollador/a:** [tus apellidos, tu nombre]  
 **Fecha:** 25 de septiembre de 2026  
 **Versión:** 1.0 (Sprint 1)  
 
 ---
 
-## 1. Diagrama de Bloques Funcional del Sistema
+## 1. Diagrama de bloques funcional del sistema
 El sistema se descompone en tres subsistemas funcionales coordinados:
 
 ```text
@@ -275,36 +274,36 @@ El sistema se descompone en tres subsistemas funcionales coordinados:
 |  - Consola de usuario formateada mediante System.out.printf()         |
 |  - Resumen tabular con columnas de ancho fijo y decimales acotados    |
 +-----------------------------------------------------------------------+
-```
 
 ---
 
-## 2. Estudio de Viabilidad Técnica
+## 2. Estudio de viabilidad técnica
+
 * **Entorno de Ejecución:** Java SE 21 (LTS) garantizando portabilidad multiplataforma mediante la JVM.
-* **Requisitos Mínimos de Hardware:**
+* **Requisitos mínimos de hardware:**
     * Procesador con arquitectura x86_64 o ARM64.
     * Memoria RAM mínima: 2 GB (óptima: 4 GB para entorno de pruebas).
     * Espacio en disco: 500 MB libres para instalación del JDK y logs.
-* **Análisis de Restricciones del Sprint 1:** Se prescinde de bases de datos externas en esta fase inicial; el procesamiento se realiza en memoria volátil de forma secuencial y transparente.
+* **Análisis de restricciones del Sprint 1:** Se prescinde de bases de datos externas en esta fase inicial; el procesamiento se realiza en memoria volátil de forma secuencial y transparente.
 
 ---
 
-## 3. Fuentes Técnicas Oficiales Contrastadas
+## 3. Fuentes técnicas oficiales contrastadas
 1. **Documentación Oficial de Java SE 21 (Oracle):** Consulta de especificaciones de tipos primitivos y clase Scanner. URL: `https://docs.oracle.com/en/java/javase/21/`
 2. **Guía de Estilo Java de Google:** Estándares de nomenclatura *camelCase* y buenas prácticas de ingeniería de software.
 ```
 
 ---
 
-#### Paso 2. Actualización y seguimiento del Sprint Backlog 1 (`pi/backlog/sprint1-backlog.md`)
+##### Paso 2. Actualización y seguimiento del Sprint Backlog 1 (`pi/backlog/sprint1-backlog.md`)
 1. Abre el archivo `sprint1-backlog.md`.
 2. Actualiza el estado de las tareas de los tres módulos al cierre de la segunda semana:
 
 ```markdown
-# Sprint Backlog 1 — [Nombre de Tu Proyecto Propio]
+# Sprint Backlog 1 — [Nombre de tu proyecto propio]
 **Estado al cierre de la Semana 2 (25 de septiembre de 2026)**
 
-## 📋 Cuadro de Mando de Tareas
+## 📋 Cuadro de mando de tareas
 
 ### Módulo: Proyecto Intermodular (PI)
 - [x] T-PI-01: Redactar análisis de necesidades y mapa de actores (`pi/docs/analisis-reto.md`)
@@ -327,7 +326,7 @@ El sistema se descompone en tres subsistemas funcionales coordinados:
 
 ---
 
-#### Paso 3. Confirmación y sincronización en GitHub
+##### Paso 3. Confirmación y sincronización en GitHub
 1. Abre el panel **Commit** en IntelliJ IDEA (`Ctrl + K`).
 2. Comprueba que aparecen seleccionados `pi/docs/viabilidad-tecnica.md` y `pi/backlog/sprint1-backlog.md`.
 3. Escribe el mensaje siguiendo el estándar de **Conventional Commits**:
@@ -336,16 +335,6 @@ El sistema se descompone en tres subsistemas funcionales coordinados:
    ```
 4. Haz clic en **Commit and Push** y verifica en GitHub que ambos archivos quedan registrados.
 
----
-
-### Resumen de la Sesión 2 de Proyecto Intermodular
-Al término de estos 60 minutos:
-* Tu proyecto propio cuenta con una **arquitectura en bloques funcional bien definida**.
-* Has certificado la **viabilidad técnica y los requisitos de hardware y software**.
-* Has referenciado **fuentes técnicas oficiales** según exige el Anexo I de la normativa.
-* El **Sprint Backlog 1** refleja un avance ordenado y sincronizado con Programación y Entornos de Desarrollo.
-
----
 ---
 
 # SEMANA 3 — SESIÓN 3 (Viernes, 2 de octubre de 2026 — 1 hora lectiva)
