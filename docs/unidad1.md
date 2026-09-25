@@ -6,7 +6,7 @@
 
 ---
 
-### Día 1 - 1 sesión
+### Día 1 - 1 sesión 
 
 #### Teoría. El análisis del proyecto y la ingeniería de requisitos
 
