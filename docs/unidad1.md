@@ -90,7 +90,7 @@ Laia Claramunt asigna las tareas de la sesión:
 ```markdown
 # Documento de análisis de necesidades y definición del proyecto
 **Consultora:** AzaharTech Software Consulting  
-**Proyecto Seleccionado:** [nombre del proyecto de la bolsa de proyectos]  
+**Proyecto Seleccionado:** [nombre de tu proyecto de la bolsa de proyectos]  
 **Cliente / Sector:** [nombre de la empresa o sector profesional]  
 **Desarrollador/a:** [tus apellidos, tu nombre]  
 **Fecha:** 18 de septiembre de 2026  
@@ -158,7 +158,7 @@ Construir el incremento base v0.1: definir el análisis técnico del proyecto, c
 - [ ] T-ED-04: Auditar limpieza de repositorio y publicar tag `v0.1.0-sprint1` (Semana 3)
 
 ### Módulo: Programación (PR)
-- [ ] T-PR-01: Declarar variables primitivas y lectura con Scanner (`pr/src/ControlAccesoQR.java`)
+- [ ] T-PR-01: Declarar variables primitivas y lectura con Scanner (`pr/src/MiProyecto.java`)
 - [ ] T-PR-02: Implementar operadores aritméticos, módulo y casting (Semana 2)
 - [ ] T-PR-03: Integrar constantes `final` y salida formateada con `printf` (Semana 3)
 ```
@@ -243,7 +243,7 @@ Un desarrollador profesional no diseña basándose en tutoriales anónimos o res
 ```markdown
 # Estudio de viabilidad técnica y arquitectura del sistema
 **Consultora:** AzaharTech Software Consulting  
-**Proyecto:** [nombre de tu proyecto propio]  
+**Proyecto:** [nombre de tu proyecto]  
 **Desarrollador/a:** [tus apellidos, tu nombre]  
 **Fecha:** 25 de septiembre de 2026  
 **Versión:** 1.0 (Sprint 1)  
@@ -300,7 +300,7 @@ El sistema se descompone en tres subsistemas funcionales coordinados:
 2. Actualiza el estado de las tareas de los tres módulos al cierre de la segunda semana:
 
 ```markdown
-# Sprint Backlog 1 — [Nombre de tu proyecto propio]
+# Sprint Backlog 1 — [Nombre de tu proyecto]
 **Estado al cierre de la Semana 2 (25 de septiembre de 2026)**
 
 ## Cuadro de mando de tareas
@@ -319,8 +319,8 @@ El sistema se descompone en tres subsistemas funcionales coordinados:
 - [ ] T-ED-04: Auditar limpieza de repositorio y publicar tag `v0.1.0-sprint1` (Semana 3)
 
 ### Módulo: Programación (PR)
-- [x] T-PR-01: Declarar variables primitivas y lectura con Scanner (`pr/src/Reto1Variables.java`)
-- [x] T-PR-02: Implementar operadores aritméticos, módulo y casting (`pr/src/Reto1Calculo.java`)
+- [x] T-PR-01: Declarar variables primitivas y lectura con Scanner (`pr/src/MiProyecto.java.java`)
+- [x] T-PR-02: Implementar operadores aritméticos, módulo y casting (`pr/src/MiProyecto.java.java`)
 - [ ] T-PR-03: Integrar constantes `final` y salida formateada con `printf` (Semana 3)
 ```
 
@@ -337,30 +337,28 @@ El sistema se descompone en tres subsistemas funcionales coordinados:
 
 ---
 
-# SEMANA 3 — SESIÓN 3 (Viernes, 2 de octubre de 2026 — 1 hora lectiva)
-### Bloque: Consolidación del Dossier Técnico, cierre del Sprint Backlog 1 y preparación de la Sprint Review (Demo técnica v0.1)
-* **Distribución horaria:** 20 minutos de teoría de comunicación y defensa oral + 40 minutos de consolidación y ensayo.
-* **Criterios de Evaluación vinculados:** RA1.a-e, RA5.a, RA5.b, RA5.c, RA5.d, Anexo I (Bloques 2 y 4 de la Guía Oficial).
+## Semana 3. Consolidacion del dossier tecnico, cierre del Sprint Backlog 1 y preparacion de la Sprint Review (demo tecnica v0.1)
 
 ---
 
-## PARTE I. SESIÓN TEÓRICA (20 MINUTOS): ASPECTOS FORMALES Y TÉCNICAS DE COMUNICACIÓN ORAL
+### Día 3 - 1 sesión
 
-### 1. Caso práctico narrativo: El ensayo de la Sprint Review en AzaharTech
+#### Teoría. Aspectos formales y tecnica de comunicacion oral
 
+#### 1. Caso guía en AzaharTech
 Es viernes 2 de octubre. Hoy concluyen las tres semanas del **Sprint 1**. La sala de demostraciones de **AzaharTech** está preparada para la revisión oficial del primer incremento de software.
 
-**Laia Claramunt** reúne a la célula de desarrollo:
+**Laia Claramunt** reúne al equipo de desarrollo:
 
-> *«Equipo, en Programación tenéis listo el programa secuencial con cálculos de precisión y formateo `printf`. En Entornos de Desarrollo habéis sellado el repositorio con la etiqueta de versión `v0.1.0-sprint1`. El software está terminado.*
+> *«Equipo, en Programación tenéis listo el programa secuencial con cálculos de precisión y formateo `printf`. En Entornos de Desarrollo habéis firmado el repositorio con la etiqueta de versión `v0.1.0-sprint1`. El software está terminado.*
 >
-> *Pero en la vida profesional, un excelente código no se defiende solo. El cliente del IES El Caminàs y el tribunal evaluador no van a leerse doscientas líneas de código; van a juzgar nuestra capacidad para **documentar el producto con normas de estilo impecables y comunicar su valor en una demostración en vivo de tres minutos**.*
+> *Pero en la vida profesional, el código no se defiende solo. El cliente del IES El Caminàs no va a leerse doscientas líneas de código; va a valorar nuestra capacidad para **documentar el producto con normas de estilo impecables y comunicar su valor en una demostración en vivo de tres minutos**.*
 >
-> *Hoy consolidaremos el **Dossier Técnico formal del Sprint 1**, cerraremos el **Sprint Backlog al 100 %** y entrenaremos la estructura de la **Sprint Review (Demo v0.1)**. Un ingeniero de software debe saber hablar con tanta precisión como programa»*.
+> *Hoy consolidaremos el **dossier técnico formal del Sprint 1**, cerraremos el **Sprint Backlog al 100 %** y entrenaremos la estructura de la **Sprint Review (demo v0.1)**. Un ingeniero de software debe saber hablar con tanta precisión como programa»*.
 
 ---
 
-### 2. Fundamento metodológico: Calidad documental y comunicación técnica
+#### 2. Calidad documental y comunicación técnica
 
 ```
 ┌────────────────────────────────────────────────────────────────────────────────────────┐
@@ -374,43 +372,39 @@ Es viernes 2 de octubre. Hoy concluyen las tres semanas del **Sprint 1**. La sal
 └──────────────────────────┴─────────────────────────────┴───────────────────────────────┘
 ```
 
-#### A. Aspectos formales y estructura del Dossier Técnico (Anexo I, Bloque 2)
+##### A. Aspectos formales y estructura del dossier técnico
 La documentación que se entrega a un cliente o a un comité evaluador debe reflejar la máxima pulcritud:
-1. **Estructura lógica completa:** Portada corporativa, índice de contenidos, cuerpo técnico organizado por apartados numerados y bibliografía de fuentes.
-2. **Normas de estilo:** Lenguaje técnico impersonal (*«se implementa»*, *«el sistema calcula»*), ausencia total de faltas ortográficas y jerarquía visual limpia.
-3. **Trazabilidad de herramientas TIC e IA:** Registro transparente de cómo se ha empleado la tecnología para documentar el proyecto.
+1. **Estructura lógica completa.** Portada corporativa, índice de contenidos, cuerpo técnico organizado por apartados numerados y bibliografía de fuentes.
+2. **Normas de estilo.** Lenguaje técnico impersonal (*«se implementa»*, *«el sistema calcula»*), ausencia total de faltas ortográficas y jerarquía visual limpia.
+3. **Trazabilidad de herramientas TIC e IA.** Registro transparente de cómo se ha empleado la tecnología para documentar el proyecto.
 
-#### B. Técnicas de comunicación oral y defensa ante el cliente (Anexo I, Bloque 4)
+##### B. Técnicas de comunicación oral y defensa ante el cliente
 Para defender con éxito el primer incremento de software ante el profesorado o el cliente:
 * **Estructura en 3 minutos (*The 3-Minute Demo*):**
     * *Minuto 1 (Problema y Propuesta):* Presentar al cliente, justificar la necesidad y explicar el alcance del Sprint 1.
     * *Minuto 2 (Software funcionando):* Compartir pantalla, ejecutar la clase `Reto1Completo.java` en IntelliJ, introducir datos de prueba y mostrar el informe de salida generado con `printf`.
     * *Minuto 3 (Ingeniería y Conclusión):* Mostrar el repositorio en GitHub, verificar el tag `v0.1.0-sprint1` y resumir los objetivos alcanzados.
-* **Comunicación no verbal y seguridad:** Hablar con voz firme y clara, mantener contacto visual con la audiencia, evitar leer diapositivas de forma monótona y demostrar dominio de los términos técnicos en inglés (*commit*, *stage*, *casting*, *build*).
+* **Comunicación no verbal y seguridad.** Hablar con voz firme y clara, mantener contacto visual con la audiencia, evitar leer diapositivas de forma monótona y demostrar dominio de los términos técnicos en inglés (*commit*, *stage*, *casting*, *build*).
 
 ---
-
-## PARTE II. TALLER PRÁCTICO GUIADO (40 MINUTOS): CONSOLIDACIÓN DOCUMENTAL Y ENSAYO DE LA DEMO
-
-### Procedimiento técnico paso a paso
-
-#### Paso 1. Consolidación del Dossier Técnico del Sprint 1 (`pi/docs/dossier-tecnico-sprint1.md`)
-1. En la carpeta `pi/docs/`, crea el archivo consolidado `dossier-tecnico-sprint1.md`.
-2. Ensambla los apartados trabajados durante las tres semanas en un único documento maestro para **tu proyecto propio**:
+#### Laboratorio práctico guiado. Consolidacion documental y ensayo de la demo
+##### Paso 1. Creacion del dossier técnico del Sprint 1 (`pi/docs/dossier-tecnico-sprint1.md`)
+1. En la carpeta `pi/docs/`, crea el archivo `dossier-tecnico-sprint1.md`.
+2. Agrupa los apartados trabajados durante las tres semanas en un único documento maestro para **tu proyecto propio**:
 
 ```markdown
-# Dossier Técnico de Proyecto Intermodular — Sprint 1 (Incremento v0.1)
+# Dossier técnico de Proyecto Intermodular — Sprint 1 (incremento v0.1)
 **Consultora:** AzaharTech Software Consulting  
-**Proyecto:** [Nombre de Tu Proyecto Propio]  
-**Cliente:** [Nombre del Cliente de la Bolsa de Proyectos]  
-**Desarrollador/a:** [Tus Apellidos, Tu Nombre]  
-**Célula / Equipo:** [Nombre de tu equipo asignado]  
-**Fecha de Entrega:** 2 de octubre de 2026  
-**Versión Tag:** v0.1.0-sprint1  
+**Proyecto:** [Nombre de tu proyecto]  
+**Cliente:** [Nombre del cliente]  
+**Desarrollador/a:** [tus apellidos, tu nombre]  
+**Equipo:** [nombre de tu equipo asignado]  
+**Fecha de entrega:** 2 de octubre de 2026  
+**Versión tag:** v0.1.0-sprint1  
 
 ---
 
-## 1. Contexto, Necesidad y Objetivos
+## 1. Contexto, necesidad y objetivos
 [Resumen del problema del cliente y justificación de la digitalización de la solución].
 * **Alineación con ODS:** [Indica el ODS seleccionado y su impacto en sostenibilidad].
 
@@ -421,39 +415,37 @@ Para defender con éxito el primer incremento de software ante el profesorado o 
 
 ---
 
-## 3. Arquitectura y Diagrama de Bloques Funcional
+## 3. Arquitectura y diagrama de bloques funcional
 [Esquema funcional de 3 bloques: Entrada de datos por Scanner -> Procesamiento aritmético y módulo -> Salida estructurada con printf].
 
 ---
 
-## 4. Viabilidad Técnica y Recursos
+## 4. Viabilidad técnica y recursos
 * **Tecnología base:** Java SE 21 LTS e IntelliJ IDEA Community Edition.
 * **Control de versiones:** Git & GitHub bajo estructura oficial corporativa.
 * **Requisitos mínimos:** 2 GB RAM, procesador x86_64/ARM64.
 
 ---
 
-## 5. Registro Ético de Uso de Inteligencia Artificial (Prompt Log)
+## 5. Registro etico de uso de inteligencia artificial (Prompt Log)
 [Tabla con las consultas realizadas a herramientas de IA, prompts exactos y revisiones críticas aplicadas por el estudiante].
 
 ---
 
-## 6. Referencias Técnicas Oficiales
+## 6. Referencias técnicas oficiales
 1. Oracle Java Documentation: `https://docs.oracle.com/en/java/javase/21/`
-2. Guía Oficial de Programación del Módulo Proyecto Intermodular (GVA).
+2. Guía oficial de programación del módulo proyecto intermodular (GVA).
 ```
 
 ---
 
-#### Paso 2. Cierre definitivo del Sprint Backlog 1 al 100 % (`pi/backlog/sprint1-backlog.md`)
+##### Paso 2. Cierre definitivo del Sprint Backlog 1 al 100 % (`pi/backlog/sprint1-backlog.md`)
 1. Abre el archivo `sprint1-backlog.md`.
 2. Marca **absolutamente todas las tareas del Sprint 1 con el check `[x]`**:
 
 ```markdown
-# Sprint Backlog 1 — [Nombre de Tu Proyecto Propio]
-**Estado Final: 100% COMPLETADO Y SELLADO (2 de octubre de 2026)**
-
-## 📋 Verificación Final de Tareas del Incremento v0.1
+# Sprint Backlog 1 — [nombre de tu proyecto]
+**Estado Final: 100% COMPLETADO Y FIRMADO (2 de octubre de 2026)**
 
 ### Módulo: Proyecto Intermodular (PI)
 - [x] T-PI-01: Redactar análisis de necesidades y mapa de actores (`pi/docs/analisis-reto.md`)
@@ -469,35 +461,33 @@ Para defender con éxito el primer incremento de software ante el profesorado o 
 - [x] T-ED-04: Auditar limpieza de repositorio y publicar tag `v0.1.0-sprint1`
 
 ### Módulo: Programación (PR)
-- [x] T-PR-01: Declarar variables primitivas y lectura con Scanner (`pr/src/Reto1Variables.java`)
-- [x] T-PR-02: Implementar operadores aritméticos, módulo y casting (`pr/src/Reto1Calculo.java`)
-- [x] T-PR-03: Integrar constantes `final` y salida formateada con `printf` (`pr/src/Reto1Completo.java`)
+- [x] T-PR-01: Declarar variables primitivas y lectura con Scanner (`pr/src/MiProyecto.java`)
+- [x] T-PR-02: Implementar operadores aritméticos, módulo y casting (`pr/src/MiProyecto.java`)
+- [x] T-PR-03: Integrar constantes `final` y salida formateada con `printf` (`pr/src/MiProyecto.java`)
 ```
 
 ---
 
-#### Paso 3. Preparación del Guion de la Demo Técnica (3 minutos)
+##### Paso 3. Preparación del guion de la demo técnica (3 minutos)
 Redacta al final de tu dossier técnico una ficha con el minutaje exacto de tu intervención ante el tribunal:
 
 ```markdown
-### Guion de Exposición: Sprint Review v0.1 (3 Minutos)
-* **00:00 - 00:45 (Presentación y Reto):** Saludo formal, nombre del proyecto, cliente de la bolsa de proyectos y problema crítico que resolvemos.
-* **00:45 - 02:15 (Demostración Práctica en Vivo):** Ejecución de `Reto1Completo.java` en IntelliJ IDEA, introducción de datos reales por consola y explicación de los resultados calculados con `printf`.
-* **02:15 - 03:00 (Ingeniería y Repositorio):** Muestra de GitHub, confirmación del tag `v0.1.0-sprint1` y mención al objetivo del Sprint 2 (uso de objetos estándar y estructura Maven).
+### Guion de exposición: Sprint Review v0.1 (3 minutos)
+* **00:00 - 00:45 (Presentación y proyecto).** Saludo formal, nombre del proyecto, cliente de la bolsa de proyectos y problema crítico que resolvemos.
+* **00:45 - 02:15 (Demostración práctica en directo).** Ejecución de `ControlAccesoQR.java` en IntelliJ IDEA, introducción de datos reales por consola y explicación de los resultados calculados con `printf`.
+* **02:15 - 03:00 (Ingeniería y repositorio).** Muestra de GitHub, confirmación del tag `v0.1.0-sprint1` y mención al objetivo del Sprint 2 (uso de objetos estándar y estructura Maven).
 ```
 
 ---
 
-#### Paso 4. Commit final y sincronización en GitHub
-1. Abre la terminal de IntelliJ (`Alt + F12`) o el panel **Commit** (`Ctrl + K`).
-2. Comprueba mediante `git status` que los archivos de `pi/` están listos.
-3. Confirma los cambios aplicando el estándar convencional:
-   ```bash
-   git add pi/
-   git commit -m "docs(pi): consolidar dossier tecnico final del sprint 1 y cerrar backlog al 100 por ciento"
-   git push
+##### Paso 4. Commit final y sincronización en GitHub
+1. Abre el panel **Commit** en IntelliJ IDEA (`Ctrl + K`).
+2. Comprueba que aparecen seleccionados todos los archivos modificados durante el dia de hoy.
+3. Escribe el mensaje siguiendo el estándar de **Conventional Commits**:
+   ```text
+   docs(pi): consolidar dossier tecnico final del sprint 1 y cerrar backlog al 100%
    ```
-4. Accede a tu repositorio en GitHub y comprueba que la carpeta `pi/` luce con todos sus documentos accesibles.
+4. Haz clic en **Commit and Push** y verifica en GitHub que ambos archivos quedan registrados.
 
 ---
 
@@ -506,4 +496,4 @@ Al concluir estas 3 sesiones de los viernes (3 horas lectivas en total):
 1. Has transformado la propuesta de tu proyecto propio en una **especificación de ingeniería formal**, analizando actores y alineándola con los **ODS**.
 2. Has definido la **arquitectura funcional en bloques** y has contrastado **fuentes técnicas oficiales**.
 3. Has utilizado la **Inteligencia Artificial con rigor ético y transparencia** mediante el *Prompt Log*.
-4. Cuentas con un **Dossier Técnico consolidado**, el **Sprint Backlog 1 al 100 %** y un guion ensayado para defender tu software, dejando el módulo plenamente preparado para la evaluación formativa mediante la lista de cotejo de Proyecto Intermodular.
+4. Cuentas con un **Dossier técnico consolidado**, el **Sprint Backlog 1 al 100 %** y un guion ensayado para defender tu software, dejando el módulo plenamente preparado para la evaluación formativa mediante la lista de cotejo de Proyecto Intermodular.
