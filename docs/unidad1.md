@@ -1,26 +1,26 @@
-# Sprint 1. Definición del reto, gestión de requisitos y herramientas de IA
+# Sprint 1. Definición del proyecto, gestión de requisitos y herramientas de IA
 
 ---
 
-## Semana 1. De la idea al reto técnico: Análisis de necesidades, identificación de actores, ODS y uso ético de la Inteligencia Artificial (IA)
+## Semana 1. De la idea al proyectotécnico: análisis de necesidades, identificación de actores, ODS y uso ético de la Inteligencia Artificial (IA)
 
 ---
 
 ### Día 1 - 1 sesión
 
-#### Teoría. El análisis del reto y la ingeniería de requisitos
+#### Teoría. El análisis del proyecto y la ingeniería de requisitos
 
 #### 1. Caso guía en AzaharTech
 
 Es viernes 19 de septiembre por la tarde en la sede de **AzaharTech** en Castellón de la Plana. Tras las intensas sesiones de la semana en Programación y Entornos de Desarrollo, el equipo de trabajo se reúne para la sesión semanal de **Proyecto Intermodular**: el espacio reservado para la estrategia, la relación con el cliente y la gestión metodológica.
 
-**Laia Claramunt**, supervisora de proyectos, conecta su portátil y muestra en el proyector dos documentos en paralelo: a la izquierda, el análisis del sistema de acceso por QR del **IES El Caminàs** (nuestro caso guía); a la derecha, el catálogo de la **bolsa de proyectos** donde cada equipo ha elegido su reto singular para el curso.
+**Laia Claramunt**, supervisora de proyectos, conecta su portátil y muestra en el proyector dos documentos en paralelo: a la izquierda, el análisis del sistema de acceso por QR del **IES El Caminàs** (nuestro caso guía); a la derecha, el catálogo de la **bolsa de proyectos** donde cada equipo ha elegido su proyecto singular para el curso.
 
 Laia toma la palabra dirigiéndose a **Alba Torres**, **Pau Ferrer** y al nuevo estudiante:
 
 > *«Durante esta primera semana habéis aprendido a declarar variables en Java y a configurar vuestro entorno en IntelliJ con Git. Esas son las herramientas del artesano. Pero un ingeniero de software no empieza tirando líneas de código al azar; un ingeniero primero **escucha al cliente, analiza el problema y delimita el alcance de la solución**.*
 >
-> *Si el cliente nos pide un sistema para su negocio y nosotros le entregamos lo que creemos que necesita sin haber analizado a sus usuarios, el proyecto fracasará. Hoy aprenderemos a transformar una idea abstracta en un **reto técnico formal**, analizaremos los diferentes perfiles de usuario que interactuarán con el sistema, vincularemos el proyecto con los **Objetivos de Desarrollo Sostenible (ODS)** y utilizaremos la **Inteligencia Artificial de forma ética y transparente** como ayudante para el análisis, registrando cada consulta en nuestro cuaderno de bitácora»*.
+> *Si el cliente nos pide un sistema para su negocio y nosotros le entregamos lo que creemos que necesita sin haber analizado a sus usuarios, el proyecto fracasará. Hoy aprenderemos a transformar una idea abstracta en un **proyecto técnico formal**, analizaremos los diferentes perfiles de usuario que interactuarán con el sistema, vincularemos el proyecto con los **Objetivos de Desarrollo Sostenible (ODS)** y utilizaremos la **Inteligencia Artificial de forma ética y transparente** como ayudante para el análisis, registrando cada consulta en nuestro cuaderno de bitácora»*.
 
 ---
 
@@ -28,7 +28,7 @@ Laia toma la palabra dirigiéndose a **Alba Torres**, **Pau Ferrer** y al nuevo 
 
 ```
 ┌────────────────────────────────────────────────────────────────────────────────────────┐
-│                        EL CICLO DE ANÁLISIS DEL RETO (FASE INICIAL)                    │
+│                        EL CICLO DE ANÁLISIS DEL PROYECTO (FASE INICIAL)                    │
 ├──────────────────────────┬─────────────────────────────┬───────────────────────────────┤
 │ 1. Problema              │ 2. Actores                  │ 3. Sostenibilidad             │
 ├──────────────────────────┼─────────────────────────────┼───────────────────────────────┤
@@ -67,10 +67,10 @@ En AzaharTech no se prohíbe la Inteligencia Artificial generativa (como ChatGPT
 * **El estándar del Prompt Log (Registro de IA).** Toda aportación de la IA debe documentarse en una tabla indicando la herramienta, la instrucción exacta (*prompt*) introducida y el criterio del estudiante para modificar o aceptar la respuesta.
 
 ---
-#### Laboratorio práctico guiado. Especificación del reto y sprint backlog 1
+#### Laboratorio práctico guiado. Especificación del proyecto y sprint backlog 1
 
 Laia Claramunt asigna las tareas de la sesión:
-> *«Durante los próximos treinta minutos, cada uno de vosotros va a crear el espacio oficial de Proyecto Intermodular en su repositorio de GitHub. Redactaréis el **documento formal de análisis del reto de vuestro proyecto propio** incluyendo el registro ético de IA, y crearéis el archivo **`sprint1-backlog.md`** que coordinará vuestras tareas entre Programación, Entornos de Desarrollo y Proyecto Intermodular»*.
+> *«Durante los próximos treinta minutos, cada uno de vosotros va a crear el espacio oficial de Proyecto Intermodular en su repositorio de GitHub. Redactaréis el **documento formal de análisis del proyecto de vuestro proyecto propio** incluyendo el registro ético de IA, y crearéis el archivo **`sprint1-backlog.md`** que coordinará vuestras tareas entre Programación, Entornos de Desarrollo y Proyecto Intermodular»*.
 
 ---
 
@@ -145,7 +145,7 @@ Construir el incremento base v0.1: definir el análisis técnico del proyecto, c
 ## Tareas
 
 ### Módulo: Proyecto Intermodular (PI)
-- [ ] T-PI-01: Redactar análisis de necesidades y mapa de actores (`pi/docs/analisis-reto.md`)
+- [ ] T-PI-01: Redactar análisis de necesidades y mapa de actores (`pi/docs/analisis-proyecto.md`)
 - [ ] T-PI-02: Registrar el uso ético de IA (*Prompt Log*)
 - [ ] T-PI-03: Crear el Sprint Backlog 1 inicial
 - [ ] T-PI-04: Elaborar diagrama de bloques funcional y viabilidad técnica (Semana 2)
@@ -306,7 +306,7 @@ El sistema se descompone en tres subsistemas funcionales coordinados:
 ## Cuadro de mando de tareas
 
 ### Módulo: Proyecto Intermodular (PI)
-- [x] T-PI-01: Redactar análisis de necesidades y mapa de actores (`pi/docs/analisis-reto.md`)
+- [x] T-PI-01: Redactar análisis de necesidades y mapa de actores (`pi/docs/analisis-proyecto.md`)
 - [x] T-PI-02: Registrar el uso ético de IA (*Prompt Log*)
 - [x] T-PI-03: Crear el Sprint Backlog 1 inicial
 - [x] T-PI-04: Elaborar diagrama de bloques funcional y viabilidad técnica (`pi/docs/viabilidad-tecnica.md`)
@@ -382,7 +382,7 @@ La documentación que se entrega a un cliente o a un comité evaluador debe refl
 Para defender con éxito el primer incremento de software ante el profesorado o el cliente:
 * **Estructura en 3 minutos (*The 3-Minute Demo*):**
     * *Minuto 1 (Problema y Propuesta):* Presentar al cliente, justificar la necesidad y explicar el alcance del Sprint 1.
-    * *Minuto 2 (Software funcionando):* Compartir pantalla, ejecutar la clase `Reto1Completo.java` en IntelliJ, introducir datos de prueba y mostrar el informe de salida generado con `printf`.
+    * *Minuto 2 (Software funcionando):* Compartir pantalla, ejecutar la clase `MiProyecto.java` en IntelliJ, introducir datos de prueba y mostrar el informe de salida generado con `printf`.
     * *Minuto 3 (Ingeniería y Conclusión):* Mostrar el repositorio en GitHub, verificar el tag `v0.1.0-sprint1` y resumir los objetivos alcanzados.
 * **Comunicación no verbal y seguridad.** Hablar con voz firme y clara, mantener contacto visual con la audiencia, evitar leer diapositivas de forma monótona y demostrar dominio de los términos técnicos en inglés (*commit*, *stage*, *casting*, *build*).
 
@@ -448,7 +448,7 @@ Para defender con éxito el primer incremento de software ante el profesorado o 
 **Estado Final: 100% COMPLETADO Y FIRMADO (2 de octubre de 2026)**
 
 ### Módulo: Proyecto Intermodular (PI)
-- [x] T-PI-01: Redactar análisis de necesidades y mapa de actores (`pi/docs/analisis-reto.md`)
+- [x] T-PI-01: Redactar análisis de necesidades y mapa de actores (`pi/docs/analisis-proyecto.md`)
 - [x] T-PI-02: Registrar el uso ético de IA (*Prompt Log*)
 - [x] T-PI-03: Crear el Sprint Backlog 1 inicial
 - [x] T-PI-04: Elaborar diagrama de bloques funcional y viabilidad técnica (`pi/docs/viabilidad-tecnica.md`)
