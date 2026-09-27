@@ -28,7 +28,7 @@ Laia toma la palabra dirigiéndose a **Alba Torres**, **Pau Ferrer** y al nuevo 
 
 ```
 ┌────────────────────────────────────────────────────────────────────────────────────────┐
-│                        EL CICLO DE ANÁLISIS DEL PROYECTO (FASE INICIAL)                    │
+│                        EL CICLO DE ANÁLISIS DEL PROYECTO (FASE INICIAL)                │
 ├──────────────────────────┬─────────────────────────────┬───────────────────────────────┤
 │ 1. Problema              │ 2. Actores                  │ 3. Sostenibilidad             │
 ├──────────────────────────┼─────────────────────────────┼───────────────────────────────┤
