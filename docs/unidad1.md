@@ -39,18 +39,18 @@ Laia toma la palabra dirigiéndose a **Alba Torres**, **Pau Ferrer** y al nuevo 
 ```
 
 ##### A. Definición del problema y justificación de la digitalización
-Todo proyecto de software viable responde a una necesidad real no resuelta o deficientemente gestionada:
-* **En el caso guía (IES El Caminàs):** El fichaje manual en papel genera aglomeraciones en conserjería, pérdida de tiempo lectivo y retraso en las alertas a las familias. La digitalización aporta inmediatez, trazabilidad y ahorro de papel.
-* **En vuestro proyecto propio de la bolsa de proyectos:** Debéis responder con precisión a tres preguntas:
-    1. ¿Cuál es la situación actual del cliente (*As-Is*)?
-    2. ¿Qué problemas operativos, económicos o de gestión genera esa situación?
-    3. ¿Cómo resolverá vuestra aplicación ese problema (*To-Be*)?
+Todo proyecto de software viable responde a una necesidad real no resuelta o deficientemente gestionada:  
+* **En el caso guía (IES El Caminàs):** El fichaje manual en papel genera aglomeraciones en conserjería, pérdida de tiempo lectivo y retraso en las alertas a las familias. La digitalización aporta inmediatez, trazabilidad y ahorro de papel.  
+* **En vuestro proyecto propio de la bolsa de proyectos:** Debéis responder con precisión a tres preguntas:  
+    1. ¿Cuál es la situación actual del cliente (*As-Is*)?  
+    2. ¿Qué problemas operativos, económicos o de gestión genera esa situación?  
+    3. ¿Cómo resolverá vuestra aplicación ese problema (*To-Be*)?  
 
 ##### B. Identificación y mapa de actores
-Un **actor** es cualquier entidad externa (humana o máquina) que interactúa directamente con el software:
-1. **Usuarios primarios u operacionales:** Aquellos que utilizan la herramienta para su función principal diaria (*ej. el alumno que valida su QR o el operario que registra una entrada de stock*).
-2. **Usuarios administradores o de gestión:** Aquellos que configuran el sistema, dan de alta parámetros y extraen informes (*ej. el equipo directivo o el jefe de almacén*).
-3. **Sistemas externos:** Dispositivos periféricos o servicios web con los que la aplicación intercambia datos (*ej. pantallas HDMI, bases de datos externas o lectores ópticos*).
+Un **actor** es cualquier entidad externa (humana o máquina) que interactúa directamente con el software:  
+1. **Usuarios primarios u operacionales:** Aquellos que utilizan la herramienta para su función principal diaria (*ej. el alumno que valida su QR o el operario que registra una entrada de stock*).  
+2. **Usuarios administradores o de gestión:** Aquellos que configuran el sistema, dan de alta parámetros y extraen informes (*ej. el equipo directivo o el jefe de almacén*).  
+3. **Sistemas externos:** Dispositivos periféricos o servicios web con los que la aplicación intercambia datos (*ej. pantallas HDMI, bases de datos externas o lectores ópticos*).  
 
 ##### C. Vinculación con los Objetivos de Desarrollo Sostenible
 Siguiendo las directrices del Decreto de Formación Profesional de la Comunitat Valenciana, todo proyecto intermodular debe incorporar la dimensión social y ambiental alineada con los **ODS**:
@@ -183,10 +183,10 @@ Construir el incremento base v0.1: definir el análisis técnico del proyecto, c
 
 Es viernes 25 de septiembre por la tarde. El equipo de desarrollo de **AzaharTech** inicia su segunda sesión de Proyecto Intermodular. En la pantalla táctil de la sala, **Laia Claramunt** proyecta un esquema técnico del caso guía: el sistema del **IES El Caminàs**.
 
-El esquema no contiene código, sino tres grandes bloques conectados por líneas de flujo:
-1. Bloque de captura (cámara del móvil de la persona).
-2. Bloque de procesamiento central (algoritmo en Java que valida la entrada y calcula tiempos).
-3. Bloque de salida y notificación (pantalla del vestíbulo y volcado en log).
+El esquema no contiene código, sino tres grandes bloques conectados por líneas de flujo:  
+1. Bloque de captura (cámara del móvil de la persona).  
+2. Bloque de procesamiento central (algoritmo en Java que valida la entrada y calcula tiempos).  
+3. Bloque de salida y notificación (pantalla del vestíbulo y volcado en log).  
 
 Laia se gira hacia el equipo:
 
@@ -214,24 +214,23 @@ Laia se gira hacia el equipo:
 ```
 
 ##### A. El diagrama de bloques funcional
-Es la representación visual de más alto nivel de un sistema de software. Permite entender de un vistazo cómo fluyen los datos sin necesidad de descender al detalle del código fuente:
+Es la representación visual de más alto nivel de un sistema de software. Permite entender de un vistazo cómo fluyen los datos sin necesidad de descender al detalle del código fuente:  
 
-* **Entradas.** Qué datos brutos recibe el sistema del exterior (*por ejemplo: DNI, lecturas térmicas, unidades demandadas*).
-* **Procesamiento.** Qué módulos de software transforman esos datos (*por ejemplo: motor de cálculo, cálculo de porcentajes, validadores de tokens*).
-* **Salidas.** Qué información útil entrega el sistema al usuario (*por ejemplo: pantallas informativas, informes formateados, comprobantes de acceso*).
+* **Entradas.** Qué datos brutos recibe el sistema del exterior (*por ejemplo: DNI, lecturas térmicas, unidades demandadas*).  
+* **Procesamiento.** Qué módulos de software transforman esos datos (*por ejemplo: motor de cálculo, cálculo de porcentajes, validadores de tokens*).  
+* **Salidas.** Qué información útil entrega el sistema al usuario (*por ejemplo: pantallas informativas, informes formateados, comprobantes de acceso*).  
 
 ##### B. Estudio de viabilidad técnica
-Evaluar la viabilidad de un proyecto significa certificar que la solución es realizable con los medios tecnológicos disponibles:
+Evaluar la viabilidad de un proyecto significa certificar que la solución es realizable con los medios tecnológicos disponibles:  
 
-1. **Viabilidad de Software:** Compatibilidad de versiones. En nuestro caso: Java OpenJDK 21 LTS como entorno de ejecución universal e IntelliJ IDEA Community como entorno de construcción.
-2. **Viabilidad de Hardware:** Requisitos mínimos de memoria RAM (mínimo 4 GB para la JVM), procesador y periféricos necesarios en el cliente.
-3. **Gestión de Restricciones Operativas:** Identificar qué tecnologías se aplican en cada sprint (*ej. en el Sprint 1 la persistencia se realiza estrictamente en memoria y consola; las bases de datos relacionales y el modelado avanzado se incorporarán en la Formación en Empresa*).
+1. **Viabilidad de Software:** Compatibilidad de versiones. En nuestro caso: Java OpenJDK 21 LTS como entorno de ejecución universal e IntelliJ IDEA Community como entorno de construcción.  
+2. **Viabilidad de Hardware:** Requisitos mínimos de memoria RAM (mínimo 4 GB para la JVM), procesador y periféricos necesarios en el cliente.  
+3. **Gestión de Restricciones Operativas:** Identificar qué tecnologías se aplican en cada sprint (*ej. en el Sprint 1 la persistencia se realiza estrictamente en memoria y consola; las bases de datos relacionales y el modelado avanzado se incorporarán en la Formación en Empresa*).  
 
 ##### C. Búsqueda y contraste de fuentes técnicas oficiales
 Un desarrollador profesional no diseña basándose en tutoriales anónimos o respuestas de foros obsoletos. La guía oficial exige:
-
-* **Selección de fuentes primarias.** Documentación oficial de Oracle Java SE 21, estándares IEEE para documentación y especificaciones de la Comunitat Valenciana.
-* **Detección de información no contrastada.** Descartar soluciones que empleen librerías no oficiales o versiones obsoletas de Java (como Java 8 o Java 11) que no respeten las buenas prácticas actuales.
+* **Selección de fuentes primarias.** Documentación oficial de Oracle Java SE 21, estándares IEEE para documentación y especificaciones de la Comunitat Valenciana.  
+* **Detección de información no contrastada.** Descartar soluciones que empleen librerías no oficiales o versiones obsoletas de Java (como Java 8 o Java 11) que no respeten las buenas prácticas actuales.  
 
 ---
 #### Laboratorio práctico guiado. Modelado de bloques y viabilidad técnica
@@ -373,18 +372,18 @@ Es viernes 2 de octubre. Hoy concluyen las tres semanas del **Sprint 1**. La sal
 ```
 
 ##### A. Aspectos formales y estructura del dossier técnico
-La documentación que se entrega a un cliente o a un comité evaluador debe reflejar la máxima pulcritud:
-1. **Estructura lógica completa.** Portada corporativa, índice de contenidos, cuerpo técnico organizado por apartados numerados y bibliografía de fuentes.
-2. **Normas de estilo.** Lenguaje técnico impersonal (*«se implementa»*, *«el sistema calcula»*), ausencia total de faltas ortográficas y jerarquía visual limpia.
-3. **Trazabilidad de herramientas TIC e IA.** Registro transparente de cómo se ha empleado la tecnología para documentar el proyecto.
+La documentación que se entrega a un cliente o a un comité evaluador debe reflejar la máxima pulcritud:    
+1. **Estructura lógica completa.** Portada corporativa, índice de contenidos, cuerpo técnico organizado por apartados numerados y bibliografía de fuentes.  
+2. **Normas de estilo.** Lenguaje técnico impersonal (*«se implementa»*, *«el sistema calcula»*), ausencia total de faltas ortográficas y jerarquía visual limpia.  
+3. **Trazabilidad de herramientas TIC e IA.** Registro transparente de cómo se ha empleado la tecnología para documentar el proyecto.  
 
 ##### B. Técnicas de comunicación oral y defensa ante el cliente
-Para defender con éxito el primer incremento de software ante el profesorado o el cliente:
-* **Estructura en 3 minutos (*The 3-Minute Demo*):**
-    * *Minuto 1 (Problema y Propuesta):* Presentar al cliente, justificar la necesidad y explicar el alcance del Sprint 1.
-    * *Minuto 2 (Software funcionando):* Compartir pantalla, ejecutar la clase `MiProyecto.java` en IntelliJ, introducir datos de prueba y mostrar el informe de salida generado con `printf`.
-    * *Minuto 3 (Ingeniería y Conclusión):* Mostrar el repositorio en GitHub, verificar el tag `v0.1.0-sprint1` y resumir los objetivos alcanzados.
-* **Comunicación no verbal y seguridad.** Hablar con voz firme y clara, mantener contacto visual con la audiencia, evitar leer diapositivas de forma monótona y demostrar dominio de los términos técnicos en inglés (*commit*, *stage*, *casting*, *build*).
+Para defender con éxito el primer incremento de software ante el profesorado o el cliente:  
+* **Estructura en 3 minutos (*The 3-Minute Demo*):**  
+    * *Minuto 1 (Problema y Propuesta):* Presentar al cliente, justificar la necesidad y explicar el alcance del Sprint 1.  
+    * *Minuto 2 (Software funcionando):* Compartir pantalla, ejecutar la clase `MiProyecto.java` en IntelliJ, introducir datos de prueba y mostrar el informe de salida generado con `printf`.  
+    * *Minuto 3 (Ingeniería y Conclusión):* Mostrar el repositorio en GitHub, verificar el tag `v0.1.0-sprint1` y resumir los objetivos alcanzados.  
+* **Comunicación no verbal y seguridad.** Hablar con voz firme y clara, mantener contacto visual con la audiencia, evitar leer diapositivas de forma monótona y demostrar dominio de los términos técnicos en inglés (*commit*, *stage*, *casting*, *build*).  
 
 ---
 #### Laboratorio práctico guiado. Consolidacion documental y ensayo de la demo
@@ -492,8 +491,8 @@ Redacta al final de tu dossier técnico una ficha con el minutaje exacto de tu i
 ---
 
 ### Resumen del Sprint 1 de Proyecto Intermodular completado
-Al concluir estas 3 sesiones de los viernes (3 horas lectivas en total):
-1. Has transformado la propuesta de tu proyecto propio en una **especificación de ingeniería formal**, analizando actores y alineándola con los **ODS**.
-2. Has definido la **arquitectura funcional en bloques** y has contrastado **fuentes técnicas oficiales**.
-3. Has utilizado la **Inteligencia Artificial con rigor ético y transparencia** mediante el *Prompt Log*.
-4. Cuentas con un **Dossier técnico consolidado**, el **Sprint Backlog 1 al 100 %** y un guion ensayado para defender tu software, dejando el módulo plenamente preparado para la evaluación formativa mediante la lista de cotejo de Proyecto Intermodular.
+Al concluir estas 3 sesiones de los viernes (3 horas lectivas en total):  
+1. Has transformado la propuesta de tu proyecto propio en una **especificación de ingeniería formal**, analizando actores y alineándola con los **ODS**.  
+2. Has definido la **arquitectura funcional en bloques** y has contrastado **fuentes técnicas oficiales**.  
+3. Has utilizado la **Inteligencia Artificial con rigor ético y transparencia** mediante el *Prompt Log*.  
+4. Cuentas con un **Dossier técnico consolidado**, el **Sprint Backlog 1 al 100 %** y un guion ensayado para defender tu software, dejando el módulo plenamente preparado para la evaluación formativa mediante la lista de cotejo de Proyecto Intermodular.  
