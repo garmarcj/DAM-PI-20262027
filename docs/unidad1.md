@@ -228,9 +228,9 @@ Evaluar la viabilidad de un proyecto significa certificar que la solución es re
 3. **Gestión de Restricciones Operativas:** Identificar qué tecnologías se aplican en cada sprint (*ej. en el Sprint 1 la persistencia se realiza estrictamente en memoria y consola; las bases de datos relacionales y el modelado avanzado se incorporarán en la Formación en Empresa*).  
 
 ##### C. Búsqueda y contraste de fuentes técnicas oficiales
-Un desarrollador profesional no diseña basándose en tutoriales anónimos o respuestas de foros obsoletos. La guía oficial exige:
-* **Selección de fuentes primarias.** Documentación oficial de Oracle Java SE 21, estándares IEEE para documentación y especificaciones de la Comunitat Valenciana.  
-* **Detección de información no contrastada.** Descartar soluciones que empleen librerías no oficiales o versiones obsoletas de Java (como Java 8 o Java 11) que no respeten las buenas prácticas actuales.  
+Un desarrollador profesional no diseña basándose en tutoriales anónimos o respuestas de foros obsoletos. La guía oficial exige:  
+* **Selección de fuentes primarias.** Documentación oficial de Oracle Java SE 21, estándares IEEE para documentación y especificaciones de la Comunitat Valenciana.    
+* **Detección de información no contrastada.** Descartar soluciones que empleen librerías no oficiales o versiones obsoletas de Java (como Java 8 o Java 11) que no respeten las buenas prácticas actuales.    
 
 ---
 #### Laboratorio práctico guiado. Modelado de bloques y viabilidad técnica
@@ -380,10 +380,10 @@ La documentación que se entrega a un cliente o a un comité evaluador debe refl
 ##### B. Técnicas de comunicación oral y defensa ante el cliente
 Para defender con éxito el primer incremento de software ante el profesorado o el cliente:  
 * **Estructura en 3 minutos (*The 3-Minute Demo*):**  
-    * *Minuto 1 (Problema y Propuesta):* Presentar al cliente, justificar la necesidad y explicar el alcance del Sprint 1.  
-    * *Minuto 2 (Software funcionando):* Compartir pantalla, ejecutar la clase `MiProyecto.java` en IntelliJ, introducir datos de prueba y mostrar el informe de salida generado con `printf`.  
-    * *Minuto 3 (Ingeniería y Conclusión):* Mostrar el repositorio en GitHub, verificar el tag `v0.1.0-sprint1` y resumir los objetivos alcanzados.  
-* **Comunicación no verbal y seguridad.** Hablar con voz firme y clara, mantener contacto visual con la audiencia, evitar leer diapositivas de forma monótona y demostrar dominio de los términos técnicos en inglés (*commit*, *stage*, *casting*, *build*).  
+    * *Minuto 1 (Problema y Propuesta):* Presentar al cliente, justificar la necesidad y explicar el alcance del Sprint 1.      
+    * *Minuto 2 (Software funcionando):* Compartir pantalla, ejecutar la clase `MiProyecto.java` en IntelliJ, introducir datos de prueba y mostrar el informe de salida generado con `printf`.    
+    * *Minuto 3 (Ingeniería y Conclusión):* Mostrar el repositorio en GitHub, verificar el tag `v0.1.0-sprint1` y resumir los objetivos alcanzados.    
+* **Comunicación no verbal y seguridad.** Hablar con voz firme y clara, mantener contacto visual con la audiencia, evitar leer diapositivas de forma monótona y demostrar dominio de los términos técnicos en inglés (*commit*, *stage*, *casting*, *build*).    
 
 ---
 #### Laboratorio práctico guiado. Consolidacion documental y ensayo de la demo
