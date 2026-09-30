@@ -318,8 +318,8 @@ El sistema se descompone en tres subsistemas funcionales coordinados:
 - [ ] T-ED-04: Auditar limpieza de repositorio y publicar tag `v0.1.0-sprint1` (Semana 3)
 
 ### Módulo: Programación (PR)
-- [x] T-PR-01: Declarar variables primitivas y lectura con Scanner (`pr/src/MiProyecto.java.java`)
-- [x] T-PR-02: Implementar operadores aritméticos, módulo y casting (`pr/src/MiProyecto.java.java`)
+- [x] T-PR-01: Declarar variables primitivas y lectura con Scanner (`pr/src/MiProyecto.java`)
+- [x] T-PR-02: Implementar operadores aritméticos, módulo y casting (`pr/src/MiProyecto.java`)
 - [ ] T-PR-03: Integrar constantes `final` y salida formateada con `printf` (Semana 3)
 ```
 
