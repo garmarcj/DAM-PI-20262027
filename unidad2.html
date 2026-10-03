@@ -1,0 +1,1439 @@
+
+<!doctype html>
+<html lang="es" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+        <meta name="author" content="Cristian Garcia">
+      
+      
+        <link rel="canonical" href="https://github.com/garmarcj/DAM-PI-20262027/unidad2.html">
+      
+      
+        <link rel="prev" href="unidad1.html">
+      
+      
+      
+        
+      
+      
+      <link rel="icon" href="assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
+    
+    
+      
+        <title>Unidad 2 - Proyecto Intermodular I de DAM</title>
+      
+    
+    
+      <link rel="stylesheet" href="assets/stylesheets/main.ec1eaa64.min.css">
+      
+        
+        <link rel="stylesheet" href="assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="stylesheets/extra.css">
+    
+    <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="green" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#sprint-2-especificacion-de-requisitos-del-sistema" class="md-skip">
+          Saltar a contenido
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Cabecera">
+    <a href="index.html" title="Proyecto Intermodular I de DAM" class="md-header__button md-logo" aria-label="Proyecto Intermodular I de DAM" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Proyecto Intermodular I de DAM
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Unidad 2
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Búsqueda" placeholder="Búsqueda" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Buscar">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Limpiar" aria-label="Limpiar" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Inicializando búsqueda
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--integrated" aria-label="Navegación" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="index.html" title="Proyecto Intermodular I de DAM" class="md-nav__button md-logo" aria-label="Proyecto Intermodular I de DAM" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Proyecto Intermodular I de DAM
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="index.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Inicio
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="unidad1.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Unidad 1
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Unidad 2
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="unidad2.html" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Unidad 2
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Tabla de contenidos
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#semana-4-de-la-necesidad-al-requisito-catalogacion-de-requisitos-funcionales-no-funcionales-y-apertura-del-sprint-backlog-2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Semana 4. De la necesidad al requisito: catalogación de requisitos funcionales, no funcionales y apertura del Sprint Backlog 2
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Semana 4. De la necesidad al requisito: catalogación de requisitos funcionales, no funcionales y apertura del Sprint Backlog 2">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#dia-4-1-sesion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Día 4 - 1 sesión
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Día 4 - 1 sesión">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#teoria-de-la-necesidad-al-catalogo-de-requisitos-del-sistema" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Teoría. De la necesidad al catálogo de requisitos del sistema
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#1-caso-guia-en-azahartech" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Caso guía en AzaharTech
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-la-ingenieria-de-requisitos-en-el-desarrollo-de-software" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. La ingeniería de requisitos en el desarrollo de software
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. La ingeniería de requisitos en el desarrollo de software">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#a-requisitos-funcionales-frente-a-requisitos-no-funcionales" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        A. Requisitos Funcionales frente a Requisitos No Funcionales
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#b-reglas-de-redaccion-de-requisitos-profesionales" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        B. Reglas de redacción de requisitos profesionales
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#c-busqueda-y-contraste-de-fuentes-tecnicas-oficiales" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        C. Búsqueda y contraste de fuentes técnicas oficiales
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#d-el-uso-etico-de-la-inteligencia-artificial-como-asistente-para-documentar-requisitos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        D. El uso ético de la Inteligencia Artificial como asistente para documentar requisitos
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#laboratorio-practico-guiado-catalogo-de-requisitos-y-sprint-backlog-2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Laboratorio práctico guiado. Catálogo de requisitos y Sprint Backlog 2
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Laboratorio práctico guiado. Catálogo de requisitos y Sprint Backlog 2">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#paso-1-creacion-del-archivo-de-catalogo-de-requisitos-pidocsrequisitos-sistemamd" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Paso 1. Creación del archivo de catálogo de requisitos (pi/docs/requisitos-sistema.md)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#paso-2-creacion-del-sprint-backlog-2-pibacklogsprint2-backlogmd" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Paso 2. Creación del Sprint Backlog 2 (pi/backlog/sprint2-backlog.md)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#paso-3-unicamente-si-los-estudiantes-ya-lo-han-visto-en-ed-confirmacion-y-sincronizacion-en-github" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Paso 3. (Únicamente si los estudiantes ya lo han visto en ED) Confirmación y sincronización en GitHub
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#semana-5-arquitectura-del-software-modelado-visual-en-drawio-tratamiento-de-imagenes-tecnicas-y-prevision-de-recursos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Semana 5. Arquitectura del software: modelado visual en Draw.io, tratamiento de imágenes técnicas y previsión de recursos
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Semana 5. Arquitectura del software: modelado visual en Draw.io, tratamiento de imágenes técnicas y previsión de recursos">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#dia-5-1-sesion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Día 5 - 1 sesión
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Día 5 - 1 sesión">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#teoria-del-requisito-a-la-arquitectura-visual-diagramas-de-bloques-funcionales-y-estimacion-de-recursos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Teoría. Del requisito a la arquitectura visual: diagramas de bloques funcionales y estimación de recursos
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#1-caso-guia-en-azahartech_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Caso guía en AzaharTech
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-modelado-de-arquitectura-y-tratamiento-de-imagenes-tecnicas-en-ingenieria" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Modelado de arquitectura y tratamiento de imágenes técnicas en ingeniería
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. Modelado de arquitectura y tratamiento de imágenes técnicas en ingeniería">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#a-el-diagrama-de-bloques-funcional-en-la-ingenieria-del-software" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        A. El Diagrama de Bloques Funcional en la ingeniería del software
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#b-herramientas-tic-para-diagramacion-tecnica-drawio-diagramsnet" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        B. Herramientas TIC para diagramación técnica: Draw.io (diagrams.net)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#c-tratamiento-formal-de-imagenes-tecnicas-en-markdown" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        C. Tratamiento formal de imágenes técnicas en Markdown
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#d-prevision-y-justificacion-de-recursos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        D. Previsión y justificación de recursos
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#laboratorio-practico-guiado-modelado-visual-en-drawio-y-actualizacion-del-sprint-backlog-2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Laboratorio práctico guiado. Modelado visual en Draw.io y actualización del Sprint Backlog 2
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Laboratorio práctico guiado. Modelado visual en Draw.io y actualización del Sprint Backlog 2">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#paso-1-diseno-y-exportacion-del-diagrama-de-bloques-en-drawio" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Paso 1. Diseño y exportación del Diagrama de Bloques en Draw.io
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#paso-2-integracion-de-la-imagen-y-redaccion-tecnica-pidocsarquitectura-recursosmd" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Paso 2. Integración de la imagen y redacción técnica (pi/docs/arquitectura-recursos.md)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#paso-3-actualizacion-del-estado-del-sprint-backlog-2-pibacklogsprint2-backlogmd" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Paso 3. Actualización del estado del Sprint Backlog 2 (pi/backlog/sprint2-backlog.md)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#paso-4-unicamente-si-los-estudiantes-ya-lo-han-visto-en-ed-confirmacion-y-sincronizacion-en-github" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Paso 4. (Únicamente si los estudiantes ya lo han visto en ED) Confirmación y sincronización en GitHub
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#semana-6-consolidacion-del-capitulo-2-de-la-memoria-cierre-del-sprint-backlog-2-y-defensa-tecnica-del-incremento-v02" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Semana 6. Consolidación del Capítulo 2 de la memoria, cierre del Sprint Backlog 2 y defensa técnica del incremento v0.2
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Semana 6. Consolidación del Capítulo 2 de la memoria, cierre del Sprint Backlog 2 y defensa técnica del incremento v0.2">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#dia-6-1-sesion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Día 6 - 1 sesión
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Día 6 - 1 sesión">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#teoria-calidad-documental-en-la-ingenieria-de-requisitos-verificacion-de-entregables-y-comunicacion-tecnica" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Teoría. Calidad documental en la ingeniería de requisitos, verificación de entregables y comunicación técnica
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#1-caso-guia-en-azahartech_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Caso guía en AzaharTech
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-calidad-documental-verificacion-formal-y-comunicacion-tecnica" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Calidad documental, verificación formal y comunicación técnica
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. Calidad documental, verificación formal y comunicación técnica">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#a-la-consolidacion-documental-como-garantia-de-ingenieria" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        A. La consolidación documental como garantía de ingeniería
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#b-criterios-de-verificacion-y-cierre-del-sprint-backlog-2-ra4a" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        B. Criterios de verificación y cierre del Sprint Backlog 2 (RA4.a)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#c-tecnicas-de-oratoria-tecnica-y-defensa-del-incremento-v02" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        C. Técnicas de oratoria técnica y defensa del incremento v0.2
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#laboratorio-practico-guiado-consolidacion-del-capitulo-2-de-la-memoria-cierre-del-sprint-backlog-2-y-preparacion-de-la-exposicion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Laboratorio práctico guiado. Consolidación del Capítulo 2 de la memoria, cierre del Sprint Backlog 2 y preparación de la exposición
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Laboratorio práctico guiado. Consolidación del Capítulo 2 de la memoria, cierre del Sprint Backlog 2 y preparación de la exposición">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#paso-1-redaccion-del-capitulo-2-pidocscapitulo2-requisitos-arquitecturamd" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Paso 1. Redacción del capítulo 2 (pi/docs/capitulo2-requisitos-arquitectura.md)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#paso-2-cierre-y-verificacion-del-sprint-backlog-2-pibacklogsprint2-backlogmd" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Paso 2. Cierre y verificación del Sprint Backlog 2 (pi/backlog/sprint2-backlog.md)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#paso-3-preparacion-de-la-ficha-de-guion-de-exposicion-3-minutos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Paso 3. Preparación de la ficha de guion de exposición (3 Minutos)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#paso-4-unicamente-si-los-estudiantes-ya-lo-han-visto-en-ed-confirmacion-y-sincronizacion-en-github_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Paso 4. (Únicamente si los estudiantes ya lo han visto en ED) Confirmación y sincronización en GitHub
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resumen-del-sprint-2-de-proyecto-intermodular-completado" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Resumen del Sprint 2 de Proyecto Intermodular completado
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="sprint-2-especificacion-de-requisitos-del-sistema">Sprint 2. Especificación de requisitos del sistema<a class="headerlink" href="#sprint-2-especificacion-de-requisitos-del-sistema" title="Permanent link">&para;</a></h1>
+<hr />
+<h2 id="semana-4-de-la-necesidad-al-requisito-catalogacion-de-requisitos-funcionales-no-funcionales-y-apertura-del-sprint-backlog-2">Semana 4. De la necesidad al requisito: catalogación de requisitos funcionales, no funcionales y apertura del Sprint Backlog 2<a class="headerlink" href="#semana-4-de-la-necesidad-al-requisito-catalogacion-de-requisitos-funcionales-no-funcionales-y-apertura-del-sprint-backlog-2" title="Permanent link">&para;</a></h2>
+<hr />
+<h3 id="dia-4-1-sesion">Día 4 - 1 sesión<a class="headerlink" href="#dia-4-1-sesion" title="Permanent link">&para;</a></h3>
+<h4 id="teoria-de-la-necesidad-al-catalogo-de-requisitos-del-sistema">Teoría. De la necesidad al catálogo de requisitos del sistema<a class="headerlink" href="#teoria-de-la-necesidad-al-catalogo-de-requisitos-del-sistema" title="Permanent link">&para;</a></h4>
+<h4 id="1-caso-guia-en-azahartech">1. Caso guía en AzaharTech<a class="headerlink" href="#1-caso-guia-en-azahartech" title="Permanent link">&para;</a></h4>
+<p>Es viernes por la tarde en la sede de <strong>AzaharTech</strong> en Castellón de la Plana. Tras haber cerrado con éxito el Sprint 1 y haber congelado la primera entrega en GitHub, el equipo arranca el <strong>Sprint 2</strong>.</p>
+<p>En la sala de reuniones, <strong>Laia Claramunt</strong> proyecta un nuevo documento en la pantalla. A su lado, <strong>Alba Torres</strong> revisa las especificaciones del entorno Maven y <strong>Pau Ferrer</strong> tiene abierto el esquema del vestíbulo del <strong>IES El Caminàs</strong>.</p>
+<p>Laia toma la palabra dirigiéndose al equipo de trabajo:</p>
+<blockquote>
+<p><em>«En el Sprint 1 definimos el problema global, identificamos a los actores y demostramos que la lógica base era viable. Pero un cliente no puede firmar un contrato sobre intenciones generales; necesita saber con exactitud matemática </em><em>qué hará y qué no hará el software</em><em>.</em></p>
+<p><em>Si el equipo directivo del IES El Caminàs nos dice 'queremos que el sistema sea rápido y seguro', esa frase no le sirve a un programador. ¿Qué significa 'rápido'? ¿Menos de un segundo? ¿Menos de diez? ¿Qué significa 'seguro'? ¿Qué datos valida?</em></p>
+<p><em>Hoy aprenderemos a transformar las necesidades del cliente en un </em><em>Catálogo Formal de Requisitos del Sistema</em><em>. Aprenderemos a distinguir los </em><em>Requisitos Funcionales (RF)</em><em> de los </em><em>Requisitos No Funcionales (RNF)</em><em>, contrastaremos la documentación técnica oficial para no basarnos en suposiciones y abriremos el </em><em>Sprint Backlog 2</em><em> que guiará nuestro trabajo durante las próximas tres semanas»</em>.</p>
+</blockquote>
+<hr />
+<h4 id="2-la-ingenieria-de-requisitos-en-el-desarrollo-de-software">2. La ingeniería de requisitos en el desarrollo de software<a class="headerlink" href="#2-la-ingenieria-de-requisitos-en-el-desarrollo-de-software" title="Permanent link">&para;</a></h4>
+<div class="highlight"><pre><span></span><code>┌────────────────────────────────────────────────────────────────────────────────────────┐
+│                        EL PUENTE ENTRE EL CLIENTE Y EL CÓDIGO                          │
+├──────────────────────────┬─────────────────────────────┬───────────────────────────────┤
+│ 1. Necesidad del Cliente │ 2. Requisito Funcional (RF) │ 3. Requisito No Funcional     │
+│    (Lenguaje natural)    │    (¿Qué hace el sistema?)  │    (¿Bajo qué restricciones?) │
+├──────────────────────────┼─────────────────────────────┼───────────────────────────────┤
+│ "Queremos que los chicos │ El sistema generará un      │ La respuesta de validación    │
+│ fichen rápido al entrar" │ código de acceso único con  │ en pantalla debe realizarse   │
+│                          │ el DNI y la marca de tiempo.│ en un tiempo inferior a 1,5 s.│
+└──────────────────────────┴─────────────────────────────┴───────────────────────────────┘
+</code></pre></div>
+<h5 id="a-requisitos-funcionales-frente-a-requisitos-no-funcionales">A. Requisitos Funcionales frente a Requisitos No Funcionales<a class="headerlink" href="#a-requisitos-funcionales-frente-a-requisitos-no-funcionales" title="Permanent link">&para;</a></h5>
+<p>Para que el equipo de desarrollo pueda construir el software sin ambigüedades, los requisitos se dividen en dos categorías complementarias:</p>
+<ul>
+<li><strong>Requisitos Funcionales (RF).</strong> Describen los servicios, comportamientos y funciones operativas que debe ejecutar el software ante determinadas entradas. Responden a la pregunta: <em>¿Qué hace el sistema?</em><ul>
+<li><em>En el caso guía (IES El Caminàs):</em><ul>
+<li><strong>RF-01.</strong> El sistema debe capturar el identificador del alumno y los minutos lectivos programados.</li>
+<li><strong>RF-02.</strong> El sistema debe componer un código de verificación que una el prefijo del centro, el DNI y el número de terminal.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><strong>Requisitos No Funcionales (RNF).</strong> Definen las restricciones técnicas, propiedades de calidad, rendimiento o normativas que limitan la solución. Responden a la pregunta: <em>¿Bajo qué condiciones o restricciones debe operar?</em><ul>
+<li><em>En el caso guía (IES El Caminàs):</em><ul>
+<li><strong>RNF-01 (Tecnología).</strong> La aplicación debe ejecutarse sobre la Máquina Virtual de Java utilizando OpenJDK 21 LTS.</li>
+<li><strong>RNF-02 (Usabilidad/Presentación).</strong> La salida de datos por consola debe estar estructurada de forma tabular con decimales acotados.</li>
+<li><strong>RNF-03 (Mantenibilidad).</strong> El código debe estructurarse mediante proyectos gestionados con Apache Maven y control de dependencias.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h5 id="b-reglas-de-redaccion-de-requisitos-profesionales">B. Reglas de redacción de requisitos profesionales<a class="headerlink" href="#b-reglas-de-redaccion-de-requisitos-profesionales" title="Permanent link">&para;</a></h5>
+<p>Un requisito técnico mal redactado propaga errores en cascada hacia las fases de diseño y pruebas. En AzaharTech aplicamos la regla <strong>SMART</strong>:
+1. <strong>Identificador unívoco.</strong> Todo requisito comienza con un código (<code>RF-01</code>, <code>RF-02</code>, <code>RNF-01</code>).
+2. <strong>Sin ambigüedades.</strong> Se evitan términos subjetivos como <em>«fácil»</em>, <em>«rápido»</em>, <em>«eficiente»</em> o <em>«moderno»</em>. Se utilizan verbos operativos (<em>«El sistema calculará...»</em>, <em>«El sistema almacenará...»</em>).
+3. <strong>Verificable.</strong> Debe ser posible diseñar una prueba técnica objetiva que demuestre si el requisito se cumple o no.</p>
+<h5 id="c-busqueda-y-contraste-de-fuentes-tecnicas-oficiales">C. Búsqueda y contraste de fuentes técnicas oficiales<a class="headerlink" href="#c-busqueda-y-contraste-de-fuentes-tecnicas-oficiales" title="Permanent link">&para;</a></h5>
+<p>Para especificar los requisitos de un proyecto no podemos recurrir a foros informales, blogs desactualizados o código no mantenido:
+* <strong>Fuentes primarias y oficiales.</strong> Se consultan las especificaciones oficiales de Oracle para Java SE 21, la documentación de la Apache Software Foundation para Maven y las guías de estándares de la industria (IEEE 830 / ISO 25010).
+* <strong>Detección de información no contrastada.</strong> Antes de dar por válido un requisito o librería externa, se verifica su licencia, su mantenimiento activo y su compatibilidad con la JVM.</p>
+<h5 id="d-el-uso-etico-de-la-inteligencia-artificial-como-asistente-para-documentar-requisitos">D. El uso ético de la Inteligencia Artificial como asistente para documentar requisitos<a class="headerlink" href="#d-el-uso-etico-de-la-inteligencia-artificial-como-asistente-para-documentar-requisitos" title="Permanent link">&para;</a></h5>
+<p>La IA generativa se utiliza como asistente para desglosar requisitos y anticipar casos límite que el analista haya podido pasar por alto:
+* <strong>Uso correcto.</strong> Pedir a la IA que revise una lista inicial de requisitos en busca de ambigüedades o incoherencias.
+* <strong>El Prompt Log del Sprint 2.</strong> Cada consulta debe quedar documentada en la memoria, detallando qué aportación de la IA se ha aceptado y qué partes se han corregido para adaptarse a la realidad técnica del proyecto.</p>
+<hr />
+<h4 id="laboratorio-practico-guiado-catalogo-de-requisitos-y-sprint-backlog-2">Laboratorio práctico guiado. Catálogo de requisitos y Sprint Backlog 2<a class="headerlink" href="#laboratorio-practico-guiado-catalogo-de-requisitos-y-sprint-backlog-2" title="Permanent link">&para;</a></h4>
+<p>Laia Claramunt asigna las tareas de la sesión:</p>
+<blockquote>
+<p><em>«Durante los próximos treinta minutos, cada uno de vosotros abrirá el archivo de requisitos de su proyecto propio de la bolsa de proyectos. Definiréis al menos </em><em>cuatro Requisitos Funcionales</em><em> y </em><em>dos Requisitos No Funcionales</em><em>, contrastaréis las fuentes oficiales y crearéis el archivo </em><em><code>sprint2-backlog.md</code></em><em> que coordinará las tres semanas que tenemos por delante»</em>.</p>
+</blockquote>
+<hr />
+<h5 id="paso-1-creacion-del-archivo-de-catalogo-de-requisitos-pidocsrequisitos-sistemamd">Paso 1. Creación del archivo de catálogo de requisitos (<code>pi/docs/requisitos-sistema.md</code>)<a class="headerlink" href="#paso-1-creacion-del-archivo-de-catalogo-de-requisitos-pidocsrequisitos-sistemamd" title="Permanent link">&para;</a></h5>
+<ol>
+<li>Abre tu proyecto en <strong>IntelliJ IDEA</strong>.</li>
+<li>Dentro de tu carpeta <code>azahartech/nombre-equipo/apellidos-nombre/pi/docs/</code>, crea el archivo <code>requisitos-sistema.md</code>.</li>
+<li>Redacta el catálogo aplicando la siguiente plantilla formal adaptada a <strong>tu proyecto elegido de la bolsa de proyectos</strong>:</li>
+</ol>
+<div class="highlight"><pre><span></span><code><span class="gh"># Catálogo de requisitos del sistema y fuentes técnicas</span>
+<span class="gs">**Consultora:**</span> AzaharTech Software Consulting  
+<span class="gs">**Proyecto Seleccionado:**</span> [nombre de tu proyecto de la bolsa de proyectos]  
+<span class="gs">**Cliente / Sector:**</span> [nombre de la empresa o sector profesional]  
+<span class="gs">**Desarrollador/a:**</span> [tus apellidos, tu nombre]  
+<span class="gs">**Fecha:**</span> 9 de octubre de 2026  
+<span class="gs">**Versión:**</span> 1.0 (Sprint 2)  
+
+---
+
+<span class="gu">## 1. Alcance y objetivos técnicos del Sprint 2</span>
+El objetivo de esta fase es estructurar la lógica del software mediante el uso de objetos estándar y clases predefinidas de Java, gestionando la construcción mediante Apache Maven y definiendo con exactitud el comportamiento esperado del sistema.
+
+---
+
+<span class="gu">## 2. Catálogo de Requisitos Funcionales (RF)</span>
+| Código | Nombre del Requisito | Descripción técnica obligatoria | Prioridad |
+| :---: | :--- | :--- | :---: |
+| <span class="gs">**RF-01**</span> | Captura de parámetros base | El sistema solicitará interactivamente los identificadores y valores iniciales de la operación del cliente. | Alta |
+| <span class="gs">**RF-02**</span> | Procesamiento de objetos | El sistema empleará clases predefinidas del lenguaje (Scanner, String, Math) para transformar los datos de entrada. | Alta |
+| <span class="gs">**RF-03**</span> | Generación de identificador | El sistema compondrá un identificador o código alfanumérico combinando prefijos fijos y marcas de transacción. | Media |
+| <span class="gs">**RF-04**</span> | Resumen estructurado | El sistema emitirá un informe de resultados formateado sin pérdida de precisión numérica. | Media |
+
+---
+
+<span class="gu">## 3. Catálogo de Requisitos No Funcionales (RNF)</span>
+| Código | Categoría | Restricción técnica o estándar | Verificación |
+| :---: | :--- | :--- | :--- |
+| <span class="gs">**RNF-01**</span> | Entorno y Plataforma | El software debe compilar y ejecutarse bajo OpenJDK 21 LTS sin librerías externas no estándar. | Inspección de compilación |
+| <span class="gs">**RNF-02**</span> | Gestión de Proyecto | La estructura de carpetas y dependencias debe regirse bajo el estándar de Apache Maven con su archivo <span class="sb">`pom.xml`</span>. | Archivo de configuración |
+| <span class="gs">**RNF-03**</span> | Calidad de Código | Nombres de variables en camelCase, constantes en UPPER_SNAKE_CASE y código autoformateado. | Revisión de estilo |
+
+---
+
+<span class="gu">## 4. Fuentes técnicas oficiales contrastadas</span>
+<span class="k">1.</span> <span class="gs">**Oracle Java SE 21 Specification:**</span> Documentación de la API estándar para clases del paquete <span class="sb">`java.lang`</span> y <span class="sb">`java.util`</span>. URL: <span class="sb">`https://docs.oracle.com/en/java/javase/21/`</span>
+<span class="k">2.</span> <span class="gs">**Apache Maven Project Standard Directory Layout:**</span> Especificación oficial de la jerarquía de carpetas en proyectos de software. URL: <span class="sb">`https://maven.apache.org/guides/introduction/introduction-to-the-standard-directory-layout.html`</span>
+
+---
+
+<span class="gu">## 5. Registro ético de uso de Inteligencia Artificial (Prompt Log)</span>
+| Fecha | Herramienta | Objetivo de la consulta | Prompt introducido | Revisión crítica y ajuste aplicado |
+| :---: | :---: | :--- | :--- | :--- |
+| 09/10/2026 | ChatGPT / Claude | Redactar requisitos no funcionales | <span class="ge">*"Actúa como analista y redacta 2 requisitos no funcionales SMART para..."*</span> | Se adaptaron las métricas de rendimiento y se eliminaron peticiones de bases de datos externas para respetar el Sprint 2. |
+</code></pre></div>
+<hr />
+<h5 id="paso-2-creacion-del-sprint-backlog-2-pibacklogsprint2-backlogmd">Paso 2. Creación del Sprint Backlog 2 (<code>pi/backlog/sprint2-backlog.md</code>)<a class="headerlink" href="#paso-2-creacion-del-sprint-backlog-2-pibacklogsprint2-backlogmd" title="Permanent link">&para;</a></h5>
+<ol>
+<li>En la carpeta <code>pi/backlog/</code>, crea el archivo <code>sprint2-backlog.md</code>.</li>
+<li>Define la lista de tareas del <strong>Sprint 2 (5 oct – 23 oct)</strong> desglosada para los tres módulos:</li>
+</ol>
+<div class="highlight"><pre><span></span><code><span class="gh"># Sprint Backlog 2 — [nombre de tu proyecto]</span>
+<span class="gs">**Periodo:**</span> 5 de octubre – 23 de octubre de 2026  
+<span class="gs">**Responsable:**</span> [tu nombre]  
+
+<span class="gu">## Objetivo general del Sprint 2</span>
+Construir el incremento v0.2: formalizar el catálogo de requisitos del sistema, estructurar el proyecto con Apache Maven en Entornos de Desarrollo y aplicar clases y objetos predefinidos en Programación.
+
+---
+
+<span class="gu">## Tareas</span>
+
+<span class="gu">### Módulo: Proyecto Intermodular (PI)</span>
+<span class="k">- [ ]</span> T-PI-06: Redactar el catálogo de requisitos funcionales y no funcionales (<span class="sb">`pi/docs/requisitos-sistema.md`</span>)
+<span class="k">- [ ]</span> T-PI-07: Contrastar fuentes técnicas oficiales y registrar el <span class="ge">*Prompt Log*</span>
+<span class="k">- [ ]</span> T-PI-08: Modelar el diagrama de bloques funcional en Draw.io (Semana 5)
+<span class="k">- [ ]</span> T-PI-09: Actualizar el avance y planificar el seguimiento del sprint (Semana 6)
+
+<span class="gu">### Módulo: Entornos de Desarrollo (ED)</span>
+<span class="k">- [ ]</span> T-ED-05: Comprender el ciclo de compilación a Bytecode y la virtualización en la JVM
+<span class="k">- [ ]</span> T-ED-06: Crear y configurar la estructura de proyecto con Apache Maven (<span class="sb">`pom.xml`</span>)
+<span class="k">- [ ]</span> T-ED-07: Configurar y verificar el archivo <span class="sb">`.gitignore`</span> para exclusiones de compilación de Maven (<span class="sb">`target/`</span>)
+
+<span class="gu">### Módulo: Programación (PR)</span>
+<span class="k">- [ ]</span> T-PR-04: Instanciar y utilizar objetos de clases predefinidas (<span class="sb">`Scanner`</span>, <span class="sb">`String`</span>, <span class="sb">`Math`</span>, <span class="sb">`Random`</span>)
+<span class="k">- [ ]</span> T-PR-05: Programar llamadas a métodos estáticos y métodos de instancia pasando parámetros
+<span class="k">- [ ]</span> T-PR-06: Integrar los cálculos y generación de cadenas en el código guía del proyecto propio
+</code></pre></div>
+<hr />
+<h5 id="paso-3-unicamente-si-los-estudiantes-ya-lo-han-visto-en-ed-confirmacion-y-sincronizacion-en-github">Paso 3. (Únicamente si los estudiantes ya lo han visto en ED) Confirmación y sincronización en GitHub<a class="headerlink" href="#paso-3-unicamente-si-los-estudiantes-ya-lo-han-visto-en-ed-confirmacion-y-sincronizacion-en-github" title="Permanent link">&para;</a></h5>
+<ol>
+<li>Realiza el commit convencional y push:
+   <div class="highlight"><pre><span></span><code>git<span class="w"> </span>add<span class="w"> </span>pi/
+git<span class="w"> </span>commit<span class="w"> </span>-m<span class="w"> </span><span class="s2">"docs(pi): definir catalogo de requisitos del sistema y abrir sprint backlog 2"</span>
+git<span class="w"> </span>push
+</code></pre></div></li>
+<li>Accede a tu repositorio en GitHub desde el navegador y comprueba que los archivos <code>requisitos-sistema.md</code> y <code>sprint2-backlog.md</code> se visualizan correctamente con su formato Markdown maquetado.</li>
+</ol>
+<hr />
+<h2 id="semana-5-arquitectura-del-software-modelado-visual-en-drawio-tratamiento-de-imagenes-tecnicas-y-prevision-de-recursos">Semana 5. Arquitectura del software: modelado visual en Draw.io, tratamiento de imágenes técnicas y previsión de recursos<a class="headerlink" href="#semana-5-arquitectura-del-software-modelado-visual-en-drawio-tratamiento-de-imagenes-tecnicas-y-prevision-de-recursos" title="Permanent link">&para;</a></h2>
+<hr />
+<h3 id="dia-5-1-sesion">Día 5 - 1 sesión<a class="headerlink" href="#dia-5-1-sesion" title="Permanent link">&para;</a></h3>
+<h4 id="teoria-del-requisito-a-la-arquitectura-visual-diagramas-de-bloques-funcionales-y-estimacion-de-recursos">Teoría. Del requisito a la arquitectura visual: diagramas de bloques funcionales y estimación de recursos<a class="headerlink" href="#teoria-del-requisito-a-la-arquitectura-visual-diagramas-de-bloques-funcionales-y-estimacion-de-recursos" title="Permanent link">&para;</a></h4>
+<h4 id="1-caso-guia-en-azahartech_1">1. Caso guía en AzaharTech<a class="headerlink" href="#1-caso-guia-en-azahartech_1" title="Permanent link">&para;</a></h4>
+<p>Es viernes 16 de octubre por la tarde en la sede de <strong>AzaharTech</strong> en Castellón de la Plana. El equipo de trabajo se reúne para la segunda sesión del Sprint 2.</p>
+<p>En la pantalla digital de la sala, <strong>Laia Claramunt</strong> proyecta el catálogo de requisitos que el equipo aprobó la semana anterior. A su lado, <strong>Alba Torres</strong> tiene abierta en su portátil la herramienta <strong>Draw.io</strong>, donde ha transformado los requisitos del <strong>IES El Caminàs</strong> en un esquema visual nítido y estructurado:</p>
+<div class="highlight"><pre><span></span><code>+-----------------------+      +--------------------------+      +-----------------------+
+|  CAPTURA Y TERMINAL   | ===&gt; |   LÓGICA CENTRAL JAVA    | ===&gt; |  VISUALIZACIÓN Y LOG  |
+|  - Lector móvil       |      |   - Paquete java.lang    |      |  - Pantalla vestíbulo |
+|  - Escáner de teclado |      |   - Clases Math y String |      |  - Consola formateada |
++-----------------------+      +--------------------------+      +-----------------------+
+</code></pre></div>
+<p>Laia toma la palabra dirigiéndose a <strong>Pau Ferrer</strong> y al estudiante:</p>
+<blockquote>
+<p><em>«En la semana anterior redactamos los Requisitos Funcionales y No Funcionales. Pero cuando un cliente o un comité técnico revisa una memoria, enfrentarse a páginas de texto denso sin apoyo gráfico dificulta entender cómo encajan las piezas del sistema.</em></p>
+<p><em>Un ingeniero de software debe saber traducir las especificaciones escritas a </em><em>modelos visuales de arquitectura</em><em>. Para el IES El Caminàs, este diagrama de bloques permite que el jefe de estudios entienda exactamente por dónde viajan los datos y qué módulos intervienen.</em></p>
+<p><em>Hoy aprenderemos a utilizar una herramienta estándar de diagramación técnica (</em><em>Draw.io / diagrams.net</em><em>), aplicaremos el </em><em>tratamiento e inserción formal de imágenes técnicas</em><em> en nuestra documentación Markdown y cuantificaremos la </em><em>previsión de recursos materiales y humanos</em><em> que exige nuestro proyecto»</em>.</p>
+</blockquote>
+<hr />
+<h4 id="2-modelado-de-arquitectura-y-tratamiento-de-imagenes-tecnicas-en-ingenieria">2. Modelado de arquitectura y tratamiento de imágenes técnicas en ingeniería<a class="headerlink" href="#2-modelado-de-arquitectura-y-tratamiento-de-imagenes-tecnicas-en-ingenieria" title="Permanent link">&para;</a></h4>
+<div class="highlight"><pre><span></span><code>┌────────────────────────────────────────────────────────────────────────────────────────┐
+│                        DEL REQUISITO AL MODELO VISUAL (IPO)                            │
+├──────────────────────────┬─────────────────────────────┬───────────────────────────────┤
+│ 1. Subsistema de Entrada │ 2. Subsistema de Proceso    │ 3. Subsistema de Salida       │
+├──────────────────────────┼─────────────────────────────┼───────────────────────────────┤
+│ Qué componentes reciben  │ Qué clases, métodos y       │ Qué dispositivos o archivos   │
+│ los datos del exterior   │ algoritmos transforman      │ reciben la información        │
+│ (dispositivos, teclado). │ los datos en memoria.       │ procesada final.              │
+└──────────────────────────┴─────────────────────────────┴───────────────────────────────┘
+</code></pre></div>
+<h5 id="a-el-diagrama-de-bloques-funcional-en-la-ingenieria-del-software">A. El Diagrama de Bloques Funcional en la ingeniería del software<a class="headerlink" href="#a-el-diagrama-de-bloques-funcional-en-la-ingenieria-del-software" title="Permanent link">&para;</a></h5>
+<p>El Diagrama de Bloques Funcional es una técnica de modelado de alto nivel que representa la arquitectura de un sistema dividiéndolo en bloques funcionales interconectados:
+* <strong>Cajas negras funcionales.</strong> Cada bloque representa un subsistema con una responsabilidad única y bien delimitada (captura, procesamiento matemático, formateo).
+* <strong>Flechas de flujo.</strong> Indican la dirección en la que viajan los datos y qué tipo de información se transmite entre subsistemas.
+* <strong>Independencia de implementación.</strong> El diagrama muestra <em>cómo colaboran las partes</em>, permitiendo que cualquier desarrollador entienda el flujo antes de inspeccionar el código Java o la estructura de Maven.</p>
+<h5 id="b-herramientas-tic-para-diagramacion-tecnica-drawio-diagramsnet">B. Herramientas TIC para diagramación técnica: Draw.io (diagrams.net)<a class="headerlink" href="#b-herramientas-tic-para-diagramacion-tecnica-drawio-diagramsnet" title="Permanent link">&para;</a></h5>
+<p>Ya no dibujaremos esquemas de ingeniería a mano alzada ni con herramientas de retoque fotográfico genéricas:
+* <strong>Draw.io (diagrams.net).</strong> Es una herramienta estándar, libre y multiplataforma especializada en diagramación técnica.
+* Permite alinear elementos con rejilla milimétrica, utilizar conectores ortogonales inteligentes y exportar esquemas en formatos vectoriales o de alta resolución listos para documentación técnica.</p>
+<h5 id="c-tratamiento-formal-de-imagenes-tecnicas-en-markdown">C. Tratamiento formal de imágenes técnicas en Markdown<a class="headerlink" href="#c-tratamiento-formal-de-imagenes-tecnicas-en-markdown" title="Permanent link">&para;</a></h5>
+<p>Una memoria técnica profesional no puede incrustar capturas borrosas o con fondos descuadrados. Al incorporar diagramas a la documentación se deben respetar tres normas de calidad:
+1. <strong>Exportación optimizada.</strong> Las imágenes deben exportarse en formato <strong>PNG</strong> (con fondo transparente o blanco nítido) o <strong>SVG</strong> (vectorial escalable), recortando los márgenes sobrantes (<em>crop</em>).
+2. <strong>Rutas relativas estrictas.</strong> En Markdown, las imágenes deben guardarse en una subcarpeta dedicada (<code>pi/docs/img/</code>) y enlazarse mediante rutas relativas (<code>![Descripción](img/diagrama.png)</code>), garantizando que se visualicen correctamente tanto en local como en GitHub.
+3. <strong>Pie de figura numerado.</strong> Toda imagen técnica debe ir acompañada de un pie explicativo numerado (<em>«Figura 1. Diagrama de bloques funcional de la arquitectura del sistema»</em>).</p>
+<h5 id="d-prevision-y-justificacion-de-recursos">D. Previsión y justificación de recursos<a class="headerlink" href="#d-prevision-y-justificacion-de-recursos" title="Permanent link">&para;</a></h5>
+<p>Un proyecto de software viable exige cuantificar con rigor los recursos necesarios para su ejecución:
+* <strong>Recursos humanos.</strong> Estimación de horas de trabajo por desarrollador y asignación de responsabilidades.
+* <strong>Recursos hardware.</strong> Equipamiento físico requerido tanto para el desarrollo (puestos de trabajo con 8 GB de RAM) como para el despliegue en el cliente (pantallas, servidores, terminales de red).
+* <strong>Recursos software.</strong> Licencias y herramientas necesarias (OpenJDK 21 LTS, IntelliJ IDEA Community, Git, GitHub y librerías del ecosistema Maven).</p>
+<hr />
+<h4 id="laboratorio-practico-guiado-modelado-visual-en-drawio-y-actualizacion-del-sprint-backlog-2">Laboratorio práctico guiado. Modelado visual en Draw.io y actualización del Sprint Backlog 2<a class="headerlink" href="#laboratorio-practico-guiado-modelado-visual-en-drawio-y-actualizacion-del-sprint-backlog-2" title="Permanent link">&para;</a></h4>
+<p>Laia Claramunt asigna las tareas de la sesión:</p>
+<blockquote>
+<p><em>«Durante los próximos minutos, cada uno de vosotros abrirá Draw.io en su navegador y diseñará el </em><em>Diagrama de Bloques Funcional de su proyecto de la bolsa de proyectos</em><em>. Exportaréis la imagen a vuestra carpeta de documentación, redactaréis la memoria técnica de arquitectura y recursos (</em><em><code>arquitectura-recursos.md</code></em><em>) y actualizaréis el avance semanal en vuestro </em><em>Sprint Backlog 2</em><em>»</em>.</p>
+</blockquote>
+<hr />
+<h5 id="paso-1-diseno-y-exportacion-del-diagrama-de-bloques-en-drawio">Paso 1. Diseño y exportación del Diagrama de Bloques en Draw.io<a class="headerlink" href="#paso-1-diseno-y-exportacion-del-diagrama-de-bloques-en-drawio" title="Permanent link">&para;</a></h5>
+<ol>
+<li>Abre tu navegador web y accede a <a href="https://app.diagrams.net/">app.diagrams.net</a>.</li>
+<li>Selecciona <strong>Crear nuevo diagrama</strong> (Diagrama en blanco).</li>
+<li>Modela la arquitectura funcional de tu proyecto propio siguiendo el patrón de tres subsistemas:<ul>
+<li><strong>Bloque 1 (Entrada de Datos).</strong> Dibuja los componentes que capturan la información de tu cliente (por ejempo, teclado de terminal, escáner, sensores o parámetros).</li>
+<li><strong>Bloque 2 (Procesamiento Lógico Java).</strong> Dibuja el núcleo de la aplicación indicando las clases estándar que intervienen (<code>Scanner</code>, <code>String</code>, <code>Math</code>).</li>
+<li><strong>Bloque 3 (Salida de Resultados).</strong> Dibuja los soportes donde se muestra o registra la información procesada (consola formateada, pantalla del usuario, comprobante de operación).</li>
+</ul>
+</li>
+<li>Conecta los bloques mediante flechas de flujo señalando qué dato viaja entre ellos.</li>
+<li>Ajusta el diseño: aplica colores sobrios corporativos, textos nítidos y comprueba que la ortografía sea correcta.</li>
+<li>Exporta el diagrama:<ul>
+<li>Menú superior: <strong>Archivo -&gt; Exportar como -&gt; PNG...</strong></li>
+<li>En las opciones, marca la casilla <strong>Recortar</strong> (<em>Crop</em>) para eliminar espacios en blanco sobrantes alrededor del diagrama.</li>
+<li>Guarda el archivo con el nombre: <code>diagrama-bloques.png</code>.</li>
+</ul>
+</li>
+</ol>
+<hr />
+<h5 id="paso-2-integracion-de-la-imagen-y-redaccion-tecnica-pidocsarquitectura-recursosmd">Paso 2. Integración de la imagen y redacción técnica (<code>pi/docs/arquitectura-recursos.md</code>)<a class="headerlink" href="#paso-2-integracion-de-la-imagen-y-redaccion-tecnica-pidocsarquitectura-recursosmd" title="Permanent link">&para;</a></h5>
+<ol>
+<li>En tu proyecto de IntelliJ, crea la carpeta <code>img/</code> dentro de <code>pi/docs/</code> si no existe: <code>azahartech/nombre-equipo/apellidos-nombre/pi/docs/img/</code>.</li>
+<li>Mueve el archivo <code>diagrama-bloques.png</code> dentro de <code>pi/docs/img/</code>.</li>
+<li>Dentro de <code>pi/docs/</code>, crea el archivo <code>arquitectura-recursos.md</code>.</li>
+<li>Redacta el documento aplicando la siguiente plantilla formal adaptada a <strong>tu proyecto propio</strong>:</li>
+</ol>
+<div class="highlight"><pre><span></span><code><span class="gh"># Arquitectura funcional del sistema y previsión de recursos</span>
+<span class="gs">**Consultora:**</span> AzaharTech Software Consulting  
+<span class="gs">**Proyecto Seleccionado:**</span> [nombre de tu proyecto de la bolsa de proyectos]  
+<span class="gs">**Desarrollador/a:**</span> [tus apellidos, tu nombre]  
+<span class="gs">**Fecha:**</span> 16 de octubre de 2026  
+<span class="gs">**Versión:**</span> 1.0 (Sprint 2)  
+
+---
+
+<span class="gu">## 1. Diagrama de Bloques Funcional de la Arquitectura</span>
+El siguiente esquema técnico modela visualmente el flujo de información y la descomposición en subsistemas de la solución:
+
+![<span class="nt">Diagrama de Bloques Funcional</span>](<span class="na">img/diagrama-bloques.png</span>)
+<span class="ge">*Figura 1. Modelo de arquitectura funcional Entrada-Procesamiento-Salida (IPO).*</span>
+
+---
+
+<span class="gu">## 2. Descripción de los Subsistemas</span>
+<span class="k">*</span><span class="w"> </span><span class="gs">**Subsistema de Entrada (Captura).**</span> [Describe qué componentes capturan los datos de tu cliente y mediante qué mecanismos].
+<span class="k">*</span><span class="w"> </span><span class="gs">**Subsistema de Procesamiento (Lógica Java).**</span> [Explica cómo las clases Java y las operaciones matemáticas transforman los datos en memoria].
+<span class="k">*</span><span class="w"> </span><span class="gs">**Subsistema de Salida (Presentación).**</span> [Describe el formato y soporte final donde se presentan los resultados al usuario].
+
+---
+
+<span class="gu">## 3. Previsión de Recursos Materiales y Humanos</span>
+| Categoría de Recurso | Descripción del Elemento | Justificación Técnica en el Proyecto |
+| :--- | :--- | :--- |
+| <span class="gs">**Recursos Humanos**</span> | Desarrollador/a junior (34 h lectivas) | Análisis, documentación en PI, codificación en PR y control en ED. |
+| <span class="gs">**Hardware de Desarrollo**</span> | PC con procesador x86_64 y 8 GB RAM | Entorno de compilación local y ejecución fluida de IntelliJ IDEA. |
+| <span class="gs">**Hardware de Despliegue**</span> | Terminal de cliente / Pantalla operativa | Soporte físico para la visualización del software en producción. |
+| <span class="gs">**Software de Base**</span> | OpenJDK 21 LTS | Entorno de ejecución estándar multiplataforma mediante la JVM. |
+| <span class="gs">**Herramientas de Gestión**</span> | Apache Maven 3.9+ / Git &amp; GitHub | Automatización de construcción y control de versiones distribuido. |
+</code></pre></div>
+<hr />
+<h5 id="paso-3-actualizacion-del-estado-del-sprint-backlog-2-pibacklogsprint2-backlogmd">Paso 3. Actualización del estado del Sprint Backlog 2 (<code>pi/backlog/sprint2-backlog.md</code>)<a class="headerlink" href="#paso-3-actualizacion-del-estado-del-sprint-backlog-2-pibacklogsprint2-backlogmd" title="Permanent link">&para;</a></h5>
+<p>Abre tu archivo <code>sprint2-backlog.md</code> y actualiza el estado de las tareas de los tres módulos al cierre de la segunda semana del sprint:</p>
+<div class="highlight"><pre><span></span><code><span class="gh"># Sprint Backlog 2 — [nombre de tu proyecto]</span>
+<span class="gs">**Estado al cierre de la Semana 5 (16 de octubre de 2026)**</span>
+
+<span class="gu">## Tareas</span>
+
+<span class="gu">### Módulo: Proyecto Intermodular (PI)</span>
+<span class="k">- [x]</span> T-PI-06: Redactar el catálogo de requisitos funcionales y no funcionales (<span class="sb">`pi/docs/requisitos-sistema.md`</span>)
+<span class="k">- [x]</span> T-PI-07: Contrastar fuentes técnicas oficiales y registrar el <span class="ge">*Prompt Log*</span>
+<span class="k">- [x]</span> T-PI-08: Modelar el diagrama de bloques funcional en Draw.io (<span class="sb">`pi/docs/arquitectura-recursos.md`</span>)
+<span class="k">- [ ]</span> T-PI-09: Consolidar el Capítulo 2 de la memoria y preparar la demo del sprint (Semana 6)
+
+<span class="gu">### Módulo: Entornos de Desarrollo (ED)</span>
+<span class="k">- [x]</span> T-ED-05: Comprender el ciclo de compilación a Bytecode y la virtualización en la JVM
+<span class="k">- [x]</span> T-ED-06: Crear y configurar la estructura de proyecto con Apache Maven (<span class="sb">`pom.xml`</span>)
+<span class="k">- [ ]</span> T-ED-07: Configurar y verificar el archivo <span class="sb">`.gitignore`</span> para exclusiones de compilación de Maven (<span class="sb">`target/`</span>)
+
+<span class="gu">### Módulo: Programación (PR)</span>
+<span class="k">- [x]</span> T-PR-04: Instanciar y utilizar objetos de clases predefinidas (<span class="sb">`Scanner`</span>, <span class="sb">`String`</span>, <span class="sb">`Math`</span>, <span class="sb">`Random`</span>)
+<span class="k">- [x]</span> T-PR-05: Programar llamadas a métodos estáticos y métodos de instancia pasando parámetros
+<span class="k">- [ ]</span> T-PR-06: Integrar los cálculos y generación de cadenas en el código guía del proyecto propio
+</code></pre></div>
+<hr />
+<h5 id="paso-4-unicamente-si-los-estudiantes-ya-lo-han-visto-en-ed-confirmacion-y-sincronizacion-en-github">Paso 4. (Únicamente si los estudiantes ya lo han visto en ED) Confirmación y sincronización en GitHub<a class="headerlink" href="#paso-4-unicamente-si-los-estudiantes-ya-lo-han-visto-en-ed-confirmacion-y-sincronizacion-en-github" title="Permanent link">&para;</a></h5>
+<ol>
+<li>Confirma los cambios realizados con un mensaje convencional:
+   <div class="highlight"><pre><span></span><code>git<span class="w"> </span>add<span class="w"> </span>pi/
+git<span class="w"> </span>commit<span class="w"> </span>-m<span class="w"> </span><span class="s2">"docs(pi): modelar diagrama de bloques funcional en drawio y estimar recursos"</span>
+git<span class="w"> </span>push
+</code></pre></div></li>
+<li>Accede a tu repositorio remoto en GitHub desde el navegador y verifica:<ul>
+<li>Que el archivo <code>arquitectura-recursos.md</code> se visualiza correctamente formateado.</li>
+<li>Que la imagen <code>diagrama-bloques.png</code> se renderiza de forma nítida dentro del documento sin enlaces rotos.</li>
+</ul>
+</li>
+</ol>
+<hr />
+<h2 id="semana-6-consolidacion-del-capitulo-2-de-la-memoria-cierre-del-sprint-backlog-2-y-defensa-tecnica-del-incremento-v02">Semana 6. Consolidación del Capítulo 2 de la memoria, cierre del Sprint Backlog 2 y defensa técnica del incremento v0.2<a class="headerlink" href="#semana-6-consolidacion-del-capitulo-2-de-la-memoria-cierre-del-sprint-backlog-2-y-defensa-tecnica-del-incremento-v02" title="Permanent link">&para;</a></h2>
+<hr />
+<h3 id="dia-6-1-sesion">Día 6 - 1 sesión<a class="headerlink" href="#dia-6-1-sesion" title="Permanent link">&para;</a></h3>
+<h4 id="teoria-calidad-documental-en-la-ingenieria-de-requisitos-verificacion-de-entregables-y-comunicacion-tecnica">Teoría. Calidad documental en la ingeniería de requisitos, verificación de entregables y comunicación técnica<a class="headerlink" href="#teoria-calidad-documental-en-la-ingenieria-de-requisitos-verificacion-de-entregables-y-comunicacion-tecnica" title="Permanent link">&para;</a></h4>
+<h4 id="1-caso-guia-en-azahartech_2">1. Caso guía en AzaharTech<a class="headerlink" href="#1-caso-guia-en-azahartech_2" title="Permanent link">&para;</a></h4>
+<p>Es viernes 23 de octubre por la tarde en la sede de <strong>AzaharTech</strong> en Castellón de la Plana. Las tres semanas del segundo ciclo de desarrollo concluyen hoy.</p>
+<p>En la sala de reuniones principal, <strong>Laia Claramunt</strong> proyecta el documento técnico consolidado del caso guía del <strong>IES El Caminàs</strong>. En pantalla se observa cómo el catálogo de requisitos redactado en la primera semana y el diagrama de bloques diseñado en Draw.io en la segunda semana se han ensamblado de forma armoniosa dentro de una memoria técnica unificada con numeración jerárquica y estilo corporativo impecable.</p>
+<p>A su lado, <strong>Alba Torres</strong> tiene abierta la estructura de Apache Maven en IntelliJ y <strong>Pau Ferrer</strong> cronometra una presentación de prueba de tres minutos.</p>
+<p>Laia toma la palabra dirigiéndose a los desarrolladores del equipo de trabajo:</p>
+<blockquote>
+<p><em>«En las dos semanas anteriores definimos el catálogo de requisitos funcionales y modelamos la arquitectura funcional en Draw.io. En Programación habéis dominado el uso de objetos estándar como <code>Scanner</code>, <code>Math</code> y <code>String</code>, y en Entornos de Desarrollo habéis configurado la jerarquía estándar de Maven.</em></p>
+<p><em>Pero un proyecto de ingeniería no se entrega con notas sueltas dispersas por el disco duro. En AzaharTech, al finalizar cada ciclo de desarrollo, integramos todos los avances en un capítulo consolidado de la </em><em>Memoria del Proyecto</em><em>, auditamos que el </em><em>Sprint Backlog esté cerrado al 100 % de cumplimiento</em><em> y preparamos la </em><em>defensa oral de la solución técnica ante el cliente</em><em>.</em></p>
+<p><em>Hoy cerraremos formalmente el </em><em>Capítulo 2 de la memoria técnica de vuestro proyecto de la bolsa de proyectos</em><em>, comprobaremos que todos los requisitos y recursos están justificados sin ambigüedades y ensayaremos el guion de comunicación técnica para la Sprint Review del incremento v0.2»</em>.</p>
+</blockquote>
+<hr />
+<h4 id="2-calidad-documental-verificacion-formal-y-comunicacion-tecnica">2. Calidad documental, verificación formal y comunicación técnica<a class="headerlink" href="#2-calidad-documental-verificacion-formal-y-comunicacion-tecnica" title="Permanent link">&para;</a></h4>
+<div class="highlight"><pre><span></span><code>┌────────────────────────────────────────────────────────────────────────────────────────┐
+│                        EL CIERRE DOCUMENTAL DEL SPRINT 2                               │
+├──────────────────────────┬─────────────────────────────┬───────────────────────────────┤
+│ 1. Consolidación         │ 2. Cierre del Backlog       │ 3. Defensa oral de requisitos │
+│    (Capítulo 2 memoria)  │    (Definition of Done)     │    (The 3-Minute Review)      │
+├──────────────────────────┼─────────────────────────────┼───────────────────────────────┤
+│ Se ensamblan requisitos, │ Se audita que todas las     │ Guion estructurado: requisitos│
+│ bloques Draw.io, recursos│ tareas de PR, ED y PI están │ clave -&gt; Modelo visual IPO -&gt; │
+│ y fuentes en un documento│ verificadas y marcadas:     │ Viabilidad y tecnologías base.│
+│ formal normalizado.      │ - [x] 100% completado       │                               │
+└──────────────────────────┴─────────────────────────────┴───────────────────────────────┘
+</code></pre></div>
+<h5 id="a-la-consolidacion-documental-como-garantia-de-ingenieria">A. La consolidación documental como garantía de ingeniería<a class="headerlink" href="#a-la-consolidacion-documental-como-garantia-de-ingenieria" title="Permanent link">&para;</a></h5>
+<p>Tener requisitos en un archivo, diagramas en una carpeta de imágenes y notas de recursos en borradores genera dispersión y desconfianza en el cliente.
+* <strong>El principio del documento maestro.</strong> Al cierre de cada sprint, todos los elementos técnicos se integran en un documento consolidado bajo normas de estilo estrictas:
+    1. Numeración jerárquica homogénea (1, 1.1, 1.2, 2, 2.1...).
+    2. Tablas estandarizadas con identificadores unívocos (<code>RF-01</code>, <code>RNF-01</code>).
+    3. Figuras técnicas incrustadas con pie numerado explicativo.
+    4. Referencias bibliográficas a fuentes técnicas oficiales (estilo IEEE/APA).</p>
+<h5 id="b-criterios-de-verificacion-y-cierre-del-sprint-backlog-2-ra4a">B. Criterios de verificación y cierre del Sprint Backlog 2 (RA4.a)<a class="headerlink" href="#b-criterios-de-verificacion-y-cierre-del-sprint-backlog-2-ra4a" title="Permanent link">&para;</a></h5>
+<p>Antes de dar por cerrado el sprint, el estudiante debe contrastar que los entregables cumplen la <strong>Definición de Hecho (<em>Definition of Done - DoD</em>)</strong>:
+* Los requisitos no contienen adjetivos subjetivos ni funciones no verificables.
+* El diagrama de bloques funcional está correctamente enlazado en Markdown mediante rutas relativas y se renderiza con nitidez en GitHub.
+* La tabla de recursos distingue con claridad el equipamiento del cliente de las herramientas de desarrollo.
+* El archivo <code>sprint2-backlog.md</code> refleja la realidad del repositorio: no pueden quedar casillas vacías (<code>- [ ]</code>) si el incremento se da por entregado.</p>
+<h5 id="c-tecnicas-de-oratoria-tecnica-y-defensa-del-incremento-v02">C. Técnicas de oratoria técnica y defensa del incremento v0.2<a class="headerlink" href="#c-tecnicas-de-oratoria-tecnica-y-defensa-del-incremento-v02" title="Permanent link">&para;</a></h5>
+<p>Defender un catálogo de requisitos y un modelo de arquitectura ante un cliente o un comité evaluador requiere una técnica de comunicación específica:
+* <strong>No leer el documento.</strong> La audiencia ya puede leer la pantalla. El ponente debe explicar el <em>porqué</em> de las decisiones de diseño.
+* <strong>Estructura de impacto en 3 minutos (<em>The 3-Minute Demo v0.2</em>):</strong>
+    * <em>Minuto 1 (Requisitos nucleares).</em> Explicar los dos requisitos funcionales más críticos del proyecto y la principal restricción no funcional (ej. compatibilidad con OpenJDK 21 LTS y Maven).
+    * <em>Minuto 2 (Arquitectura en bloques).</em> Proyectar el diagrama de Draw.io y seguir el recorrido del dato desde el bloque de captura hasta la salida formateada.
+    * <em>Minuto 3 (Viabilidad y apertura).</em> Resumir los recursos asignados, certificar la viabilidad y anticipar el objetivo del Sprint 3 (planificación temporal mediante Diagrama de Gantt y matriz de riesgos).
+* <strong>Control de la comunicación no verbal y autoconfianza:</strong> Mantener contacto visual con la sala, voz firme y pausada, postura erguida y dominio del vocabulario técnico sin vacilaciones.</p>
+<hr />
+<h4 id="laboratorio-practico-guiado-consolidacion-del-capitulo-2-de-la-memoria-cierre-del-sprint-backlog-2-y-preparacion-de-la-exposicion">Laboratorio práctico guiado. Consolidación del Capítulo 2 de la memoria, cierre del Sprint Backlog 2 y preparación de la exposición<a class="headerlink" href="#laboratorio-practico-guiado-consolidacion-del-capitulo-2-de-la-memoria-cierre-del-sprint-backlog-2-y-preparacion-de-la-exposicion" title="Permanent link">&para;</a></h4>
+<p>Laia Claramunt asigna las tareas de la sesión:</p>
+<blockquote>
+<p><em>«Durante los próximos treinta minutos, cada uno de vosotros ensamblará el </em><em>Capítulo 2 consolidado de la Memoria del Proyecto (<code>capitulo2-requisitos-arquitectura.md</code>)</em><em> de su proyecto elegido. Comprobaréis que el diagrama de Draw.io se muestra impecable, cerraréis el </em><em>Sprint Backlog 2 al 100 % de cumplimiento</em><em> y redactaréis el guion de vuestra presentación oral de tres minutos»</em>.</p>
+</blockquote>
+<hr />
+<h5 id="paso-1-redaccion-del-capitulo-2-pidocscapitulo2-requisitos-arquitecturamd">Paso 1. Redacción del capítulo 2 (<code>pi/docs/capitulo2-requisitos-arquitectura.md</code>)<a class="headerlink" href="#paso-1-redaccion-del-capitulo-2-pidocscapitulo2-requisitos-arquitecturamd" title="Permanent link">&para;</a></h5>
+<ol>
+<li>Abre tu proyecto en <strong>IntelliJ IDEA</strong>.</li>
+<li>Dentro de tu carpeta <code>azahartech/nombre-equipo/apellidos-nombre/pi/docs/</code>, crea el archivo <code>capitulo2-requisitos-arquitectura.md</code>.</li>
+<li>Ensambla y unifica los contenidos trabajados en las semanas 4 y 5 aplicando la plantilla oficial de AzaharTech para <strong>tu proyecto de la bolsa de proyectos</strong>:</li>
+</ol>
+<div class="highlight"><pre><span></span><code><span class="gh"># Memoria técnica del proyecto — Capítulo 2. Requisitos y arquitectura funcional</span>
+<span class="gs">**Consultora:**</span> AzaharTech Software Consulting  
+<span class="gs">**Proyecto Seleccionado:**</span> [nombre de tu proyecto de la bolsa de proyectos]  
+<span class="gs">**Cliente / Sector:**</span> [nombre de la empresa o sector profesional]  
+<span class="gs">**Desarrollador/a:**</span> [tus apellidos, tu nombre]  
+<span class="gs">**Fecha de Cierre:**</span> 23 de octubre de 2026  
+<span class="gs">**Versión:**</span> 1.0 (Incremento v0.2)  
+
+---
+
+<span class="gu">## 1. Objetivos del sistema y delimitación del alcance</span>
+El propósito de este incremento es formalizar el catálogo exhaustivo de requisitos técnicos del sistema, modelar visualmente la interacción de sus subsistemas funcionales y cuantificar los recursos materiales y humanos indispensables para garantizar la viabilidad del software.
+
+---
+
+<span class="gu">## 2. Catálogo oficial de requisitos del sistema</span>
+<span class="gu">### 2.1 Requisitos Funcionales (RF)</span>
+| Código | Nombre del Requisito | Descripción técnica obligatoria | Prioridad |
+| :---: | :--- | :--- | :---: |
+| <span class="gs">**RF-01**</span> | Captura interactiva | El sistema solicitará los identificadores de operación y parámetros iniciales de entrada. | Alta |
+| <span class="gs">**RF-02**</span> | Procesamiento estándar | El sistema empleará clases predefinidas de Java (Scanner, Math, String) para la transformación de datos. | Alta |
+| <span class="gs">**RF-03**</span> | Identificación unívoca | El sistema generará códigos alfanuméricos combinando prefijos corporativos y marcas de tiempo. | Media |
+| <span class="gs">**RF-04**</span> | Resumen formateado | El sistema emitirá comprobantes estructurados por consola acotando la precisión decimal. | Media |
+
+<span class="gu">### 2.2 Requisitos No Funcionales (RNF)</span>
+| Código | Categoría | Restricción técnica o estándar aplicable | Criterio de Verificación |
+| :---: | :--- | :--- | :--- |
+| <span class="gs">**RNF-01**</span> | Plataforma base | Ejecución sobre la Máquina Virtual de Java utilizando OpenJDK 21 LTS sin dependencias propietarias. | Verificación de versión JVM |
+| <span class="gs">**RNF-02**</span> | Gestión de proyecto | Estructura del proyecto y gestión del ciclo de construcción automatizada mediante Apache Maven (<span class="sb">`pom.xml`</span>). | Inspección del descriptor POM |
+| <span class="gs">**RNF-03**</span> | Calidad documental | Documentación viva en formato Markdown con rutas relativas e imágenes optimizadas en PNG/SVG. | Auditoría del repositorio |
+
+---
+
+<span class="gu">## 3. Modelo de Arquitectura Funcional (IPO)</span>
+La solución técnica se divide en tres subsistemas funcionales desacoplados cuyo flujo de información se representa en el siguiente esquema:
+
+![<span class="nt">Diagrama de Bloques Funcional</span>](<span class="na">img/diagrama-bloques.png</span>)  
+<span class="ge">*Figura 1. Diagrama de bloques funcional de la arquitectura del sistema (Entrada-Procesamiento-Salida).*</span>
+
+<span class="k">*</span><span class="w"> </span><span class="gs">**Subsistema de Entrada.**</span> Responsable de la captura y validación inicial de los datos introducidos por el usuario o periférico.
+<span class="k">*</span><span class="w"> </span><span class="gs">**Subsistema de Procesamiento.**</span> Implementado en Java, aplica las reglas matemáticas y de negocio transformando los datos en memoria.
+<span class="k">*</span><span class="w"> </span><span class="gs">**Subsistema de Salida.**</span> Canaliza la presentación de los resultados hacia la pantalla o consola mediante formatos tabulares.
+
+---
+
+<span class="gu">## 4. Previsión y justificación de recursos</span>
+| Tipo de Recurso | Detalle del Recurso | Justificación de Ingeniería |
+| :--- | :--- | :--- |
+| <span class="gs">**Recursos Humanos**</span> | Desarrollador/a de software | Dedicación estimada de 34 horas presenciales en aula más trabajo autónomo. |
+| <span class="gs">**Entorno Hardware**</span> | Puesto de trabajo PC / Portátil | Equipo con 8 GB de RAM y procesador multi-núcleo para ejecución del IDE. |
+| <span class="gs">**Entorno Software**</span> | OpenJDK 21 + IntelliJ Community | Pila tecnológica libre y estándar de la industria para desarrollo multiplataforma. |
+| <span class="gs">**Control de Proyecto**</span>| Apache Maven + Git/GitHub | Trazabilidad del código, gestión de versiones y automatización de la construcción. |
+
+---
+
+<span class="gu">## 5. Referencias técnicas oficiales</span>
+<span class="k">1.</span> <span class="gs">**Oracle Java SE Documentation (JDK 21 API):**</span> Especificación de clases estándar de la biblioteca Java. URL: <span class="sb">`https://docs.oracle.com/en/java/javase/21/`</span>
+<span class="k">2.</span> <span class="gs">**Apache Maven Documentation:**</span> Guía de arquitectura de directorios estándar y ciclo de vida de construcción. URL: <span class="sb">`https://maven.apache.org/`</span>
+
+---
+
+<span class="gu">## 6. Registro ético de uso de inteligencia artificial (prompt log del Sprint 2)</span>
+| Fecha | Herramienta | Objetivo de la consulta | Prompt introducido | Criterio de ajuste personal |
+| :---: | :---: | :--- | :--- | :--- |
+| 23/10/2026 | ChatGPT / Claude | Revisar consistencia de requisitos | <span class="ge">*"Revisa si estos 4 requisitos funcionales presentan solapamientos o ambigüedades..."*</span> | Se unificaron términos técnicos y se confirmó que ningún requisito exige bases de datos externas en el Sprint 2. |
+</code></pre></div>
+<hr />
+<h5 id="paso-2-cierre-y-verificacion-del-sprint-backlog-2-pibacklogsprint2-backlogmd">Paso 2. Cierre y verificación del Sprint Backlog 2 (<code>pi/backlog/sprint2-backlog.md</code>)<a class="headerlink" href="#paso-2-cierre-y-verificacion-del-sprint-backlog-2-pibacklogsprint2-backlogmd" title="Permanent link">&para;</a></h5>
+<ol>
+<li>Abre tu archivo <code>sprint2-backlog.md</code>.</li>
+<li>Actualiza <strong>absolutamente todas las tareas del sprint marcándolas como completadas (<code>- [x]</code>)</strong>:</li>
+</ol>
+<div class="highlight"><pre><span></span><code><span class="gh"># Sprint Backlog 2 — [nombre de tu proyecto]</span>
+
+<span class="gu">## Tareas</span>
+
+<span class="gu">### Módulo: Proyecto Intermodular (PI)</span>
+<span class="k">- [x]</span> T-PI-06: Redactar el catálogo de requisitos funcionales y no funcionales (<span class="sb">`pi/docs/requisitos-sistema.md`</span>)
+<span class="k">- [x]</span> T-PI-07: Contrastar fuentes técnicas oficiales y registrar el <span class="ge">*Prompt Log*</span>
+<span class="k">- [x]</span> T-PI-08: Modelar el diagrama de bloques funcional en Draw.io (<span class="sb">`pi/docs/img/diagrama-bloques.png`</span>)
+<span class="k">- [x]</span> T-PI-09: Consolidar el Capítulo 2 de la memoria y preparar el guion de defensa técnica v0.2
+
+<span class="gu">### Módulo: Entornos de Desarrollo (ED)</span>
+<span class="k">- [x]</span> T-ED-05: Comprender el ciclo de compilación a Bytecode y la virtualización en la JVM
+<span class="k">- [x]</span> T-ED-06: Crear y configurar la estructura de proyecto con Apache Maven (<span class="sb">`pom.xml`</span>)
+<span class="k">- [x]</span> T-ED-07: Configurar y verificar el archivo <span class="sb">`.gitignore`</span> para exclusiones de compilación de Maven (<span class="sb">`target/`</span>)
+
+<span class="gu">### Módulo: Programación (PR)</span>
+<span class="k">- [x]</span> T-PR-04: Instanciar y utilizar objetos de clases predefinidas (<span class="sb">`Scanner`</span>, <span class="sb">`String`</span>, <span class="sb">`Math`</span>, <span class="sb">`Random`</span>)
+<span class="k">- [x]</span> T-PR-05: Programar llamadas a métodos estáticos y métodos de instancia pasando parámetros
+<span class="k">- [x]</span> T-PR-06: Integrar los cálculos y generación de cadenas en el código maestro del proyecto propio
+</code></pre></div>
+<hr />
+<h5 id="paso-3-preparacion-de-la-ficha-de-guion-de-exposicion-3-minutos">Paso 3. Preparación de la ficha de guion de exposición (3 Minutos)<a class="headerlink" href="#paso-3-preparacion-de-la-ficha-de-guion-de-exposicion-3-minutos" title="Permanent link">&para;</a></h5>
+<p>Añade al final de tu documento consolidado o en tu libreta técnica el guion para la <em>Sprint Review</em>:</p>
+<div class="highlight"><pre><span></span><code><span class="gu">### Guion de Exposición Técnica: Sprint Review v0.2 (3 Minutos)</span>
+<span class="k">*</span><span class="w"> </span><span class="gs">**00:00 - 01:00 (Catálogo de Requisitos).**</span> Saludo formal, nombre del proyecto, cliente y explicación concisa de los dos requisitos funcionales principales (RF-01 y RF-02) y la restricción tecnológica (RNF-01: OpenJDK 21).
+<span class="k">*</span><span class="w"> </span><span class="gs">**01:00 - 02:00 (Arquitectura Visual).**</span> Proyección del diagrama de bloques de Draw.io, explicando el recorrido del dato desde el subsistema de entrada hasta la salida estructurada.
+<span class="k">*</span><span class="w"> </span><span class="gs">**02:00 - 03:00 (Viabilidad y Apertura al Sprint 3).**</span> Certificación de la viabilidad técnica y recursos materiales, confirmación del cierre de tareas en GitHub y anticipación del objetivo del Sprint 3 (planificación temporal mediante Diagrama de Gantt y gestión de riesgos).
+</code></pre></div>
+<hr />
+<h5 id="paso-4-unicamente-si-los-estudiantes-ya-lo-han-visto-en-ed-confirmacion-y-sincronizacion-en-github_1">Paso 4. (Únicamente si los estudiantes ya lo han visto en ED) Confirmación y sincronización en GitHub<a class="headerlink" href="#paso-4-unicamente-si-los-estudiantes-ya-lo-han-visto-en-ed-confirmacion-y-sincronizacion-en-github_1" title="Permanent link">&para;</a></h5>
+<ol>
+<li>Realiza el commit convencional y push:
+   <div class="highlight"><pre><span></span><code>git<span class="w"> </span>add<span class="w"> </span>pi/
+git<span class="w"> </span>commit<span class="w"> </span>-m<span class="w"> </span><span class="s2">"docs(pi): consolidar capitulo 2 de la memoria y cerrar sprint backlog 2 al 100 por ciento"</span>
+git<span class="w"> </span>push
+</code></pre></div></li>
+<li>Accede a tu repositorio en GitHub desde el navegador y comprueba que <code>capitulo2-requisitos-arquitectura.md</code> se visualiza con su formato Markdown, la imagen de Draw.io y todas las casillas del backlog marcadas con el check <code>[x]</code>.</li>
+</ol>
+<hr />
+<h3 id="resumen-del-sprint-2-de-proyecto-intermodular-completado">Resumen del Sprint 2 de Proyecto Intermodular completado<a class="headerlink" href="#resumen-del-sprint-2-de-proyecto-intermodular-completado" title="Permanent link">&para;</a></h3>
+<p>Al concluir estas 3 sesiones de los viernes (3 horas lectivas en total):
+1. Has formalizado el <strong>catálogo oficial de requisitos del sistema</strong>, clasificando con precisión los Requisitos Funcionales (RF) y No Funcionales (RNF) bajo criterios verificables y sin ambigüedades.
+2. Has modelado visualmente la arquitectura técnica mediante <strong>Draw.io</strong>, exportando e incrustando el <strong>Diagrama de Bloques Funcional (IPO)</strong> con tratamiento profesional de imágenes técnicas en Markdown.
+3. Has justificado con rigor la <strong>previsión de recursos materiales y humanos</strong>, contrastando fuentes oficiales de la industria (Oracle y Apache Maven) y manteniendo el registro ético de IA mediante el <strong>Prompt Log del Sprint 2</strong>.
+4. Cuentas con el <strong>Capítulo 2 de la Memoria Técnica consolidado</strong>, el <strong>Sprint Backlog 2 al 100 %</strong> y un guion ensayado para la <strong>defensa técnica del incremento v0.2</strong>, dejando el proyecto plenamente preparado para abordar en el Sprint 3 la planificación temporal mediante diagramas de Gantt y la gestión de riesgos.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Volver al principio
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": ".", "features": ["content.code.copy", "content.tabs.link", "navigation.instant", "navigation.top", "navigation.sections", "search.highlight", "search.suggest", "toc.integrate"], "search": "assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copiado al portapapeles", "clipboard.copy": "Copiar al portapapeles", "search.result.more.one": "1 m\u00e1s en esta p\u00e1gina", "search.result.more.other": "# m\u00e1s en esta p\u00e1gina", "search.result.none": "No se encontraron documentos", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Teclee para comenzar b\u00fasqueda", "search.result.term.missing": "Falta", "select.version": "Seleccionar versi\u00f3n"}, "version": null}</script>
+    
+    
+      <script src="assets/javascripts/bundle.d7400e89.min.js"></script>
+      
+    
+  </body>
+</html>
