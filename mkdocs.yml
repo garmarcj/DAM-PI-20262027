@@ -1,5 +1,5 @@
-site_name: Proyecto Intermodular I de DAM
-site_url: https://github.com/garmarcj/DAM-PI-20262027
+site_name: Proyecto intermodular I de DAM
+site_url: https://garmarcj.github.io/DAM-PI-20262027/
 site_author: Cristian Garcia
 theme:
   name: material
@@ -8,20 +8,18 @@ theme:
     scheme: default
     primary: green
   features:
-    - content.code.copy
-    - content.tabs.link
     - navigation.instant
     - navigation.top
     - navigation.sections
     - search.highlight
     - search.suggest
-    - toc.integrate
+    - content.code.copy
+    - content.tabs.link
 nav:
   - Inicio: index.md
   - Unidad 1: unidad1.md
   - Unidad 2: unidad2.md
 markdown_extensions:
-  - attr_list
   - admonition
   - footnotes
   - toc:
@@ -30,6 +28,10 @@ markdown_extensions:
   - pymdownx.superfences
   - pymdownx.details
   - pymdownx.tabbed
-extra_css:
-  - stylesheets/extra.css
-use_directory_urls: false
+plugins:
+  - with-pdf:
+      output_path: pdf/proyectointermodular.pdf
+      cover: true
+      toc_title: "proyectointermodular"
+      exclude_pages:
+        - licencia.md
