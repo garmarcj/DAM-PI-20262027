@@ -273,7 +273,7 @@ El sistema se descompone en tres subsistemas funcionales coordinados:
 |  - Consola de usuario formateada mediante System.out.printf()         |
 |  - Resumen tabular con columnas de ancho fijo y decimales acotados    |
 +-----------------------------------------------------------------------+
-
+```
 ---
 
 ## 2. Estudio de viabilidad técnica
@@ -353,7 +353,7 @@ Es viernes 2 de octubre. Hoy concluyen las tres semanas del **Sprint 1**. La sal
 >
 > *Pero en la vida profesional, el código no se defiende solo. El cliente del IES El Caminàs no va a leerse doscientas líneas de código; va a valorar nuestra capacidad para **documentar el producto con normas de estilo impecables y comunicar su valor en una demostración en vivo de tres minutos**.*
 >
-> *Hoy consolidaremos el **dossier técnico formal del Sprint 1**, cerraremos el **Sprint Backlog al 100 %** y entrenaremos la estructura de la **Sprint Review (demo v0.1)**. Un ingeniero de software debe saber hablar con tanta precisión como programa»*.
+> *Hoy consolidaremos la **memoria técnica hasta el Sprint 1**, cerraremos el **Sprint Backlog al 100 %** y entrenaremos la estructura de la **Sprint Review (demo v0.1)**. Un ingeniero de software debe saber hablar con tanta precisión como programa»*.
 
 ---
 
@@ -387,12 +387,14 @@ Para defender con éxito el primer incremento de software ante el profesorado o 
 
 ---
 #### Laboratorio práctico guiado. Consolidacion documental y ensayo de la demo
-##### Paso 1. Creacion del dossier técnico del Sprint 1 (`pi/docs/dossier-tecnico-sprint1.md`)
-1. En la carpeta `pi/docs/`, crea el archivo `dossier-tecnico-sprint1.md`.
-2. Agrupa los apartados trabajados durante las tres semanas en un único documento maestro para **tu proyecto propio**:
+##### Paso 1. Creacion de la memoria técnica hasta el Sprint 1 (`pi/docs/memoria.md`)
+1. En la carpeta `pi/docs/`, crea el archivo `memoria.md`.
+2. Agrupa los apartados trabajados durante las tres semanas en ese documento (`pi/docs/memoria.md`) para **tu proyecto propio**:
 
 ```markdown
-# Dossier técnico de Proyecto Intermodular — Sprint 1 (incremento v0.1)
+# Memoria técnica del proyecto
+## Capítulo 1. Contexto, necesidades y ODS
+
 **Consultora:** AzaharTech Software Consulting  
 **Proyecto:** [Nombre de tu proyecto]  
 **Cliente:** [Nombre del cliente]  
@@ -403,55 +405,48 @@ Para defender con éxito el primer incremento de software ante el profesorado o 
 
 ---
 
-## 1. Contexto, necesidad y objetivos
-[Resumen del problema del cliente y justificación de la digitalización de la solución].
-* **Alineación con ODS:** [Indica el ODS seleccionado y su impacto en sostenibilidad].
+### 1. Contexto y justificación del problema
 
 ---
 
-## 2. Mapa de Actores del Sistema
-[Tabla completa de perfiles de usuario: operarios, administradores y sistemas externos].
+### 2. Actores y usuarios del sistema
 
 ---
 
-## 3. Arquitectura y diagrama de bloques funcional
-[Esquema funcional de 3 bloques: Entrada de datos por Scanner -> Procesamiento aritmético y módulo -> Salida estructurada con printf].
+### 3. Registro ético de uso de Inteligencia Artificial (Prompt Log)
 
 ---
 
-## 4. Viabilidad técnica y recursos
-* **Tecnología base:** Java SE 21 LTS e IntelliJ IDEA Community Edition.
-* **Control de versiones:** Git & GitHub bajo estructura oficial corporativa.
-* **Requisitos mínimos:** 2 GB RAM, procesador x86_64/ARM64.
+### 4. Diagrama de bloques funcional del sistema
 
 ---
 
-## 5. Registro etico de uso de inteligencia artificial (Prompt Log)
-[Tabla con las consultas realizadas a herramientas de IA, prompts exactos y revisiones críticas aplicadas por el estudiante].
+### 5. Estudio de viabilidad técnica
 
 ---
 
-## 6. Referencias técnicas oficiales
-1. Oracle Java Documentation: `https://docs.oracle.com/en/java/javase/21/`
-2. Guía oficial de programación del módulo proyecto intermodular (GVA).
+### 6. Fuentes técnicas oficiales contrastadas
+
+
 ```
 
 ---
 
 ##### Paso 2. Cierre definitivo del Sprint Backlog 1 al 100 % (`pi/backlog/sprint1-backlog.md`)
 1. Abre el archivo `sprint1-backlog.md`.
-2. Marca **absolutamente todas las tareas del Sprint 1 con el check `[x]`**:
+2. Marca **todas las tareas del Sprint 1 con el check `[x]`**:
 
 ```markdown
 # Sprint Backlog 1 — [nombre de tu proyecto]
-**Estado Final: 100% COMPLETADO Y FIRMADO (2 de octubre de 2026)**
+**Periodo:** 14 de septiembre – 2 de octubre de 2026  
+**Responsable:** [tu nombre]
 
 ### Módulo: Proyecto Intermodular (PI)
 - [x] T-PI-01: Redactar análisis de necesidades y mapa de actores (`pi/docs/analisis-proyecto.md`)
 - [x] T-PI-02: Registrar el uso ético de IA (*Prompt Log*)
 - [x] T-PI-03: Crear el Sprint Backlog 1 inicial
 - [x] T-PI-04: Elaborar diagrama de bloques funcional y viabilidad técnica (`pi/docs/viabilidad-tecnica.md`)
-- [x] T-PI-05: Consolidar dossier técnico y guion de demo v0.1 (`pi/docs/dossier-tecnico-sprint1.md`)
+- [x] T-PI-05: Consolidar dossier técnico y guion de demo v0.1 (`pi/docs/memoria.md`)
 
 ### Módulo: Entornos de Desarrollo (ED)
 - [x] T-ED-01: Instalar y verificar OpenJDK 21 e IntelliJ IDEA (`ed/docs/entorno.png`)
@@ -468,7 +463,7 @@ Para defender con éxito el primer incremento de software ante el profesorado o 
 ---
 
 ##### Paso 3. Preparación del guion de la demo técnica (3 minutos)
-Redacta al final de tu dossier técnico una ficha con el minutaje exacto de tu intervención ante el tribunal:
+Redacta al final de tu memoria técnica una ficha con el minutaje exacto de tu intervención ante el tribunal:
 
 ```markdown
 ### Guion de exposición: Sprint Review v0.1 (3 minutos)
@@ -484,7 +479,7 @@ Redacta al final de tu dossier técnico una ficha con el minutaje exacto de tu i
 2. Comprueba que aparecen seleccionados todos los archivos modificados durante el dia de hoy.
 3. Escribe el mensaje siguiendo el estándar de **Conventional Commits**:
    ```text
-   docs(pi): consolidar dossier tecnico final del sprint 1 y cerrar backlog al 100%
+   docs(pi): consolidar memoria técnica final del sprint 1 y cerrar backlog al 100%
    ```
 4. Haz clic en **Commit and Push** y verifica en GitHub que ambos archivos quedan registrados.
 
