@@ -243,10 +243,10 @@ Una memoria técnica profesional no puede incrustar capturas borrosas o con fond
 2. **Rutas relativas estrictas.** En Markdown, las imágenes deben guardarse en una subcarpeta dedicada (`pi/docs/img/`) y enlazarse mediante rutas relativas (`![Descripción](img/diagrama.png)`), garantizando que se visualicen correctamente tanto en local como en GitHub.    
 3. **Pie de figura numerado.** Toda imagen técnica debe ir acompañada de un pie explicativo numerado (*«Figura 1. Diagrama de bloques funcional de la arquitectura del sistema»*).  
 
-##### D. Previsión y justificación de recursos
-Un proyecto de software viable exige cuantificar con rigor los recursos necesarios para su ejecución:    
-* **Recursos humanos.** Estimación de horas de trabajo por desarrollador y asignación de responsabilidades.    
-* **Recursos hardware.** Equipamiento físico requerido tanto para el desarrollo (puestos de trabajo con 8 GB de RAM) como para el despliegue en el cliente (pantallas, servidores, terminales de red).    
+##### D. Previsión y justificación de recursos  
+Un proyecto de software viable exige cuantificar con rigor los recursos necesarios para su ejecución:      
+* **Recursos humanos.** Estimación de horas de trabajo por desarrollador y asignación de responsabilidades.      
+* **Recursos hardware.** Equipamiento físico requerido tanto para el desarrollo (puestos de trabajo con 8 GB de RAM) como para el despliegue en el cliente (pantallas, servidores, terminales de red).      
 * **Recursos software.** Licencias y herramientas necesarias (OpenJDK 21 LTS, IntelliJ IDEA Community, Git, GitHub y librerías del ecosistema Maven).  
 
 ---
