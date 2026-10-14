@@ -55,34 +55,34 @@ Para que el equipo de desarrollo pueda construir el software sin ambigüedades, 
         * **RNF-03 (Mantenibilidad).** El código debe estructurarse mediante proyectos gestionados con Apache Maven y control de dependencias.
 
 ##### B. Reglas de redacción de requisitos profesionales
-Un requisito técnico mal redactado propaga errores en cascada hacia las fases de diseño y pruebas. En AzaharTech aplicamos la regla **SMART**:
-1. **Identificador unívoco.** Todo requisito comienza con un código (`RF-01`, `RF-02`, `RNF-01`).
-2. **Sin ambigüedades.** Se evitan términos subjetivos como *«fácil»*, *«rápido»*, *«eficiente»* o *«moderno»*. Se utilizan verbos operativos (*«El sistema calculará...»*, *«El sistema almacenará...»*).
-3. **Verificable.** Debe ser posible diseñar una prueba técnica objetiva que demuestre si el requisito se cumple o no.
+Un requisito técnico mal redactado propaga errores en cascada hacia las fases de diseño y pruebas. En AzaharTech aplicamos la regla **SMART**:  
+1. **Identificador unívoco.** Todo requisito comienza con un código (`RF-01`, `RF-02`, `RNF-01`).  
+2. **Sin ambigüedades.** Se evitan términos subjetivos como *«fácil»*, *«rápido»*, *«eficiente»* o *«moderno»*. Se utilizan verbos operativos (*«El sistema calculará...»*, *«El sistema almacenará...»*).  
+3. **Verificable.** Debe ser posible diseñar una prueba técnica objetiva que demuestre si el requisito se cumple o no.  
 
 ##### C. Búsqueda y contraste de fuentes técnicas oficiales
-Para especificar los requisitos de un proyecto no podemos recurrir a foros informales, blogs desactualizados o código no mantenido:
-* **Fuentes primarias y oficiales.** Se consultan las especificaciones oficiales de Oracle para Java SE 21, la documentación de la Apache Software Foundation para Maven y las guías de estándares de la industria (IEEE 830 / ISO 25010).
-* **Detección de información no contrastada.** Antes de dar por válido un requisito o librería externa, se verifica su licencia, su mantenimiento activo y su compatibilidad con la JVM.
+Para especificar los requisitos de un proyecto no podemos recurrir a foros informales, blogs desactualizados o código no mantenido:  
+* **Fuentes primarias y oficiales.** Se consultan las especificaciones oficiales de Oracle para Java SE 21, la documentación de la Apache Software Foundation para Maven y las guías de estándares de la industria (IEEE 830 / ISO 25010).  
+* **Detección de información no contrastada.** Antes de dar por válido un requisito o librería externa, se verifica su licencia, su mantenimiento activo y su compatibilidad con la JVM.  
 
 ##### D. El uso ético de la Inteligencia Artificial como asistente para documentar requisitos
-La IA generativa se utiliza como asistente para desglosar requisitos y anticipar casos límite que el analista haya podido pasar por alto:
-* **Uso correcto.** Pedir a la IA que revise una lista inicial de requisitos en busca de ambigüedades o incoherencias.
-* **El Prompt Log del Sprint 2.** Cada consulta debe quedar documentada en la memoria, detallando qué aportación de la IA se ha aceptado y qué partes se han corregido para adaptarse a la realidad técnica del proyecto.
+La IA generativa se utiliza como asistente para desglosar requisitos y anticipar casos límite que el analista haya podido pasar por alto:  
+* **Uso correcto.** Pedir a la IA que revise una lista inicial de requisitos en busca de ambigüedades o incoherencias.  
+* **El Prompt Log del Sprint 2.** Cada consulta debe quedar documentada en la memoria, detallando qué aportación de la IA se ha aceptado y qué partes se han corregido para adaptarse a la realidad técnica del proyecto.  
 
 ---
 
 #### Laboratorio práctico guiado. Catálogo de requisitos y Sprint Backlog 2
 
 Laia Claramunt asigna las tareas de la sesión:
-> *«Durante los próximos treinta minutos, cada uno de vosotros abrirá el archivo de requisitos de su proyecto propio de la bolsa de proyectos. Definiréis al menos **cuatro Requisitos Funcionales** y **dos Requisitos No Funcionales**, contrastaréis las fuentes oficiales y crearéis el archivo **`sprint2-backlog.md`** que coordinará las tres semanas que tenemos por delante»*.
+> *«Durante los próximos minutos, cada uno de vosotros abrirá el archivo de requisitos de su proyecto propio de la bolsa de proyectos. Definiréis al menos **cuatro Requisitos Funcionales** y **dos Requisitos No Funcionales**, contrastaréis las fuentes oficiales y crearéis el archivo **`sprint2-backlog.md`** que coordinará las tres semanas que tenemos por delante»*.
 
 ---
 
-##### Paso 1. Creación del archivo de catálogo de requisitos (`pi/docs/requisitos-sistema.md`)
-1. Abre tu proyecto en **IntelliJ IDEA**.
-2. Dentro de tu carpeta `azahartech/nombre-equipo/apellidos-nombre/pi/docs/`, crea el archivo `requisitos-sistema.md`.
-3. Redacta el catálogo aplicando la siguiente plantilla formal adaptada a **tu proyecto elegido de la bolsa de proyectos**:
+##### Paso 1. Creación del archivo de catálogo de requisitos (`pi/docs/requisitos-sistema.md`)  
+1. Abre tu proyecto en **IntelliJ IDEA**.  
+2. Dentro de tu carpeta `azahartech/nombre-equipo/apellidos-nombre/pi/docs/`, crea el archivo `requisitos-sistema.md`.  
+3. Redacta el catálogo aplicando la siguiente plantilla formal adaptada a **tu proyecto elegido de la bolsa de proyectos**:  
 
 ```markdown
 # Catálogo de requisitos del sistema y fuentes técnicas
