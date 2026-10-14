@@ -55,20 +55,20 @@ Para que el equipo de desarrollo pueda construir el software sin ambigüedades, 
         * **RNF-03 (Mantenibilidad).** El código debe estructurarse mediante proyectos gestionados con Apache Maven y control de dependencias.
 
 ##### B. Reglas de redacción de requisitos profesionales
-Un requisito técnico mal redactado propaga errores en cascada hacia las fases de diseño y pruebas. En AzaharTech aplicamos la regla **SMART**:  
+Un requisito técnico mal redactado propaga errores en cascada hacia las fases de diseño y pruebas. En AzaharTech aplicamos la regla **SMART** (Specific -Específico, Measurable -Medible, Achievable - Alcanzable, Relevant - Relevante y Time-bound - Con límite de tiempo):  
 1. **Identificador unívoco.** Todo requisito comienza con un código (`RF-01`, `RF-02`, `RNF-01`).  
 2. **Sin ambigüedades.** Se evitan términos subjetivos como *«fácil»*, *«rápido»*, *«eficiente»* o *«moderno»*. Se utilizan verbos operativos (*«El sistema calculará...»*, *«El sistema almacenará...»*).  
 3. **Verificable.** Debe ser posible diseñar una prueba técnica objetiva que demuestre si el requisito se cumple o no.  
 
 ##### C. Búsqueda y contraste de fuentes técnicas oficiales
-Para especificar los requisitos de un proyecto no podemos recurrir a foros informales, blogs desactualizados o código no mantenido:  
-* **Fuentes primarias y oficiales.** Se consultan las especificaciones oficiales de Oracle para Java SE 21, la documentación de la Apache Software Foundation para Maven y las guías de estándares de la industria (IEEE 830 / ISO 25010).  
+Para especificar los requisitos de un proyecto no podemos recurrir a foros informales, blogs desactualizados o código no mantenido:    
+* **Fuentes primarias y oficiales.** Se consultan las especificaciones oficiales de Oracle para Java SE 21, la documentación de la Apache Software Foundation para Maven y las guías de estándares de la industria (IEEE 830 / ISO 25010).    
 * **Detección de información no contrastada.** Antes de dar por válido un requisito o librería externa, se verifica su licencia, su mantenimiento activo y su compatibilidad con la JVM.  
 
-##### D. El uso ético de la Inteligencia Artificial como asistente para documentar requisitos
-La IA generativa se utiliza como asistente para desglosar requisitos y anticipar casos límite que el analista haya podido pasar por alto:  
-* **Uso correcto.** Pedir a la IA que revise una lista inicial de requisitos en busca de ambigüedades o incoherencias.  
-* **El Prompt Log del Sprint 2.** Cada consulta debe quedar documentada en la memoria, detallando qué aportación de la IA se ha aceptado y qué partes se han corregido para adaptarse a la realidad técnica del proyecto.  
+##### D. El uso ético de la Inteligencia Artificial como asistente para documentar requisitos  
+La IA generativa se utiliza como asistente para desglosar requisitos y anticipar casos límite que el analista haya podido pasar por alto:    
+* **Uso correcto.** Pedir a la IA que revise una lista inicial de requisitos en busca de ambigüedades o incoherencias.    
+* **El Prompt Log del Sprint 2.** Cada consulta debe quedar documentada en la memoria, detallando qué aportación de la IA se ha aceptado y qué partes se han corregido para adaptarse a la realidad técnica del proyecto.    
 
 ---
 
@@ -168,14 +168,15 @@ Construir el incremento v0.2: formalizar el catálogo de requisitos del sistema,
 
 ---
 
-##### Paso 3. (Únicamente si los estudiantes ya lo han visto en ED) Confirmación y sincronización en GitHub
-1. Realiza el commit convencional y push:
-   ```bash
-   git add pi/
-   git commit -m "docs(pi): definir catalogo de requisitos del sistema y abrir sprint backlog 2"
-   git push
+##### Paso 3. Confirmación y sincronización en GitHub
+
+1. Abre el panel **Commit** en IntelliJ IDEA (`Ctrl + K`).
+2. Comprueba que aparecen seleccionados `pi/docs/requisitos-sistema.md` y `pi/backlog/sprint2-backlog.md`.
+3. Escribe el mensaje siguiendo el estándar de **Conventional Commits**:
+   ```text
+   docs(pi): definir catalogo de requisitos del sistema y abrir sprint backlog 2
    ```
-2. Accede a tu repositorio en GitHub desde el navegador y comprueba que los archivos `requisitos-sistema.md` y `sprint2-backlog.md` se visualizan correctamente con su formato Markdown maquetado.
+4. Haz clic en **Commit and Push** y verifica en GitHub que ambos archivos quedan registrados.
 
 ---
 
@@ -226,33 +227,33 @@ Laia toma la palabra dirigiéndose a **Pau Ferrer** y al estudiante:
 ```
 
 ##### A. El Diagrama de Bloques Funcional en la ingeniería del software
-El Diagrama de Bloques Funcional es una técnica de modelado de alto nivel que representa la arquitectura de un sistema dividiéndolo en bloques funcionales interconectados:
-* **Cajas negras funcionales.** Cada bloque representa un subsistema con una responsabilidad única y bien delimitada (captura, procesamiento matemático, formateo).
-* **Flechas de flujo.** Indican la dirección en la que viajan los datos y qué tipo de información se transmite entre subsistemas.
-* **Independencia de implementación.** El diagrama muestra *cómo colaboran las partes*, permitiendo que cualquier desarrollador entienda el flujo antes de inspeccionar el código Java o la estructura de Maven.
+El Diagrama de Bloques Funcional es una técnica de modelado de alto nivel que representa la arquitectura de un sistema dividiéndolo en bloques funcionales interconectados:  
+* **Cajas negras funcionales.** Cada bloque representa un subsistema con una responsabilidad única y bien delimitada (captura, procesamiento matemático, formateo).  
+* **Flechas de flujo.** Indican la dirección en la que viajan los datos y qué tipo de información se transmite entre subsistemas.  
+* **Independencia de implementación.** El diagrama muestra *cómo colaboran las partes*, permitiendo que cualquier desarrollador entienda el flujo antes de inspeccionar el código Java o la estructura de Maven.  
 
 ##### B. Herramientas TIC para diagramación técnica: Draw.io (diagrams.net)
-Ya no dibujaremos esquemas de ingeniería a mano alzada ni con herramientas de retoque fotográfico genéricas:
-* **Draw.io (diagrams.net).** Es una herramienta estándar, libre y multiplataforma especializada en diagramación técnica.
-* Permite alinear elementos con rejilla milimétrica, utilizar conectores ortogonales inteligentes y exportar esquemas en formatos vectoriales o de alta resolución listos para documentación técnica.
+Ya no dibujaremos esquemas de ingeniería a mano alzada ni con herramientas de retoque fotográfico genéricas:  
+* **Draw.io (diagrams.net).** Es una herramienta estándar, libre y multiplataforma especializada en diagramación técnica.  
+* Permite alinear elementos con rejilla milimétrica, utilizar conectores ortogonales inteligentes y exportar esquemas en formatos vectoriales o de alta resolución listos para documentación técnica.  
 
 ##### C. Tratamiento formal de imágenes técnicas en Markdown
-Una memoria técnica profesional no puede incrustar capturas borrosas o con fondos descuadrados. Al incorporar diagramas a la documentación se deben respetar tres normas de calidad:
-1. **Exportación optimizada.** Las imágenes deben exportarse en formato **PNG** (con fondo transparente o blanco nítido) o **SVG** (vectorial escalable), recortando los márgenes sobrantes (*crop*).
-2. **Rutas relativas estrictas.** En Markdown, las imágenes deben guardarse en una subcarpeta dedicada (`pi/docs/img/`) y enlazarse mediante rutas relativas (`![Descripción](img/diagrama.png)`), garantizando que se visualicen correctamente tanto en local como en GitHub.
-3. **Pie de figura numerado.** Toda imagen técnica debe ir acompañada de un pie explicativo numerado (*«Figura 1. Diagrama de bloques funcional de la arquitectura del sistema»*).
+Una memoria técnica profesional no puede incrustar capturas borrosas o con fondos descuadrados. Al incorporar diagramas a la documentación se deben respetar tres normas de calidad:  
+1. **Exportación optimizada.** Las imágenes deben exportarse en formato **PNG** (con fondo transparente o blanco nítido) o **SVG** (vectorial escalable), recortando los márgenes sobrantes (*crop*).  
+2. **Rutas relativas estrictas.** En Markdown, las imágenes deben guardarse en una subcarpeta dedicada (`pi/docs/img/`) y enlazarse mediante rutas relativas (`![Descripción](img/diagrama.png)`), garantizando que se visualicen correctamente tanto en local como en GitHub.  
+3. **Pie de figura numerado.** Toda imagen técnica debe ir acompañada de un pie explicativo numerado (*«Figura 1. Diagrama de bloques funcional de la arquitectura del sistema»*).  
 
 ##### D. Previsión y justificación de recursos
-Un proyecto de software viable exige cuantificar con rigor los recursos necesarios para su ejecución:
-* **Recursos humanos.** Estimación de horas de trabajo por desarrollador y asignación de responsabilidades.
-* **Recursos hardware.** Equipamiento físico requerido tanto para el desarrollo (puestos de trabajo con 8 GB de RAM) como para el despliegue en el cliente (pantallas, servidores, terminales de red).
-* **Recursos software.** Licencias y herramientas necesarias (OpenJDK 21 LTS, IntelliJ IDEA Community, Git, GitHub y librerías del ecosistema Maven).
+Un proyecto de software viable exige cuantificar con rigor los recursos necesarios para su ejecución:  
+* **Recursos humanos.** Estimación de horas de trabajo por desarrollador y asignación de responsabilidades.  
+* **Recursos hardware.** Equipamiento físico requerido tanto para el desarrollo (puestos de trabajo con 8 GB de RAM) como para el despliegue en el cliente (pantallas, servidores, terminales de red).  
+* **Recursos software.** Licencias y herramientas necesarias (OpenJDK 21 LTS, IntelliJ IDEA Community, Git, GitHub y librerías del ecosistema Maven).  
 
 ---
 
 #### Laboratorio práctico guiado. Modelado visual en Draw.io y actualización del Sprint Backlog 2
 
-Laia Claramunt asigna las tareas de la sesión:
+Laia Claramunt asigna las tareas de la sesión:  
 > *«Durante los próximos minutos, cada uno de vosotros abrirá Draw.io en su navegador y diseñará el **Diagrama de Bloques Funcional de su proyecto de la bolsa de proyectos**. Exportaréis la imagen a vuestra carpeta de documentación, redactaréis la memoria técnica de arquitectura y recursos (**`arquitectura-recursos.md`**) y actualizaréis el avance semanal en vuestro **Sprint Backlog 2**»*.
 
 ---
@@ -298,9 +299,9 @@ El siguiente esquema técnico modela visualmente el flujo de información y la d
 ---
 
 ## 2. Descripción de los Subsistemas
-* **Subsistema de Entrada (Captura).** [Describe qué componentes capturan los datos de tu cliente y mediante qué mecanismos].
-* **Subsistema de Procesamiento (Lógica Java).** [Explica cómo las clases Java y las operaciones matemáticas transforman los datos en memoria].
-* **Subsistema de Salida (Presentación).** [Describe el formato y soporte final donde se presentan los resultados al usuario].
+* **Subsistema de Entrada (Captura).** [Describe qué componentes capturan los datos de tu cliente y mediante qué mecanismos].  
+* **Subsistema de Procesamiento (Lógica Java).** [Explica cómo las clases Java y las operaciones matemáticas transforman los datos en memoria].  
+* **Subsistema de Salida (Presentación).** [Describe el formato y soporte final donde se presentan los resultados al usuario].  
 
 ---
 
@@ -344,16 +345,14 @@ Abre tu archivo `sprint2-backlog.md` y actualiza el estado de las tareas de los 
 
 ---
 
-##### Paso 4. (Únicamente si los estudiantes ya lo han visto en ED) Confirmación y sincronización en GitHub
-1. Confirma los cambios realizados con un mensaje convencional:
-   ```bash
-   git add pi/
-   git commit -m "docs(pi): modelar diagrama de bloques funcional en drawio y estimar recursos"
-   git push
+##### Paso 4. Confirmación y sincronización en GitHub
+1. Abre el panel **Commit** en IntelliJ IDEA (`Ctrl + K`).
+2. Comprueba que aparecen seleccionados `pi/docs/arquitectura-recursos.md` y `pi/docs/img/diagrama-bloques.png`.
+3. Escribe el mensaje siguiendo el estándar de **Conventional Commits**:
+   ```text
+   docs(pi): modelar diagrama de bloques funcional en drawio y estimar recursos
    ```
-2. Accede a tu repositorio remoto en GitHub desde el navegador y verifica:
-    * Que el archivo `arquitectura-recursos.md` se visualiza correctamente formateado.
-    * Que la imagen `diagrama-bloques.png` se renderiza de forma nítida dentro del documento sin enlaces rotos.
+4. Haz clic en **Commit and Push** y verifica en GitHub que ambos archivos quedan registrados.
 
 ---
 
