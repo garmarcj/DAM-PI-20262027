@@ -227,26 +227,26 @@ Laia toma la palabra dirigiéndose a **Pau Ferrer** y al estudiante:
 ```
 
 ##### A. El Diagrama de Bloques Funcional en la ingeniería del software
-El Diagrama de Bloques Funcional es una técnica de modelado de alto nivel que representa la arquitectura de un sistema dividiéndolo en bloques funcionales interconectados:  
+El Diagrama de Bloques Funcional es una técnica de modelado de alto nivel que representa la arquitectura de un sistema dividiéndolo en bloques funcionales interconectados:    
 * **Cajas negras funcionales.** Cada bloque representa un subsistema con una responsabilidad única y bien delimitada (captura, procesamiento matemático, formateo).  
 * **Flechas de flujo.** Indican la dirección en la que viajan los datos y qué tipo de información se transmite entre subsistemas.  
-* **Independencia de implementación.** El diagrama muestra *cómo colaboran las partes*, permitiendo que cualquier desarrollador entienda el flujo antes de inspeccionar el código Java o la estructura de Maven.  
+* **Independencia de implementación.** El diagrama muestra *cómo colaboran las partes*, permitiendo que cualquier desarrollador entienda el flujo antes de inspeccionar el código Java o la estructura de Maven.    
 
 ##### B. Herramientas TIC para diagramación técnica: Draw.io (diagrams.net)
-Ya no dibujaremos esquemas de ingeniería a mano alzada ni con herramientas de retoque fotográfico genéricas:  
-* **Draw.io (diagrams.net).** Es una herramienta estándar, libre y multiplataforma especializada en diagramación técnica.  
-* Permite alinear elementos con rejilla milimétrica, utilizar conectores ortogonales inteligentes y exportar esquemas en formatos vectoriales o de alta resolución listos para documentación técnica.  
+Ya no dibujaremos esquemas de ingeniería a mano alzada ni con herramientas de retoque fotográfico genéricas:
+* **Draw.io (diagrams.net).** Es una herramienta estándar, libre y multiplataforma especializada en diagramación técnica.    
+* Permite alinear elementos con rejilla milimétrica, utilizar conectores ortogonales inteligentes y exportar esquemas en formatos vectoriales o de alta resolución listos para documentación técnica.    
 
 ##### C. Tratamiento formal de imágenes técnicas en Markdown
 Una memoria técnica profesional no puede incrustar capturas borrosas o con fondos descuadrados. Al incorporar diagramas a la documentación se deben respetar tres normas de calidad:  
 1. **Exportación optimizada.** Las imágenes deben exportarse en formato **PNG** (con fondo transparente o blanco nítido) o **SVG** (vectorial escalable), recortando los márgenes sobrantes (*crop*).  
-2. **Rutas relativas estrictas.** En Markdown, las imágenes deben guardarse en una subcarpeta dedicada (`pi/docs/img/`) y enlazarse mediante rutas relativas (`![Descripción](img/diagrama.png)`), garantizando que se visualicen correctamente tanto en local como en GitHub.  
+2. **Rutas relativas estrictas.** En Markdown, las imágenes deben guardarse en una subcarpeta dedicada (`pi/docs/img/`) y enlazarse mediante rutas relativas (`![Descripción](img/diagrama.png)`), garantizando que se visualicen correctamente tanto en local como en GitHub.    
 3. **Pie de figura numerado.** Toda imagen técnica debe ir acompañada de un pie explicativo numerado (*«Figura 1. Diagrama de bloques funcional de la arquitectura del sistema»*).  
 
 ##### D. Previsión y justificación de recursos
-Un proyecto de software viable exige cuantificar con rigor los recursos necesarios para su ejecución:  
-* **Recursos humanos.** Estimación de horas de trabajo por desarrollador y asignación de responsabilidades.  
-* **Recursos hardware.** Equipamiento físico requerido tanto para el desarrollo (puestos de trabajo con 8 GB de RAM) como para el despliegue en el cliente (pantallas, servidores, terminales de red).  
+Un proyecto de software viable exige cuantificar con rigor los recursos necesarios para su ejecución:    
+* **Recursos humanos.** Estimación de horas de trabajo por desarrollador y asignación de responsabilidades.    
+* **Recursos hardware.** Equipamiento físico requerido tanto para el desarrollo (puestos de trabajo con 8 GB de RAM) como para el despliegue en el cliente (pantallas, servidores, terminales de red).    
 * **Recursos software.** Licencias y herramientas necesarias (OpenJDK 21 LTS, IntelliJ IDEA Community, Git, GitHub y librerías del ecosistema Maven).  
 
 ---
