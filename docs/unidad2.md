@@ -486,7 +486,7 @@ Añade al final de tu documento consolidado o en tu libreta técnica el guion pa
    ```
 4. Haz clic en **Commit and Push** y comprueba que `memoria.md` se visualiza con su formato Markdown, la imagen de Draw.io y todas las casillas del backlog marcadas con el check `[x]`.
 
----
+---  
 
 ### Resumen del Sprint 2 de Proyecto Intermodular completado
 Al concluir estas 3 sesiones de los viernes (3 horas lectivas en total):
