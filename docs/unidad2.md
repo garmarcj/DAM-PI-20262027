@@ -232,9 +232,8 @@ El Diagrama de Bloques Funcional es una técnica de modelado de alto nivel que r
 * **Independencia de implementación.** El diagrama muestra *cómo colaboran las partes*, permitiendo que cualquier desarrollador entienda el flujo antes de inspeccionar el código Java o la estructura de Maven.
 
 ##### B. Herramientas TIC para diagramación técnica: Draw.io (diagrams.net)
-Ya no dibujaremos esquemas de ingeniería a mano alzada ni con herramientas de retoque fotográfico genéricas:
-* **Draw.io (diagrams.net).** Es una herramienta estándar, libre y multiplataforma especializada en diagramación técnica.
-* Permite alinear elementos con rejilla milimétrica, utilizar conectores ortogonales inteligentes y exportar esquemas en formatos vectoriales o de alta resolución listos para documentación técnica.
+Ya no dibujaremos esquemas de ingeniería a mano alzada ni con herramientas de retoque fotográfico genéricas:  
+**Draw.io (diagrams.net).** Es una herramienta estándar, libre y multiplataforma especializada en diagramación técnica. Permite alinear elementos con rejilla milimétrica, utilizar conectores ortogonales inteligentes y exportar esquemas en formatos vectoriales o de alta resolución listos para documentación técnica.    
 
 ##### C. Tratamiento formal de imágenes técnicas en Markdown
 Una memoria técnica profesional no puede incrustar capturas borrosas o con fondos descuadrados. Al incorporar diagramas a la documentación se deben respetar tres normas de calidad:
@@ -243,9 +242,9 @@ Una memoria técnica profesional no puede incrustar capturas borrosas o con fond
 3. **Pie de figura numerado.** Toda imagen técnica debe ir acompañada de un pie explicativo numerado (*«Figura 1. Diagrama de bloques funcional de la arquitectura del sistema»*).
 
 ##### D. Previsión y justificación de recursos
-Un proyecto de software viable exige cuantificar con rigor los recursos necesarios para su ejecución:
+Un proyecto de software viable exige cuantificar con rigor los recursos necesarios para su ejecución:  
 * **Recursos humanos.** Estimación de horas de trabajo por desarrollador y asignación de responsabilidades.
-* **Recursos hardware.** Equipamiento físico requerido tanto para el desarrollo (puestos de trabajo con 8 GB de RAM) como para el despliegue en el cliente (pantallas, servidores, terminales de red).
+* **Recursos hardware.** Equipamiento físico requerido tanto para el desarrollo (puestos de trabajo con 8 GB de RAM) como para el despliegue en el cliente (pantallas, servidores, terminales de red).  
 * **Recursos software.** Licencias y herramientas necesarias (OpenJDK 21 LTS, IntelliJ IDEA Community, Git, GitHub y librerías del ecosistema Maven).
 
 ---
@@ -400,27 +399,27 @@ Laia toma la palabra dirigiéndose a los desarrolladores del equipo de trabajo:
 ```
 
 ##### A. La consolidación documental como garantía de ingeniería
-Tener requisitos en un archivo, diagramas en una carpeta de imágenes y notas de recursos en borradores genera dispersión y desconfianza en el cliente.
-* **El principio del documento maestro.** Al cierre de cada sprint, todos los elementos técnicos se integran en un documento consolidado bajo normas de estilo estrictas:
-    1. Numeración jerárquica homogénea (1, 1.1, 1.2, 2, 2.1...).
-    2. Tablas estandarizadas con identificadores unívocos (`RF-01`, `RNF-01`).
-    3. Figuras técnicas incrustadas con pie numerado explicativo.
-    4. Referencias bibliográficas a fuentes técnicas oficiales (estilo IEEE/APA).
+Tener requisitos en un archivo, diagramas en una carpeta de imágenes y notas de recursos en borradores genera dispersión y desconfianza en el cliente.  
+* **El principio del documento maestro.** Al cierre de cada sprint, todos los elementos técnicos se integran en un documento consolidado bajo normas de estilo estrictas:  
+  1. Numeración jerárquica homogénea (1, 1.1, 1.2, 2, 2.1...).
+  2. Tablas estandarizadas con identificadores unívocos (`RF-01`, `RNF-01`).
+  3. Figuras técnicas incrustadas con pie numerado explicativo.  
+  4. Referencias bibliográficas a fuentes técnicas oficiales (estilo IEEE/APA).
 
 ##### B. Criterios de verificación y cierre del Sprint Backlog 2 (RA4.a)
-Antes de dar por cerrado el sprint, el estudiante debe contrastar que los entregables cumplen la **Definición de Hecho (*Definition of Done - DoD*)**:
-* Los requisitos no contienen adjetivos subjetivos ni funciones no verificables.
-* El diagrama de bloques funcional está correctamente enlazado en Markdown mediante rutas relativas y se renderiza con nitidez en GitHub.
-* La tabla de recursos distingue con claridad el equipamiento del cliente de las herramientas de desarrollo.
+Antes de dar por cerrado el sprint, el estudiante debe contrastar que los entregables cumplen la **Definición de Hecho (*Definition of Done - DoD*)**:  
+* Los requisitos no contienen adjetivos subjetivos ni funciones no verificables.  
+* El diagrama de bloques funcional está correctamente enlazado en Markdown mediante rutas relativas y se renderiza con nitidez en GitHub.  
+* La tabla de recursos distingue con claridad el equipamiento del cliente de las herramientas de desarrollo.  
 * El archivo `sprint2-backlog.md` refleja la realidad del repositorio: no pueden quedar casillas vacías (`- [ ]`) si el incremento se da por entregado.
 
 ##### C. Técnicas de oratoria técnica y defensa del incremento v0.2
-Defender un catálogo de requisitos y un modelo de arquitectura ante un cliente o un comité evaluador requiere una técnica de comunicación específica:
-* **No leer el documento.** La audiencia ya puede leer la pantalla. El ponente debe explicar el *porqué* de las decisiones de diseño.
-* **Estructura de impacto en 3 minutos (*The 3-Minute Demo v0.2*):**
-    * *Minuto 1 (Requisitos nucleares).* Explicar los dos requisitos funcionales más críticos del proyecto y la principal restricción no funcional (ej. compatibilidad con OpenJDK 21 LTS y Maven).
-    * *Minuto 2 (Arquitectura en bloques).* Proyectar el diagrama de Draw.io y seguir el recorrido del dato desde el bloque de captura hasta la salida formateada.
-    * *Minuto 3 (Viabilidad y apertura).* Resumir los recursos asignados, certificar la viabilidad y anticipar el objetivo del Sprint 3 (planificación temporal mediante Diagrama de Gantt y matriz de riesgos).
+Defender un catálogo de requisitos y un modelo de arquitectura ante un cliente o un comité evaluador requiere una técnica de comunicación específica:  
+* **No leer el documento.** La audiencia ya puede leer la pantalla. El ponente debe explicar el *porqué* de las decisiones de diseño.  
+* **Estructura de impacto en 3 minutos (*The 3-Minute Demo v0.2*):**  
+  * *Minuto 1 (Requisitos nucleares).* Explicar los dos requisitos funcionales más críticos del proyecto y la principal restricción no funcional (ej. compatibilidad con OpenJDK 21 LTS y Maven).  
+  * *Minuto 2 (Arquitectura en bloques).* Proyectar el diagrama de Draw.io y seguir el recorrido del dato desde el bloque de captura hasta la salida formateada.  
+  * *Minuto 3 (Viabilidad y apertura).* Resumir los recursos asignados, certificar la viabilidad y anticipar el objetivo del Sprint 3 (planificación temporal mediante Diagrama de Gantt y matriz de riesgos).  
 * **Control de la comunicación no verbal y autoconfianza:** Mantener contacto visual con la sala, voz firme y pausada, postura erguida y dominio del vocabulario técnico sin vacilaciones.
 
 ---
@@ -434,82 +433,13 @@ Laia Claramunt asigna las tareas de la sesión:
 
 ##### Paso 1. Redacción del capítulo 2 (`pi/docs/capitulo2-requisitos-arquitectura.md`)
 1. Abre tu proyecto en **IntelliJ IDEA**.
-2. Dentro de tu carpeta `azahartech/nombre-equipo/apellidos-nombre/pi/docs/`, crea el archivo `capitulo2-requisitos-arquitectura.md`.
-3. Ensambla y unifica los contenidos trabajados en las semanas 4 y 5 aplicando la plantilla oficial de AzaharTech para **tu proyecto de la bolsa de proyectos**:
-
-```markdown
-# Memoria técnica del proyecto — Capítulo 2. Requisitos y arquitectura funcional
-**Consultora:** AzaharTech Software Consulting  
-**Proyecto Seleccionado:** [nombre de tu proyecto de la bolsa de proyectos]  
-**Cliente / Sector:** [nombre de la empresa o sector profesional]  
-**Desarrollador/a:** [tus apellidos, tu nombre]  
-**Fecha de Cierre:** 23 de octubre de 2026  
-**Versión:** 1.0 (Incremento v0.2)  
-
----
-
-## 1. Objetivos del sistema y delimitación del alcance
-El propósito de este incremento es formalizar el catálogo exhaustivo de requisitos técnicos del sistema, modelar visualmente la interacción de sus subsistemas funcionales y cuantificar los recursos materiales y humanos indispensables para garantizar la viabilidad del software.
-
----
-
-## 2. Catálogo oficial de requisitos del sistema
-### 2.1 Requisitos Funcionales (RF)
-| Código | Nombre del Requisito | Descripción técnica obligatoria | Prioridad |
-| :---: | :--- | :--- | :---: |
-| **RF-01** | Captura interactiva | El sistema solicitará los identificadores de operación y parámetros iniciales de entrada. | Alta |
-| **RF-02** | Procesamiento estándar | El sistema empleará clases predefinidas de Java (Scanner, Math, String) para la transformación de datos. | Alta |
-| **RF-03** | Identificación unívoca | El sistema generará códigos alfanuméricos combinando prefijos corporativos y marcas de tiempo. | Media |
-| **RF-04** | Resumen formateado | El sistema emitirá comprobantes estructurados por consola acotando la precisión decimal. | Media |
-
-### 2.2 Requisitos No Funcionales (RNF)
-| Código | Categoría | Restricción técnica o estándar aplicable | Criterio de Verificación |
-| :---: | :--- | :--- | :--- |
-| **RNF-01** | Plataforma base | Ejecución sobre la Máquina Virtual de Java utilizando OpenJDK 21 LTS sin dependencias propietarias. | Verificación de versión JVM |
-| **RNF-02** | Gestión de proyecto | Estructura del proyecto y gestión del ciclo de construcción automatizada mediante Apache Maven (`pom.xml`). | Inspección del descriptor POM |
-| **RNF-03** | Calidad documental | Documentación viva en formato Markdown con rutas relativas e imágenes optimizadas en PNG/SVG. | Auditoría del repositorio |
-
----
-
-## 3. Modelo de Arquitectura Funcional (IPO)
-La solución técnica se divide en tres subsistemas funcionales desacoplados cuyo flujo de información se representa en el siguiente esquema:
-
-![Diagrama de Bloques Funcional](img/diagrama-bloques.png)  
-*Figura 1. Diagrama de bloques funcional de la arquitectura del sistema (Entrada-Procesamiento-Salida).*
-
-* **Subsistema de Entrada.** Responsable de la captura y validación inicial de los datos introducidos por el usuario o periférico.
-* **Subsistema de Procesamiento.** Implementado en Java, aplica las reglas matemáticas y de negocio transformando los datos en memoria.
-* **Subsistema de Salida.** Canaliza la presentación de los resultados hacia la pantalla o consola mediante formatos tabulares.
-
----
-
-## 4. Previsión y justificación de recursos
-| Tipo de Recurso | Detalle del Recurso | Justificación de Ingeniería |
-| :--- | :--- | :--- |
-| **Recursos Humanos** | Desarrollador/a de software | Dedicación estimada de 34 horas presenciales en aula más trabajo autónomo. |
-| **Entorno Hardware** | Puesto de trabajo PC / Portátil | Equipo con 8 GB de RAM y procesador multi-núcleo para ejecución del IDE. |
-| **Entorno Software** | OpenJDK 21 + IntelliJ Community | Pila tecnológica libre y estándar de la industria para desarrollo multiplataforma. |
-| **Control de Proyecto**| Apache Maven + Git/GitHub | Trazabilidad del código, gestión de versiones y automatización de la construcción. |
-
----
-
-## 5. Referencias técnicas oficiales
-1. **Oracle Java SE Documentation (JDK 21 API):** Especificación de clases estándar de la biblioteca Java. URL: `https://docs.oracle.com/en/java/javase/21/`
-2. **Apache Maven Documentation:** Guía de arquitectura de directorios estándar y ciclo de vida de construcción. URL: `https://maven.apache.org/`
-
----
-
-## 6. Registro ético de uso de inteligencia artificial (prompt log del Sprint 2)
-| Fecha | Herramienta | Objetivo de la consulta | Prompt introducido | Criterio de ajuste personal |
-| :---: | :---: | :--- | :--- | :--- |
-| 23/10/2026 | ChatGPT / Claude | Revisar consistencia de requisitos | *"Revisa si estos 4 requisitos funcionales presentan solapamientos o ambigüedades..."* | Se unificaron términos técnicos y se confirmó que ningún requisito exige bases de datos externas en el Sprint 2. |
-```
+2. Ensambla y unifica los contenidos trabajados en las semanas 4 y 5 en el archivo `memoria.md` de AzaharTech para **tu proyecto de la bolsa de proyectos**:
 
 ---
 
 ##### Paso 2. Cierre y verificación del Sprint Backlog 2 (`pi/backlog/sprint2-backlog.md`)
 1. Abre tu archivo `sprint2-backlog.md`.
-2. Actualiza **absolutamente todas las tareas del sprint marcándolas como completadas (`- [x]`)**:
+2. Actualiza **todas las tareas del sprint marcándolas como completadas (`- [x]`)**:
 
 ```markdown
 # Sprint Backlog 2 — [nombre de tu proyecto]
@@ -547,14 +477,14 @@ Añade al final de tu documento consolidado o en tu libreta técnica el guion pa
 
 ---
 
-##### Paso 4. (Únicamente si los estudiantes ya lo han visto en ED) Confirmación y sincronización en GitHub
-1. Realiza el commit convencional y push:
-   ```bash
-   git add pi/
-   git commit -m "docs(pi): consolidar capitulo 2 de la memoria y cerrar sprint backlog 2 al 100 por ciento"
-   git push
+##### Paso 4. Confirmación y sincronización en GitHub
+1. Abre el panel **Commit** en IntelliJ IDEA (`Ctrl + K`).
+2. Comprueba que aparecen seleccionados todos los archivos modificados durante el dia de hoy.
+3. Escribe el mensaje siguiendo el estándar de **Conventional Commits**:
+   ```text
+   docs(pi): consolidar memoria técnica final del sprint 2 y cerrar backlog al 100%
    ```
-2. Accede a tu repositorio en GitHub desde el navegador y comprueba que `capitulo2-requisitos-arquitectura.md` se visualiza con su formato Markdown, la imagen de Draw.io y todas las casillas del backlog marcadas con el check `[x]`.
+4. Haz clic en **Commit and Push** y comprueba que `memoria.md` se visualiza con su formato Markdown, la imagen de Draw.io y todas las casillas del backlog marcadas con el check `[x]`.
 
 ---
 
