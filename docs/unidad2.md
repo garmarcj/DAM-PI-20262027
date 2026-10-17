@@ -2,13 +2,13 @@
 
 ---
 
-## Semana 4. De la necesidad al requisito: catalogación de requisitos funcionales, no funcionales y apertura del Sprint Backlog 2
+## Semana 4. Catálogo de requisitos y Sprint Backlog 2
 
 ---
 
 ### Día 4 - 1 sesión
 
-#### Teoría. De la necesidad al catálogo de requisitos del sistema
+#### Teoría. Requisitos funcionales y no funcionales
 
 #### 1. Caso guía en AzaharTech
 
@@ -26,7 +26,7 @@ Laia toma la palabra dirigiéndose al equipo de trabajo:
 
 ---
 
-#### 2. La ingeniería de requisitos en el desarrollo de software
+#### 2. Fundamentos de ingeniería de requisitos
 
 ```
 ┌────────────────────────────────────────────────────────────────────────────────────────┐
@@ -75,7 +75,7 @@ La IA generativa se utiliza como asistente para desglosar requisitos y anticipar
 
 ---
 
-#### Laboratorio práctico guiado. Catálogo de requisitos y Sprint Backlog 2
+#### Laboratorio. Catálogo de requisitos y Sprint Backlog 2
 
 Laia Claramunt asigna las tareas de la sesión:
 > *«Durante los próximos minutos, cada uno de vosotros abrirá el archivo de requisitos de su proyecto propio de la bolsa de proyectos. Definiréis al menos **cuatro Requisitos Funcionales** y **dos Requisitos No Funcionales**, contrastaréis las fuentes oficiales y crearéis el archivo **`sprint2-backlog.md`** que coordinará las tres semanas que tenemos por delante»*.
@@ -183,13 +183,13 @@ Construir el incremento v0.2: formalizar el catálogo de requisitos del sistema,
 
 ---
 
-## Semana 5. Arquitectura del software: modelado visual en Draw.io, tratamiento de imágenes técnicas y previsión de recursos
+## Semana 5. Modelado visual y previsión de recursos
 
 ---
 
 ### Día 5 - 1 sesión
 
-#### Teoría. Del requisito a la arquitectura visual: diagramas de bloques funcionales y estimación de recursos
+#### Teoría. Modelado visual y tratamiento de imágenes
 
 #### 1. Caso guía en AzaharTech
 
@@ -215,7 +215,7 @@ Laia toma la palabra dirigiéndose a **Pau Ferrer** y al estudiante:
 
 ---
 
-#### 2. Modelado de arquitectura y tratamiento de imágenes técnicas en ingeniería
+#### 2. Diagramas de arquitectura y estimacion técnica
 
 ```
 ┌────────────────────────────────────────────────────────────────────────────────────────┐
@@ -258,7 +258,7 @@ Un proyecto de software viable exige cuantificar con rigor los recursos necesari
 
 ---
 
-#### Laboratorio práctico guiado. Modelado visual en Draw.io y actualización del Sprint Backlog 2
+#### Laboratorio. Modelado visual y prevision de recursos
 
 Laia Claramunt asigna las tareas de la sesión:
 > *«Durante los próximos minutos, cada uno de vosotros abrirá Draw.io en su navegador y diseñará el **Diagrama de Bloques Funcional de su proyecto de la bolsa de proyectos**. Exportaréis la imagen a vuestra carpeta de documentación, redactaréis la memoria técnica de arquitectura y recursos (**`arquitectura-recursos.md`**) y actualizaréis el avance semanal en vuestro **Sprint Backlog 2**»*.
@@ -363,13 +363,13 @@ Abre tu archivo `sprint2-backlog.md` y actualiza el estado de las tareas de los 
 
 ---
 
-## Semana 6. Consolidación del Capítulo 2 de la memoria, cierre del Sprint Backlog 2 y defensa técnica del incremento v0.2
+## Semana 6. Consolidación de la memoria y demo técnica v0.2
 
 ---
 
 ### Día 6 - 1 sesión
 
-#### Teoría. Calidad documental en la ingeniería de requisitos, verificación de entregables y comunicación técnica
+#### Teoría. Verificación formal y defensa del incremento
 
 #### 1. Caso guía en AzaharTech
 
@@ -389,7 +389,7 @@ Laia toma la palabra dirigiéndose a los desarrolladores del equipo de trabajo:
 
 ---
 
-#### 2. Calidad documental, verificación formal y comunicación técnica
+#### 2. Control de calidad y defensa oral
 
 ```
 ┌────────────────────────────────────────────────────────────────────────────────────────┐
@@ -434,7 +434,7 @@ Defender un catálogo de requisitos y un modelo de arquitectura ante un cliente 
 
 ---
 
-#### Laboratorio práctico guiado. Consolidación del Capítulo 2 de la memoria, cierre del Sprint Backlog 2 y preparación de la exposición
+#### Laboratorio. Cierre de la memoria y defensa técnica
 
 Laia Claramunt asigna las tareas de la sesión:
 > *«Durante los próximos treinta minutos, cada uno de vosotros ensamblará el **Capítulo 2 consolidado de la Memoria del Proyecto (`capitulo2-requisitos-arquitectura.md`)** de su proyecto elegido. Comprobaréis que el diagrama de Draw.io se muestra impecable, cerraréis el **Sprint Backlog 2 al 100 % de cumplimiento** y redactaréis el guion de vuestra presentación oral de tres minutos»*.
@@ -498,7 +498,7 @@ Añade al final de tu documento consolidado o en tu libreta técnica el guion pa
 
 ---  
 
-### Resumen del Sprint 2 de Proyecto Intermodular completado
+### Resumen del Sprint 2 completado
 Al concluir estas 3 sesiones de los viernes (3 horas lectivas en total):
 
 1. Has formalizado el **catálogo oficial de requisitos del sistema**, clasificando con precisión los Requisitos Funcionales (RF) y No Funcionales (RNF) bajo criterios verificables y sin ambigüedades.  

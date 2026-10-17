@@ -1,18 +1,18 @@
-# Sprint 1. Definición del proyecto, gestión de requisitos y herramientas de IA
+# Sprint 1. Identificación de necesidades y herramientas de IA
 
 ---
 
-## Semana 1. De la idea al proyectotécnico: análisis de necesidades, identificación de actores, ODS y uso ético de la Inteligencia Artificial (IA)
+## Semana 1. Análisis de necesidades, ODS y Sprint Backlog 1
 
 ---
 
 ### Día 1 - 1 sesión 
 
-#### Teoría. El análisis del proyecto y la ingeniería de requisitos
+#### Teoría. Análisis del problema y uso ético de la IA
 
 #### 1. Caso guía en AzaharTech
 
-Es viernes 19 de septiembre por la tarde en la sede de **AzaharTech** en Castellón de la Plana. Tras las intensas sesiones de la semana en Programación y Entornos de Desarrollo, el equipo de trabajo se reúne para la sesión semanal de **Proyecto Intermodular**: el espacio reservado para la estrategia, la relación con el cliente y la gestión metodológica.
+Es viernes 18 de septiembre por la tarde en la sede de **AzaharTech** en Castellón de la Plana. Tras las intensas sesiones de la semana en Programación y Entornos de Desarrollo, el equipo de trabajo se reúne para la sesión semanal de **Proyecto Intermodular**: el espacio reservado para la estrategia, la relación con el cliente y la gestión metodológica.
 
 **Laia Claramunt**, supervisora de proyectos, conecta su portátil y muestra en el proyector dos documentos en paralelo: a la izquierda, el análisis del sistema de acceso por QR del **IES El Caminàs** (nuestro caso guía); a la derecha, el catálogo de la **bolsa de proyectos** donde cada equipo ha elegido su proyecto singular para el curso.
 
@@ -24,7 +24,7 @@ Laia toma la palabra dirigiéndose a **Alba Torres**, **Pau Ferrer** y al nuevo 
 
 ---
 
-#### 2. Del problema de negocio a la especificación técnica
+#### 2. Del problema de negocio a la solución técnica
 
 ```
 ┌────────────────────────────────────────────────────────────────────────────────────────┐
@@ -67,7 +67,7 @@ En AzaharTech no se prohíbe la Inteligencia Artificial generativa (como ChatGPT
 * **El estándar del Prompt Log (Registro de IA).** Toda aportación de la IA debe documentarse en una tabla indicando la herramienta, la instrucción exacta (*prompt*) introducida y el criterio del estudiante para modificar o aceptar la respuesta.
 
 ---
-#### Laboratorio práctico guiado. Especificación del proyecto y sprint backlog 1
+#### Laboratorio. Especificación del proyecto y Sprint Backlog 1
 
 Laia Claramunt asigna las tareas de la sesión:
 > *«Durante los próximos treinta minutos, cada uno de vosotros va a crear el espacio oficial de Proyecto Intermodular en su repositorio de GitHub. Redactaréis el **documento formal de análisis del proyecto de vuestro proyecto propio** incluyendo el registro ético de IA, y crearéis el archivo **`sprint1-backlog.md`** que coordinará vuestras tareas entre Programación, Entornos de Desarrollo y Proyecto Intermodular»*.
@@ -171,13 +171,13 @@ Construir el incremento base v0.1: definir el análisis técnico del proyecto, c
 
 ---
 
-## Semana 2. Arquitectura funcional del sistema: diagrama de bloques (IPO), estudio de viabilidad técnica y búsqueda de fuentes oficiales
+## Semana 2. Arquitectura funcional (IPO) y viabilidad técnica
 
 ---
 
 ### Día 2 - 1 sesión
 
-#### Teoría. Arquitectura de bloques y viabilidad
+#### Teoría. Arquitectura funcional y fuentes oficiales
 
 #### 1. Caso guía en AzaharTech
 
@@ -198,7 +198,7 @@ Laia se gira hacia el equipo:
 
 ---
 
-#### 2. Fundamento metodológico: arquitectura funcional y contraste de fuentes
+#### 2. Modelado de bloques IPO y fuentes tecnicas
 
 ```
 ┌────────────────────────────────────────────────────────────────────────────────────────┐
@@ -233,7 +233,7 @@ Un desarrollador profesional no diseña basándose en tutoriales anónimos o res
 * **Detección de información no contrastada.** Descartar soluciones que empleen librerías no oficiales o versiones obsoletas de Java (como Java 8 o Java 11) que no respeten las buenas prácticas actuales.    
 
 ---
-#### Laboratorio práctico guiado. Modelado de bloques y viabilidad técnica
+#### Laboratorio. Diagrama de bloques y viabilidad técnica
 ##### Paso 1. Redacción del documento de viabilidad y arquitectura (`pi/docs/viabilidad-tecnica.md`)
 1. Abre tu proyecto en IntelliJ IDEA y navega hasta la carpeta `pi/docs/`.
 2. Crea el archivo `viabilidad-tecnica.md`.
@@ -273,8 +273,6 @@ El sistema se descompone en tres subsistemas funcionales coordinados:
 |  - Consola de usuario formateada mediante System.out.printf()         |
 |  - Resumen tabular con columnas de ancho fijo y decimales acotados    |
 +-----------------------------------------------------------------------+
-```
----
 
 ## 2. Estudio de viabilidad técnica
 
@@ -336,13 +334,13 @@ El sistema se descompone en tres subsistemas funcionales coordinados:
 
 ---
 
-## Semana 3. Consolidacion del dossier tecnico, cierre del Sprint Backlog 1 y preparacion de la Sprint Review (demo tecnica v0.1)
+## Semana 3. Consolidación de la memoria y demo tecnica v0.1
 
 ---
 
 ### Día 3 - 1 sesión
 
-#### Teoría. Aspectos formales y tecnica de comunicacion oral
+#### Teoría. Calidad formal y comunicación técnica oral
 
 #### 1. Caso guía en AzaharTech
 Es viernes 2 de octubre. Hoy concluyen las tres semanas del **Sprint 1**. La sala de demostraciones de **AzaharTech** está preparada para la revisión oficial del primer incremento de software.
@@ -357,7 +355,7 @@ Es viernes 2 de octubre. Hoy concluyen las tres semanas del **Sprint 1**. La sal
 
 ---
 
-#### 2. Calidad documental y comunicación técnica
+#### 2. Estilo documental y técnicas de exposicion
 
 ```
 ┌────────────────────────────────────────────────────────────────────────────────────────┐
@@ -386,7 +384,7 @@ Para defender con éxito el primer incremento de software ante el profesorado o 
 * **Comunicación no verbal y seguridad.** Hablar con voz firme y clara, mantener contacto visual con la audiencia, evitar leer diapositivas de forma monótona y demostrar dominio de los términos técnicos en inglés (*commit*, *stage*, *casting*, *build*).    
 
 ---
-#### Laboratorio práctico guiado. Consolidacion documental y ensayo de la demo
+#### Laboratorio. Cierre de la memoria y ensayo de la demo
 ##### Paso 1. Creacion de la memoria técnica hasta el Sprint 1 (`pi/docs/memoria.md`)
 1. En la carpeta `pi/docs/`, crea el archivo `memoria.md`.
 2. Agrupa los apartados trabajados durante las tres semanas en ese documento (`pi/docs/memoria.md`) para **tu proyecto propio**:
@@ -485,7 +483,7 @@ Redacta al final de tu memoria técnica una ficha con el minutaje exacto de tu i
 
 ---
 
-### Resumen del Sprint 1 de Proyecto Intermodular completado
+### Resumen del Sprint 1 completado
 Al concluir estas 3 sesiones de los viernes (3 horas lectivas en total):  
 1. Has transformado la propuesta de tu proyecto propio en una **especificación de ingeniería formal**, analizando actores y alineándola con los **ODS**.  
 2. Has definido la **arquitectura funcional en bloques** y has contrastado **fuentes técnicas oficiales**.  
