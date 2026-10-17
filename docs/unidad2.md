@@ -56,17 +56,20 @@ Para que el equipo de desarrollo pueda construir el software sin ambigüedades, 
 
 ##### B. Reglas de redacción de requisitos profesionales
 Un requisito técnico mal redactado propaga errores en cascada hacia las fases de diseño y pruebas. En AzaharTech aplicamos la regla **SMART**:
+
 1. **Identificador unívoco.** Todo requisito comienza con un código (`RF-01`, `RF-02`, `RNF-01`).
 2. **Sin ambigüedades.** Se evitan términos subjetivos como *«fácil»*, *«rápido»*, *«eficiente»* o *«moderno»*. Se utilizan verbos operativos (*«El sistema calculará...»*, *«El sistema almacenará...»*).
 3. **Verificable.** Debe ser posible diseñar una prueba técnica objetiva que demuestre si el requisito se cumple o no.
 
 ##### C. Búsqueda y contraste de fuentes técnicas oficiales
 Para especificar los requisitos de un proyecto no podemos recurrir a foros informales, blogs desactualizados o código no mantenido:
+
 * **Fuentes primarias y oficiales.** Se consultan las especificaciones oficiales de Oracle para Java SE 21, la documentación de la Apache Software Foundation para Maven y las guías de estándares de la industria (IEEE 830 / ISO 25010).
 * **Detección de información no contrastada.** Antes de dar por válido un requisito o librería externa, se verifica su licencia, su mantenimiento activo y su compatibilidad con la JVM.
 
 ##### D. El uso ético de la Inteligencia Artificial como asistente para documentar requisitos
 La IA generativa se utiliza como asistente para desglosar requisitos y anticipar casos límite que el analista haya podido pasar por alto:
+
 * **Uso correcto.** Pedir a la IA que revise una lista inicial de requisitos en busca de ambigüedades o incoherencias.
 * **El Prompt Log del Sprint 2.** Cada consulta debe quedar documentada en la memoria, detallando qué aportación de la IA se ha aceptado y qué partes se han corregido para adaptarse a la realidad técnica del proyecto.
 
@@ -497,7 +500,8 @@ Añade al final de tu documento consolidado o en tu libreta técnica el guion pa
 
 ### Resumen del Sprint 2 de Proyecto Intermodular completado
 Al concluir estas 3 sesiones de los viernes (3 horas lectivas en total):
-1. Has formalizado el **catálogo oficial de requisitos del sistema**, clasificando con precisión los Requisitos Funcionales (RF) y No Funcionales (RNF) bajo criterios verificables y sin ambigüedades.
-2. Has modelado visualmente la arquitectura técnica mediante **Draw.io**, exportando e incrustando el **Diagrama de Bloques Funcional (IPO)** con tratamiento profesional de imágenes técnicas en Markdown.
-3. Has justificado con rigor la **previsión de recursos materiales y humanos**, contrastando fuentes oficiales de la industria (Oracle y Apache Maven) y manteniendo el registro ético de IA mediante el **Prompt Log del Sprint 2**.
+
+1. Has formalizado el **catálogo oficial de requisitos del sistema**, clasificando con precisión los Requisitos Funcionales (RF) y No Funcionales (RNF) bajo criterios verificables y sin ambigüedades.  
+2. Has modelado visualmente la arquitectura técnica mediante **Draw.io**, exportando e incrustando el **Diagrama de Bloques Funcional (IPO)** con tratamiento profesional de imágenes técnicas en Markdown.  
+3. Has justificado con rigor la **previsión de recursos materiales y humanos**, contrastando fuentes oficiales de la industria (Oracle y Apache Maven) y manteniendo el registro ético de IA mediante el **Prompt Log del Sprint 2**.  
 4. Cuentas con el **Capítulo 2 de la Memoria Técnica consolidado**, el **Sprint Backlog 2 al 100 %** y un guion ensayado para la **defensa técnica del incremento v0.2**, dejando el proyecto plenamente preparado para abordar en el Sprint 3 la planificación temporal mediante diagramas de Gantt y la gestión de riesgos.
