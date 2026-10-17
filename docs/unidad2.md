@@ -228,23 +228,27 @@ Laia toma la palabra dirigiéndose a **Pau Ferrer** y al estudiante:
 
 ##### A. El Diagrama de Bloques Funcional en la ingeniería del software
 El Diagrama de Bloques Funcional es una técnica de modelado de alto nivel que representa la arquitectura de un sistema dividiéndolo en bloques funcionales interconectados:
+
 * **Cajas negras funcionales.** Cada bloque representa un subsistema con una responsabilidad única y bien delimitada (captura, procesamiento matemático, formateo).
 * **Flechas de flujo.** Indican la dirección en la que viajan los datos y qué tipo de información se transmite entre subsistemas.
 * **Independencia de implementación.** El diagrama muestra *cómo colaboran las partes*, permitiendo que cualquier desarrollador entienda el flujo antes de inspeccionar el código Java o la estructura de Maven.
 
 ##### B. Herramientas TIC para diagramación técnica: Draw.io (diagrams.net)
 Ya no dibujaremos esquemas de ingeniería a mano alzada ni con herramientas de retoque fotográfico genéricas:
+
 * **Draw.io (diagrams.net).** Es una herramienta estándar, libre y multiplataforma especializada en diagramación técnica.
 * Permite alinear elementos con rejilla milimétrica, utilizar conectores ortogonales inteligentes y exportar esquemas en formatos vectoriales o de alta resolución listos para documentación técnica.
 
 ##### C. Tratamiento formal de imágenes técnicas en Markdown
 Una memoria técnica profesional no puede incrustar capturas borrosas o con fondos descuadrados. Al incorporar diagramas a la documentación se deben respetar tres normas de calidad:
+
 1. **Exportación optimizada.** Las imágenes deben exportarse en formato **PNG** (con fondo transparente o blanco nítido) o **SVG** (vectorial escalable), recortando los márgenes sobrantes (*crop*).
 2. **Rutas relativas estrictas.** En Markdown, las imágenes deben guardarse en una subcarpeta dedicada (`pi/docs/img/`) y enlazarse mediante rutas relativas (`![Descripción](img/diagrama.png)`), garantizando que se visualicen correctamente tanto en local como en GitHub.
 3. **Pie de figura numerado.** Toda imagen técnica debe ir acompañada de un pie explicativo numerado (*«Figura 1. Diagrama de bloques funcional de la arquitectura del sistema»*).
 
 ##### D. Previsión y justificación de recursos
 Un proyecto de software viable exige cuantificar con rigor los recursos necesarios para su ejecución:
+
 * **Recursos humanos.** Estimación de horas de trabajo por desarrollador y asignación de responsabilidades.
 * **Recursos hardware.** Equipamiento físico requerido tanto para el desarrollo (puestos de trabajo con 8 GB de RAM) como para el despliegue en el cliente (pantallas, servidores, terminales de red).
 * **Recursos software.** Licencias y herramientas necesarias (OpenJDK 21 LTS, IntelliJ IDEA Community, Git, GitHub y librerías del ecosistema Maven).
@@ -400,6 +404,7 @@ Laia toma la palabra dirigiéndose a los desarrolladores del equipo de trabajo:
 
 ##### A. La consolidación documental como garantía de ingeniería
 Tener requisitos en un archivo, diagramas en una carpeta de imágenes y notas de recursos en borradores genera dispersión y desconfianza en el cliente.
+
 * **El principio del documento maestro.** Al cierre de cada sprint, todos los elementos técnicos se integran en un documento consolidado bajo normas de estilo estrictas:
     1. Numeración jerárquica homogénea (1, 1.1, 1.2, 2, 2.1...).
     2. Tablas estandarizadas con identificadores unívocos (`RF-01`, `RNF-01`).
@@ -408,6 +413,7 @@ Tener requisitos en un archivo, diagramas en una carpeta de imágenes y notas de
 
 ##### B. Criterios de verificación y cierre del Sprint Backlog 2 (RA4.a)
 Antes de dar por cerrado el sprint, el estudiante debe contrastar que los entregables cumplen la **Definición de Hecho (*Definition of Done - DoD*)**:
+
 * Los requisitos no contienen adjetivos subjetivos ni funciones no verificables.
 * El diagrama de bloques funcional está correctamente enlazado en Markdown mediante rutas relativas y se renderiza con nitidez en GitHub.
 * La tabla de recursos distingue con claridad el equipamiento del cliente de las herramientas de desarrollo.
@@ -415,6 +421,7 @@ Antes de dar por cerrado el sprint, el estudiante debe contrastar que los entreg
 
 ##### C. Técnicas de oratoria técnica y defensa del incremento v0.2
 Defender un catálogo de requisitos y un modelo de arquitectura ante un cliente o un comité evaluador requiere una técnica de comunicación específica:
+
 * **No leer el documento.** La audiencia ya puede leer la pantalla. El ponente debe explicar el *porqué* de las decisiones de diseño.
 * **Estructura de impacto en 3 minutos (*The 3-Minute Demo v0.2*):**
     * *Minuto 1 (Requisitos nucleares).* Explicar los dos requisitos funcionales más críticos del proyecto y la principal restricción no funcional (ej. compatibilidad con OpenJDK 21 LTS y Maven).
