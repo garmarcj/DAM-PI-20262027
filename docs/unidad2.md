@@ -78,7 +78,7 @@ La IA generativa se utiliza como asistente para desglosar requisitos y anticipar
 #### Laboratorio práctico guiado. Catálogo de requisitos y Sprint Backlog 2
 
 Laia Claramunt asigna las tareas de la sesión:
-> *«Durante los próximos treinta minutos, cada uno de vosotros abrirá el archivo de requisitos de su proyecto propio de la bolsa de proyectos. Definiréis al menos **cuatro Requisitos Funcionales** y **dos Requisitos No Funcionales**, contrastaréis las fuentes oficiales y crearéis el archivo **`sprint2-backlog.md`** que coordinará las tres semanas que tenemos por delante»*.
+> *«Durante los próximos minutos, cada uno de vosotros abrirá el archivo de requisitos de su proyecto propio de la bolsa de proyectos. Definiréis al menos **cuatro Requisitos Funcionales** y **dos Requisitos No Funcionales**, contrastaréis las fuentes oficiales y crearéis el archivo **`sprint2-backlog.md`** que coordinará las tres semanas que tenemos por delante»*.
 
 ---
 
@@ -116,9 +116,9 @@ El objetivo de esta fase es estructurar la lógica del software mediante el uso 
 ## 3. Catálogo de Requisitos No Funcionales (RNF)
 | Código | Categoría | Restricción técnica o estándar | Verificación |
 | :---: | :--- | :--- | :--- |
-| **RNF-01** | Entorno y Plataforma | El software debe compilar y ejecutarse bajo OpenJDK 21 LTS sin librerías externas no estándar. | Inspección de compilación |
-| **RNF-02** | Gestión de Proyecto | La estructura de carpetas y dependencias debe regirse bajo el estándar de Apache Maven con su archivo `pom.xml`. | Archivo de configuración |
-| **RNF-03** | Calidad de Código | Nombres de variables en camelCase, constantes en UPPER_SNAKE_CASE y código autoformateado. | Revisión de estilo |
+| **RNF-01** | Entorno y plataforma | El software debe compilar y ejecutarse bajo OpenJDK 21 LTS sin librerías externas no estándar. | Inspección de compilación |
+| **RNF-02** | Gestión de proyecto | La estructura de carpetas y dependencias debe regirse bajo el estándar de Apache Maven con su archivo `pom.xml`. | Archivo de configuración |
+| **RNF-03** | Calidad de código | Nombres de variables en camelCase, constantes en UPPER_SNAKE_CASE y código autoformateado. | Revisión de estilo |
 
 ---
 
@@ -269,9 +269,9 @@ Laia Claramunt asigna las tareas de la sesión:
 1. Abre tu navegador web y accede a [app.diagrams.net](https://app.diagrams.net/).
 2. Selecciona **Crear nuevo diagrama** (Diagrama en blanco).
 3. Modela la arquitectura funcional de tu proyecto propio siguiendo el patrón de tres subsistemas:
-    * **Bloque 1 (Entrada de Datos).** Dibuja los componentes que capturan la información de tu cliente (por ejempo, teclado de terminal, escáner, sensores o parámetros).
-    * **Bloque 2 (Procesamiento Lógico Java).** Dibuja el núcleo de la aplicación indicando las clases estándar que intervienen (`Scanner`, `String`, `Math`).
-    * **Bloque 3 (Salida de Resultados).** Dibuja los soportes donde se muestra o registra la información procesada (consola formateada, pantalla del usuario, comprobante de operación).
+    * **Bloque 1 (Entrada de datos).** Dibuja los componentes que capturan la información de tu cliente (por ejempo, teclado de terminal, escáner, sensores o parámetros).
+    * **Bloque 2 (Procesamiento lógico Java).** Dibuja el núcleo de la aplicación indicando las clases estándar que intervienen (`Scanner`, `String`, `Math`).
+    * **Bloque 3 (Salida de resultados).** Dibuja los soportes donde se muestra o registra la información procesada (consola formateada, pantalla del usuario, comprobante de operación).
 4. Conecta los bloques mediante flechas de flujo señalando qué dato viaja entre ellos.
 5. Ajusta el diseño: aplica colores sobrios corporativos, textos nítidos y comprueba que la ortografía sea correcta.
 6. Exporta el diagrama:
