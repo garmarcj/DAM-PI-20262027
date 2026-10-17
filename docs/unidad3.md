@@ -1,42 +1,42 @@
-# Sprint 3. Cronograma del proyecto
+# Sprint 3. Planificación y cronograma del proyecto
 
 ---
 
-## Semana 7. De la especificación a la temporización: descomposición de tareas, secuenciación temporal y apertura del Sprint Backlog 3
-
+## Semana 7. Desglose de tareas, cronograma y Sprint Backlog 3
 ---
 
 ### Día 7 - 1 sesión
 
-#### Teoría. Planificación temporal, secuenciación y cronograma del proyecto
+#### Teoría. Secuenciación, estimación temporal y Diagrama de Gantt
 
 #### 1. Caso guía en AzaharTech
 
-Es viernes 30 de octubre de 2026 por la tarde en la sede de **AzaharTech Software Consulting** en Castellón de la Plana. Con los dos primeros sprints cerrados y consolidados en GitHub, el equipo de desarrollo inicia el **Sprint 3 (26 oct – 13 nov)**.
+Es viernes 30 de octubre de 2026 por la tarde en la sede de **AzaharTech Software Consulting** en Castellón de la Plana. Tras dos ciclos de trabajo intensos, el equipo ha consolidado las bases: la arquitectura funcional del sistema está modelada y el catálogo formal de requisitos funcionales y no funcionales quedó cerrado en el Sprint anterior.
 
 En la pantalla principal de la sala, **Laia Claramunt** proyecta una línea de tiempo dividida en semanas e hitos clave. A su lado, **Alba Torres** examina en su portátil los primeros casos de prueba con puntos de ruptura en IntelliJ IDEA, mientras **Pau Ferrer** anota en la pizarra las dependencias técnicas del lector del **IES El Caminàs**.
 
 Laia toma la palabra dirigiéndose al equipo:
 
-> *«Durante los Sprints 1 y 2 transformamos una necesidad del IES El Caminàs en un catálogo estricto de requisitos funcionales y un modelo de bloques en Draw.io. Sabemos con exactitud **qué** debemos construir. Pero un proyecto de software profesional no se gestiona con buenas intenciones: necesita responder a la pregunta que más preocupa al cliente y a dirección: **¿cuándo estará listo y qué tareas dependen de otras?**
+> «Durante los Sprints 1 y 2 transformamos una necesidad del IES El Caminàs en un catálogo de requisitos funcionales y un modelo de bloques en formato visual. Sabemos con exactitud **qué** debemos construir. Pero un proyecto de software profesional no se gestiona con buenas intenciones: necesita responder a la pregunta que más preocupa al cliente y a dirección: **¿cuándo estará listo y qué tareas dependen de otras?**
 >
 > Si prometemos al equipo directivo del centro que el control de acceso estará operando sin haber secuenciado las fases de validación, algoritmos de repetición y captura de excepciones, cualquier imprevisto técnico paralizará la entrega.
 >
-> En este Sprint 3, mientras en Programación implementáis estructuras condicionales, bucles y control de errores con `try-catch`, y en Entornos de Desarrollo aprendéis a depurar paso a paso con puntos de ruptura, en Proyecto Intermodular aprenderemos a descomponer el proyecto en una **Estructura de Desglose del Trabajo (EDT/WBS)**, planificaremos su **Cronograma temporal formal**, identificaremos el **camino crítico** y abriremos el **Sprint Backlog 3** que coordinará nuestras próximas tres semanas de desarrollo»*.
+> En este Sprint 3, mientras en Programación implementáis estructuras condicionales, bucles y control de errores con `try-catch`, y en Entornos de Desarrollo aprendéis a depurar paso a paso con puntos de ruptura, en Proyecto Intermodular aprenderemos a descomponer el proyecto en una **Estructura de Desglose del Trabajo (EDT/WBS)**, planificaremos su **Cronograma temporal formal**, identificaremos el **camino crítico** y abriremos el **Sprint Backlog 3** que coordinará nuestras próximas tres semanas de desarrollo».
 
 ---
 
-#### 2. Planificación, temporización y estimación en ingeniería del software
+#### 2. Fundamentos de planificacion y temporización
 
 ```text
 ┌────────────────────────────────────────────────────────────────────────────────────────┐
-│                        EL CICLO DE PLANIFICACIÓN TEMPORAL (SPRINT 3)                   │
+│                        EL CICLO DE PLANIFICACIÓN TEMPORAL                              │
 ├──────────────────────────┬─────────────────────────────┬───────────────────────────────┤
 │ 1. Descomposición (EDT)  │ 2. Estimación y Dependencia │ 3. Cronograma y Seguimiento   │
+│    (¿qué hay que hacer?) │    (¿en qué orden?)         │    (¿cuándo y con qué holgura?│
 ├──────────────────────────┼─────────────────────────────┼───────────────────────────────┤
-│ ¿Qué paquetes de trabajo │ ¿Cuánto tiempo exige cada   │ ¿En qué orden se ejecutan?    │
-│ y tareas componen el     │ tarea y qué actividades     │ ¿Cuáles son los hitos clave   │
-│ alcance del proyecto?    │ bloquean el inicio de otras?│ (milestones) de entrega?      │
+│ Descomposición jerárquica│ Definición de relaciones de │ Representación temporal en    │
+│ de fases en paquetes de  │ precedencia (Fin-Inicio) e  │ barras horizontales, camino   │
+│ trabajo y tareas mínimas.│ identificación de hitos.    │ crítico y fechas de entrega.  │
 └──────────────────────────┴─────────────────────────────┴───────────────────────────────┘
 ```
 
@@ -67,11 +67,11 @@ En AzaharTech, las herramientas de IA generativa se emplean como soporte analít
 
 ---
 
-#### Laboratorio práctico guiado. Cronograma del proyecto y Sprint Backlog 3
+#### Laboratorio. Cronograma de tareas y Sprint Backlog 3
 
-Laia Claramunt asigna los objetivos operativos para la sesión de hoy:
+Laia Claramunt asigna las tareas para la sesión de hoy:
 
-> *«Durante los próximos treinta minutos, cada desarrollador va a estructurar la planificación temporal de su proyecto propio de la bolsa de proyectos. Desglosaréis las tareas en fases lógicas, definiréis sus dependencias temporales, fijaréis los hitos en el documento **`cronograma-proyecto.md`** y abriréis el archivo **`sprint3-backlog.md`** para sincronizar los avances entre Programación, Entornos de Desarrollo y Proyecto Intermodular»*.
+> *«Durante los próximos minutos, cada desarrollador va a estructurar la planificación temporal de su proyecto propio de la bolsa de proyectos. Desglosaréis las tareas en fases lógicas, definiréis sus dependencias temporales, fijaréis los hitos en el documento **`cronograma-proyecto.md`** y abriréis el archivo **`sprint3-backlog.md`** para sincronizar los avances entre Programación, Entornos de Desarrollo y Proyecto Intermodular»*.
 
 ---
 
