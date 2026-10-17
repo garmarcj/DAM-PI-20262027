@@ -168,14 +168,15 @@ Construir el incremento v0.2: formalizar el catálogo de requisitos del sistema,
 
 ---
 
-##### Paso 3. (Únicamente si los estudiantes ya lo han visto en ED) Confirmación y sincronización en GitHub
-1. Realiza el commit convencional y push:
-   ```bash
-   git add pi/
-   git commit -m "docs(pi): definir catalogo de requisitos del sistema y abrir sprint backlog 2"
-   git push
+##### Paso 3. Confirmación y sincronización en GitHub
+
+1. Abre el panel **Commit** en IntelliJ IDEA (`Ctrl + K`).
+2. Comprueba que aparecen seleccionados `pi/docs/requisitos-sistema.md` y `pi/backlog/sprint2-backlog.md`.
+3. Escribe el mensaje siguiendo el estándar de **Conventional Commits**:
+   ```text
+   docs(pi): definir catalogo de requisitos del sistema y abrir sprint backlog 2
    ```
-2. Accede a tu repositorio en GitHub desde el navegador y comprueba que los archivos `requisitos-sistema.md` y `sprint2-backlog.md` se visualizan correctamente con su formato Markdown maquetado.
+4. Haz clic en **Commit and Push** y verifica en GitHub que ambos archivos quedan registrados.
 
 ---
 
@@ -232,8 +233,9 @@ El Diagrama de Bloques Funcional es una técnica de modelado de alto nivel que r
 * **Independencia de implementación.** El diagrama muestra *cómo colaboran las partes*, permitiendo que cualquier desarrollador entienda el flujo antes de inspeccionar el código Java o la estructura de Maven.
 
 ##### B. Herramientas TIC para diagramación técnica: Draw.io (diagrams.net)
-Ya no dibujaremos esquemas de ingeniería a mano alzada ni con herramientas de retoque fotográfico genéricas:  
-**Draw.io (diagrams.net).** Es una herramienta estándar, libre y multiplataforma especializada en diagramación técnica. Permite alinear elementos con rejilla milimétrica, utilizar conectores ortogonales inteligentes y exportar esquemas en formatos vectoriales o de alta resolución listos para documentación técnica.    
+Ya no dibujaremos esquemas de ingeniería a mano alzada ni con herramientas de retoque fotográfico genéricas:
+* **Draw.io (diagrams.net).** Es una herramienta estándar, libre y multiplataforma especializada en diagramación técnica.
+* Permite alinear elementos con rejilla milimétrica, utilizar conectores ortogonales inteligentes y exportar esquemas en formatos vectoriales o de alta resolución listos para documentación técnica.
 
 ##### C. Tratamiento formal de imágenes técnicas en Markdown
 Una memoria técnica profesional no puede incrustar capturas borrosas o con fondos descuadrados. Al incorporar diagramas a la documentación se deben respetar tres normas de calidad:
@@ -242,9 +244,9 @@ Una memoria técnica profesional no puede incrustar capturas borrosas o con fond
 3. **Pie de figura numerado.** Toda imagen técnica debe ir acompañada de un pie explicativo numerado (*«Figura 1. Diagrama de bloques funcional de la arquitectura del sistema»*).
 
 ##### D. Previsión y justificación de recursos
-Un proyecto de software viable exige cuantificar con rigor los recursos necesarios para su ejecución:  
+Un proyecto de software viable exige cuantificar con rigor los recursos necesarios para su ejecución:
 * **Recursos humanos.** Estimación de horas de trabajo por desarrollador y asignación de responsabilidades.
-* **Recursos hardware.** Equipamiento físico requerido tanto para el desarrollo (puestos de trabajo con 8 GB de RAM) como para el despliegue en el cliente (pantallas, servidores, terminales de red).  
+* **Recursos hardware.** Equipamiento físico requerido tanto para el desarrollo (puestos de trabajo con 8 GB de RAM) como para el despliegue en el cliente (pantallas, servidores, terminales de red).
 * **Recursos software.** Licencias y herramientas necesarias (OpenJDK 21 LTS, IntelliJ IDEA Community, Git, GitHub y librerías del ecosistema Maven).
 
 ---
@@ -343,16 +345,14 @@ Abre tu archivo `sprint2-backlog.md` y actualiza el estado de las tareas de los 
 
 ---
 
-##### Paso 4. (Únicamente si los estudiantes ya lo han visto en ED) Confirmación y sincronización en GitHub
-1. Confirma los cambios realizados con un mensaje convencional:
-   ```bash
-   git add pi/
-   git commit -m "docs(pi): modelar diagrama de bloques funcional en drawio y estimar recursos"
-   git push
+##### Paso 4. Confirmación y sincronización en GitHub
+1. Abre el panel **Commit** en IntelliJ IDEA (`Ctrl + K`).
+2. Comprueba que aparecen seleccionados `pi/docs/arquitectura-recursos.md` y `pi/docs/img/diagrama-bloques.png`.
+3. Escribe el mensaje siguiendo el estándar de **Conventional Commits**:
+   ```text
+   docs(pi): modelar diagrama de bloques funcional en drawio y estimar recursos
    ```
-2. Accede a tu repositorio remoto en GitHub desde el navegador y verifica:
-    * Que el archivo `arquitectura-recursos.md` se visualiza correctamente formateado.
-    * Que la imagen `diagrama-bloques.png` se renderiza de forma nítida dentro del documento sin enlaces rotos.
+4. Haz clic en **Commit and Push** y verifica en GitHub que ambos archivos quedan registrados.
 
 ---
 
@@ -399,27 +399,27 @@ Laia toma la palabra dirigiéndose a los desarrolladores del equipo de trabajo:
 ```
 
 ##### A. La consolidación documental como garantía de ingeniería
-Tener requisitos en un archivo, diagramas en una carpeta de imágenes y notas de recursos en borradores genera dispersión y desconfianza en el cliente.  
-* **El principio del documento maestro.** Al cierre de cada sprint, todos los elementos técnicos se integran en un documento consolidado bajo normas de estilo estrictas:  
-  1. Numeración jerárquica homogénea (1, 1.1, 1.2, 2, 2.1...).
-  2. Tablas estandarizadas con identificadores unívocos (`RF-01`, `RNF-01`).
-  3. Figuras técnicas incrustadas con pie numerado explicativo.  
-  4. Referencias bibliográficas a fuentes técnicas oficiales (estilo IEEE/APA).
+Tener requisitos en un archivo, diagramas en una carpeta de imágenes y notas de recursos en borradores genera dispersión y desconfianza en el cliente.
+* **El principio del documento maestro.** Al cierre de cada sprint, todos los elementos técnicos se integran en un documento consolidado bajo normas de estilo estrictas:
+    1. Numeración jerárquica homogénea (1, 1.1, 1.2, 2, 2.1...).
+    2. Tablas estandarizadas con identificadores unívocos (`RF-01`, `RNF-01`).
+    3. Figuras técnicas incrustadas con pie numerado explicativo.
+    4. Referencias bibliográficas a fuentes técnicas oficiales (estilo IEEE/APA).
 
 ##### B. Criterios de verificación y cierre del Sprint Backlog 2 (RA4.a)
-Antes de dar por cerrado el sprint, el estudiante debe contrastar que los entregables cumplen la **Definición de Hecho (*Definition of Done - DoD*)**:  
-* Los requisitos no contienen adjetivos subjetivos ni funciones no verificables.  
-* El diagrama de bloques funcional está correctamente enlazado en Markdown mediante rutas relativas y se renderiza con nitidez en GitHub.  
-* La tabla de recursos distingue con claridad el equipamiento del cliente de las herramientas de desarrollo.  
+Antes de dar por cerrado el sprint, el estudiante debe contrastar que los entregables cumplen la **Definición de Hecho (*Definition of Done - DoD*)**:
+* Los requisitos no contienen adjetivos subjetivos ni funciones no verificables.
+* El diagrama de bloques funcional está correctamente enlazado en Markdown mediante rutas relativas y se renderiza con nitidez en GitHub.
+* La tabla de recursos distingue con claridad el equipamiento del cliente de las herramientas de desarrollo.
 * El archivo `sprint2-backlog.md` refleja la realidad del repositorio: no pueden quedar casillas vacías (`- [ ]`) si el incremento se da por entregado.
 
 ##### C. Técnicas de oratoria técnica y defensa del incremento v0.2
-Defender un catálogo de requisitos y un modelo de arquitectura ante un cliente o un comité evaluador requiere una técnica de comunicación específica:  
-* **No leer el documento.** La audiencia ya puede leer la pantalla. El ponente debe explicar el *porqué* de las decisiones de diseño.  
-* **Estructura de impacto en 3 minutos (*The 3-Minute Demo v0.2*):**  
-  * *Minuto 1 (Requisitos nucleares).* Explicar los dos requisitos funcionales más críticos del proyecto y la principal restricción no funcional (ej. compatibilidad con OpenJDK 21 LTS y Maven).  
-  * *Minuto 2 (Arquitectura en bloques).* Proyectar el diagrama de Draw.io y seguir el recorrido del dato desde el bloque de captura hasta la salida formateada.  
-  * *Minuto 3 (Viabilidad y apertura).* Resumir los recursos asignados, certificar la viabilidad y anticipar el objetivo del Sprint 3 (planificación temporal mediante Diagrama de Gantt y matriz de riesgos).  
+Defender un catálogo de requisitos y un modelo de arquitectura ante un cliente o un comité evaluador requiere una técnica de comunicación específica:
+* **No leer el documento.** La audiencia ya puede leer la pantalla. El ponente debe explicar el *porqué* de las decisiones de diseño.
+* **Estructura de impacto en 3 minutos (*The 3-Minute Demo v0.2*):**
+    * *Minuto 1 (Requisitos nucleares).* Explicar los dos requisitos funcionales más críticos del proyecto y la principal restricción no funcional (ej. compatibilidad con OpenJDK 21 LTS y Maven).
+    * *Minuto 2 (Arquitectura en bloques).* Proyectar el diagrama de Draw.io y seguir el recorrido del dato desde el bloque de captura hasta la salida formateada.
+    * *Minuto 3 (Viabilidad y apertura).* Resumir los recursos asignados, certificar la viabilidad y anticipar el objetivo del Sprint 3 (planificación temporal mediante Diagrama de Gantt y matriz de riesgos).
 * **Control de la comunicación no verbal y autoconfianza:** Mantener contacto visual con la sala, voz firme y pausada, postura erguida y dominio del vocabulario técnico sin vacilaciones.
 
 ---
