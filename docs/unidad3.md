@@ -32,7 +32,7 @@ Laia toma la palabra dirigiéndose al equipo:
 ┌────────────────────────────────────────────────────────────────────────────────────────┐
 │                        EL CICLO DE PLANIFICACIÓN TEMPORAL                              │
 ├──────────────────────────┬─────────────────────────────┬───────────────────────────────┤
-│ 1. Descomposición (EDT)  │ 2. Estimación y Dependencias│ 3. Cronograma (Gantt)         │
+│ 1. Descomposición (EDT)  │ 2. Estimación y dependencias│ 3. Cronograma (Gantt)         │
 ├──────────────────────────┼─────────────────────────────┼───────────────────────────────┤
 │ ¿Qué paquetes de trabajo │ ¿Cuánto tiempo exige cada   │ ¿En qué fechas exactas se     │
 │ componen el producto de  │ tarea y qué actividades     │ ejecutan las fases y cuáles   │
@@ -257,7 +257,7 @@ En la pantalla central, **Alba Torres** proyecta una anomalía descubierta duran
 ┌────────────────────────────────────────────────────────────────────────────────────────┐
 │                        GESTIÓN DE INCERTIDUMBRE Y CALIDAD                              │
 ├──────────────────────────┬─────────────────────────────┬───────────────────────────────┤
-│ 1. Análisis de Riesgos   │ 2. Planes de Contingencia   │ 3. Control de Incidencias     │
+│ 1. Análisis de riesgos   │ 2. Planes de contingencia   │ 3. Control de incidencias     │
 ├──────────────────────────┼─────────────────────────────┼───────────────────────────────┤
 │ Identificar amenazas     │ Definir acciones preventivas│ Registrar, clasificar y cerrar│
 │ técnicas, organizativas  │ y de respuesta ante la      │ los fallos detectados durante │
@@ -523,7 +523,7 @@ En el proyector de la sala de reuniones, **Alba Torres** ejecuta la versión act
 ┌────────────────────────────────────────────────────────────────────────────────────────┐
 │                        EL CIERRE DEL INCREMENTO DE SPRINT                              │
 ├──────────────────────────┬─────────────────────────────┬───────────────────────────────┤
-│ 1. Consolidación Memoria │ 2. Cierre de Backlog        │ 3. Sprint Review (3 minutos)  │
+│ 1. Consolidación memoria │ 2. Cierre de backlog        │ 3. Sprint review (3 minutos)  │
 ├──────────────────────────┼─────────────────────────────┼───────────────────────────────┤
 │ Integrar cronograma,     │ Verificar que todas las     │ Demostrar el valor en vivo:   │
 │ matriz de riesgos e      │ tareas cumplen la DoD y     │ lógica robusta, depuración y  │
