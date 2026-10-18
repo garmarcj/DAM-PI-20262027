@@ -277,7 +277,9 @@ En el desarrollo de software los riesgos se agrupan en tres categorías principa
 
 Para evitar sobredimensionar amenazas menores o descuidar peligros críticos, cada riesgo se evalúa mediante dos variables numéricas en una escala de 1 a 5:
 
-$$\text{Severidad (Nivel de Riesgo)} = \text{Probabilidad} \times \text{Impacto}$$
+$$
+\text{Severidad (Nivel de Riesgo)} = \text{Probabilidad} \times \text{Impacto}
+$$
 
 * **Probabilidad (1 a 5).** Desde muy baja (1: evento sumamente improbable) hasta muy alta (5: casi seguro que ocurrirá sin medidas preventivas).
 * **Impacto (1 a 5).** Desde insignificante (1: molestia menor sin efecto en la entrega) hasta catastrófico (5: bloqueo absoluto de la aplicación o pérdida irrecuperable de datos).
