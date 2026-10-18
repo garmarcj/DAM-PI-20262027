@@ -1,205 +1,497 @@
-# Sprint 3. Planificación y cronograma del proyecto
+# Sprint 3. Cronograma y planificación temporal del proyecto
 
 ---
 
-## Semana 7. Desglose de tareas, cronograma y Sprint Backlog 3
+## Semana 7. Secuenciación de tareas, cronograma y Sprint Backlog 3
+
 ---
 
 ### Día 7 - 1 sesión
 
-#### Teoría. Secuenciación, estimación temporal y Diagrama de Gantt
+#### Teoría. Secuenciación de fases, estimación temporal y dependencias
 
 #### 1. Caso guía en AzaharTech
 
-Es viernes 30 de octubre de 2026 por la tarde en la sede de **AzaharTech Software Consulting** en Castellón de la Plana. Tras dos ciclos de trabajo intensos, el equipo ha consolidado las bases: la arquitectura funcional del sistema está modelada y el catálogo formal de requisitos funcionales y no funcionales quedó cerrado en el Sprint anterior.
+Es viernes 30 de octubre de 2026 por la tarde en la sede de **AzaharTech** en Castellón de la Plana. Tras una semana de intenso trabajo dominando las bifurcaciones y los bucles en Programación, junto con el manejo del depurador en Entornos de Desarrollo, el equipo se reúne en la sala de planificación para iniciar formalmente el **Sprint 3**.
 
-En la pantalla principal de la sala, **Laia Claramunt** proyecta una línea de tiempo dividida en semanas e hitos clave. A su lado, **Alba Torres** examina en su portátil los primeros casos de prueba con puntos de ruptura en IntelliJ IDEA, mientras **Pau Ferrer** anota en la pizarra las dependencias técnicas del lector del **IES El Caminàs**.
+En el panel interactivo, **Laia Claramunt** tiene desplegado un calendario que abarca desde la situación presente hasta el final del curso, junto con una estructura desglosada del sistema de control de acceso por QR del **IES El Caminàs**. A su lado, **Alba Torres** revisa la lista de tareas pendientes del motor de lectura y **Pau Ferrer** anota las duraciones estimadas de cada módulo.
 
 Laia toma la palabra dirigiéndose al equipo:
 
-> «Durante los Sprints 1 y 2 transformamos una necesidad del IES El Caminàs en un catálogo de requisitos funcionales y un modelo de bloques en formato visual. Sabemos con exactitud **qué** debemos construir. Pero un proyecto de software profesional no se gestiona con buenas intenciones: necesita responder a la pregunta que más preocupa al cliente y a dirección: **¿cuándo estará listo y qué tareas dependen de otras?**
+> *«En los dos primeros sprints habéis sentado los cimientos: analizasteis las necesidades del cliente, redactasteis el catálogo de requisitos funcionales y no funcionales, y dibujasteis la arquitectura visual de la aplicación. Pero en la ingeniería del software real, una excelente arquitectura sin una planificación temporal rigurosa está condenada al fracaso.*
 >
-> Si prometemos al equipo directivo del centro que el control de acceso estará operando sin haber secuenciado las fases de validación, algoritmos de repetición y captura de excepciones, cualquier imprevisto técnico paralizará la entrega.
+> *Si el equipo directivo del IES El Caminàs nos pregunta cuándo entrará en funcionamiento el lector del vestíbulo o qué ocurrirá si el módulo de validación se retrasa tres semanas, no podemos responder con suposiciones. Necesitamos una **Estructura de Descomposición del Trabajo (EDT)**, una matriz de duraciones y precedencias, y un **Diagrama de Gantt** que visibilice el camino crítico del proyecto.*
 >
-> En este Sprint 3, mientras en Programación implementáis estructuras condicionales, bucles y control de errores con `try-catch`, y en Entornos de Desarrollo aprendéis a depurar paso a paso con puntos de ruptura, en Proyecto Intermodular aprenderemos a descomponer el proyecto en una **Estructura de Desglose del Trabajo (EDT/WBS)**, planificaremos su **Cronograma temporal formal**, identificaremos el **camino crítico** y abriremos el **Sprint Backlog 3** que coordinará nuestras próximas tres semanas de desarrollo».
+> *Hoy aprenderemos a secuenciar las fases del desarrollo, estimaremos el esfuerzo en horas lectivas reales, construiremos el cronograma temporal combinando herramientas visuales y código declarativo, y abriremos el **Sprint Backlog 3**, que asegurará que el ritmo de trabajo sea constante, predecible y profesional»*.
 
 ---
 
-#### 2. Fundamentos de planificacion y temporización
+#### 2. Fundamentos de secuenciación y planificación temporal
 
-```text
+```
 ┌────────────────────────────────────────────────────────────────────────────────────────┐
 │                        EL CICLO DE PLANIFICACIÓN TEMPORAL                              │
 ├──────────────────────────┬─────────────────────────────┬───────────────────────────────┤
-│ 1. Descomposición (EDT)  │ 2. Estimación y Dependencia │ 3. Cronograma y Seguimiento   │
-│    (¿qué hay que hacer?) │    (¿en qué orden?)         │    (¿cuándo y con qué holgura?│
+│ 1. Descomposición (EDT)  │ 2. Estimación y Dependencias│ 3. Cronograma (Gantt)         │
 ├──────────────────────────┼─────────────────────────────┼───────────────────────────────┤
-│ Descomposición jerárquica│ Definición de relaciones de │ Representación temporal en    │
-│ de fases en paquetes de  │ precedencia (Fin-Inicio) e  │ barras horizontales, camino   │
-│ trabajo y tareas mínimas.│ identificación de hitos.    │ crítico y fechas de entrega.  │
+│ ¿Qué paquetes de trabajo │ ¿Cuánto tiempo exige cada   │ ¿En qué fechas exactas se     │
+│ componen el producto de  │ tarea y qué actividades     │ ejecutan las fases y cuáles   │
+│ forma tangible?          │ deben finalizar antes?      │ marcan el camino crítico?     │
 └──────────────────────────┴─────────────────────────────┴───────────────────────────────┘
 ```
 
-##### A. Descomposición del alcance: Estructura de Desglose del Trabajo (EDT / WBS)
-Un requisito funcional complejo no puede abordarse de golpe. En ingeniería del software se utiliza el principio de *«divide y vencerás»* mediante la **EDT (Estructura de Desglose del Trabajo)**:
-* **Fases o paquetes de trabajo:** Agrupaciones lógicas de entregables (Análisis, Arquitectura, Codificación del núcleo lógico, Pruebas unitarias, Despliegue).
-* **Tareas elementales:** Actividades atómicas que pueden ser asignadas a un único responsable, con un resultado medible y un plazo delimitado (generalmente entre 2 y 8 horas lectivas).
-* **Criterio de completitud (Regla del 100 %):** La suma de las tareas desglosadas debe cubrir el 100 % del alcance definido en el catálogo de requisitos, sin omitir ni añadir funcionalidades fuera de contrato.
+##### A. Estructura de Descomposición del Trabajo (EDT / WBS)
 
-##### B. Estimación de esfuerzos, dependencias y camino crítico
-Una vez listadas las tareas, se deben dimensionar de forma realista:
-1. **Estimación de esfuerzo:** Cuantificación del tiempo necesario teniendo en cuenta la complejidad técnica y la curva de aprendizaje (por ejemplo, implementar bucles anidados con validación interactiva).
-2. **Dependencias entre tareas (Precedencias):** Determinadas tareas no pueden iniciarse hasta que sus predecesoras hayan concluido con éxito:
-    * *Fin a Inicio (FS - Finish to Start):* No se pueden programar las pruebas de depuración sin tener compilada la clase de control.
-3. **Identificación de Hitos (Milestones):** Puntos de control temporal con duración cero que marcan la consecución de un logro significativo (por ejemplo: *M1: Aprobación de requisitos*, *M2: Congelación del motor de cálculo v0.3*, *M3: Entrega del prototipo*).
+La Estructura de Descomposición del Trabajo (EDT, o *Work Breakdown Structure* en inglés) es una técnica fundamental de gestión que consiste en fragmentar un proyecto complejo en componentes más pequeños, manejables e independientes:
 
-##### C. Representación visual del cronograma: Diagrama de Gantt
-El **Diagrama de Gantt** es el estándar de la industria para visualizar la planificación temporal:
-* **Eje horizontal:** Representa el avance temporal (sprints, semanas lectivas o jornadas de trabajo).
-* **Eje vertical:** Relación secuencial de fases y tareas.
-* **Barras de actividad:** Indican la duración y solapamiento entre tareas concurrentes.
-* Permite detectar de inmediato si un retraso en una tarea de Programación compromete el cierre del sprint o la entrega de documentación en Proyecto Intermodular.
+* **Orientación a entregables.** Cada elemento terminal de la EDT debe asociarse a un resultado verificable (un documento técnico formal, una clase Java compilada, un conjunto de casos de prueba o una etiqueta de versión en Git).
+* **Nivel de granularidad adecuado.** Una tarea excesivamente genérica (*«programar la aplicación»*) genera incertidumbre; una tarea minúscula (*«declarar variable booleana»*) asfixia la gestión. El tamaño óptimo de un paquete de trabajo se sitúa entre las 2 y las 12 horas.
+* **Criterio del 100 %:** La suma del trabajo de los niveles inferiores debe equivaler con total exactitud al alcance comprometido con el cliente, sin omitir tareas ni añadir requisitos fuera de contrato (*scope creep*).
 
-##### D. Uso ético y profesional de la Inteligencia Artificial en la estimación temporal
-En AzaharTech, las herramientas de IA generativa se emplean como soporte analítico para contrastar desgloses de tareas:
-* **Uso permitido:** Solicitar a la IA una propuesta de desglose de tareas técnicas para un módulo de software determinado con el fin de no olvidar dependencias ocultas (como la gestión de excepciones numéricas o la configuración de carpetas).
-* **Revisión crítica obligatoria:** Ajustar siempre los tiempos sugeridos por la IA a la realidad del calendario lectivo oficial y al ritmo de trabajo del curso. Toda consulta debe ser registrada con su prompt exacto y su valoración técnica en el **Prompt Log**.
+##### B. Estimación de tiempos y gestión de dependencias entre tareas
 
----
+Ninguna tarea de desarrollo ocurre en el vacío. Para articular un cronograma creíble es imprescindible definir las relaciones lógicas entre actividades:
 
-#### Laboratorio. Cronograma de tareas y Sprint Backlog 3
+* **Dependencia Fin a Inicio (FS - *Finish to Start*).** Es la más habitual en software. Una actividad no puede comenzar hasta que su predecesora haya concluido satisfactoriamente (*ejemplo: no se puede iniciar la depuración de algoritmos en Entornos de Desarrollo sin tener implementada la lógica condicional en Programación*).
+* **Hitos del proyecto (*Milestones*).** Puntos de control temporales de duración cero que marcan el cierre formal de una fase (*por ejemplo: H1 - Catálogo de requisitos cerrado, H2 - Entrega v0.3 del prototipo*).
+* **Camino crítico.** La secuencia encadenada de tareas que determina la duración total mínima del proyecto. Cualquier retraso en una tarea situada en el camino crítico pospone de forma inmediata la fecha de entrega acordada con el cliente.
 
-Laia Claramunt asigna las tareas para la sesión de hoy:
+##### C. Modelado del cronograma: herramientas de código y software visual
 
-> *«Durante los próximos minutos, cada desarrollador va a estructurar la planificación temporal de su proyecto propio de la bolsa de proyectos. Desglosaréis las tareas en fases lógicas, definiréis sus dependencias temporales, fijaréis los hitos en el documento **`cronograma-proyecto.md`** y abriréis el archivo **`sprint3-backlog.md`** para sincronizar los avances entre Programación, Entornos de Desarrollo y Proyecto Intermodular»*.
+La representación de un cronograma debe ser accesible, mantenible y versionable junto con el resto del proyecto. En nuestro flujo de trabajo disponemos de dos alternativas complementarias:
+
+1. **Modelado declarativo mediante código (Mermaid en Markdown).** Permite describir diagramas de Gantt mediante bloques de texto estructurado dentro de los propios documentos Markdown. Esta opción facilita el control de versiones en Git, la revisión de cambios mediante `git diff` y su visualización automática tanto en GitHub como en el visor interno del IDE.
+2. **Modelado visual con software especializado de escritorio (GanttProject - https://www.ganttproject.biz/download/).** Para quienes prefieran diseñar y ajustar la planificación mediante una interfaz gráfica dedicada, **GanttProject** es una aplicación libre y multiplataforma orientada al cálculo de rutas críticas, dependencias y asignación de recursos. En entornos GNU/Linux puede ejecutarse descargando directamente su versión portable y lanzando el binario desde el directorio del usuario sin requerir instalaciones del sistema operativo, exportando el resultado en un archivo PNG.
+
+##### D. Fuentes técnicas oficiales y uso ético de la Inteligencia Artificial
+
+* **Estándares internacionales de gestión.** La estructuración de las fases se apoya en las directrices de la norma ISO/IEC/IEEE 12207 (Procesos del ciclo de vida del software) y la Guía Scrum oficial.
+* **Uso ético y crítico de la IA.** La Inteligencia Artificial resulta muy útil para obtener propuestas de desgloses de tareas iniciales y contrastar posibles dependencias técnicas que el analista novel suele pasar por alto. Sin embargo, los tiempos deben contrastarse siempre con el calendario lectivo oficial y las horas reales asignadas a cada módulo. Cada sugerencia de la IA debe documentarse de forma transparente en el *Prompt Log*.
 
 ---
 
-##### Paso 1. Creación del documento de temporización y cronograma (`pi/docs/cronograma-proyecto.md`)
+#### Laboratorio. Planificación temporal, cronograma y Sprint Backlog 3
 
-1. Abre tu entorno de trabajo en **IntelliJ IDEA**.
-2. Navega hasta la carpeta `pi/docs/` de tu proyecto individual (`azahartech/nombre-equipo/apellidos-nombre/pi/docs/`).
-3. Crea un nuevo archivo denominado `cronograma-proyecto.md`.
-4. Cumplimenta el documento adaptando la siguiente plantilla corporativa a **tu proyecto elegido de la bolsa de proyectos**:
+Laia Claramunt asigna los objetivos operativos para la sesión:
+
+> *«Durante los próximos minutos, cada estudiante abrirá su repositorio y creará el documento formal de cronograma y secuenciación de su proyecto singular de la bolsa de proyectos. Modelaréis las fases del proyecto hasta el cierre del curso, definiréis la matriz de dependencias, incorporaréis el Diagrama de Gantt y crearéis el archivo **`sprint3-backlog.md`** que coordinará las tres semanas que tenemos por delante»*.
+
+---
+
+##### Paso 1. Creación del documento de cronograma (`pi/docs/cronograma.md`)
+
+1. Abre tu proyecto en **IntelliJ IDEA**.
+2. En la carpeta `azahartech/nombre-equipo/apellidos-nombre/pi/docs/`, crea el archivo `cronograma.md`.
+3. Redacta el contenido aplicando la plantilla técnica adaptada a **tu proyecto de la bolsa de proyectos**:
 
 ```markdown
-# Planificación temporal y cronograma del proyecto
+# Planificación temporal, secuenciación de fases y cronograma
 **Consultora:** AzaharTech Software Consulting  
-**Proyecto Seleccionado:** [Nombre de tu proyecto de la bolsa de proyectos]  
-**Cliente / Sector:** [Nombre de la empresa o sector profesional]  
-**Desarrollador/a:** [Tus apellidos, tu nombre]  
+**Proyecto Seleccionado:** [nombre de tu proyecto de la bolsa de proyectos]  
+**Cliente / Sector:** [entidad receptora o sector profesional]  
+**Desarrollador/a:** [tus apellidos, tu nombre]  
 **Fecha:** 30 de octubre de 2026  
 **Versión:** 1.0 (Sprint 3)  
 
 ---
 
-## 1. Alcance y objetivos de la planificación temporal
-El presente documento establece la secuenciación, estimación de esfuerzo y temporización de las tareas necesarias para el desarrollo del proyecto durante el primer trimestre del curso 2026-2027. La planificación se organiza en torno a los sprints metodológicos, alineando la ingeniería de requisitos (PI), el control de calidad y depuración (ED) y el desarrollo de la lógica de control (PR).
+## 1. Estructura de Descomposición del Trabajo (EDT)
+El ciclo de vida del proyecto se divide en cuatro grandes fases secuenciales orientadas a entregables verificables:
+
+* **Fase 1: Análisis y Viabilidad (Sprints 1 y 2 - Semanas 1 a 6).** Definición del problema, requisitos funcionales/no funcionales y arquitectura base.
+* **Fase 2: Construcción del Núcleo y Control de Calidad (Sprints 3 y 4 - Semanas 7 a 12).** Implementación de la lógica algorítmica, validación de entradas, control de excepciones y auditoría de pruebas en consola.
+* **Fase 3: Almacenamiento, Concurrencia e Interfaz Gráfica (Sprints 5 a 8 - Semanas 13 a 24).** Estructuras dinámicas de datos, persistencia en archivos estructurados y desarrollo de interfaces con Swing.
+* **Fase 4: Consolidación Final y Pase a Producción (Semanas 25 a 30).** Pruebas de integración, empaquetado con Maven y defensa técnica pública.
 
 ---
 
-## 2. Estructura de Desglose del Trabajo (EDT / WBS)
-A continuación se detalla la descomposición del proyecto en fases y tareas elementales, indicando su identificador, duración estimada y predecesoras:
+## 2. Matriz de tareas, estimaciones y dependencias
 
-| ID Tarea | Fase / Paquete de Trabajo | Descripción Técnica de la Tarea | Horas Est. | Dependencia |
-| :---: | :--- | :--- | :---: | :---: |
-| **T-01** | Análisis y Requisitos | Definición del problema, mapa de actores y ODS | 3 h | Ninguna |
-| **T-02** | Análisis y Requisitos | Catálogo formal de Requisitos Funcionales y No Funcionales | 3 h | T-01 |
-| **T-03** | Arquitectura del Sistema | Diagrama de bloques funcional (IPO) y viabilidad técnica | 3 h | T-02 |
-| **T-04** | Codificación Base | Implementación de variables, tipos primitivos y Scanner | 8 h | T-03 |
-| **T-05** | Codificación Base | Operaciones con objetos estándar (`String`, `Math`) | 8 h | T-04 |
-| **T-06** | Lógica de Control | Implementación de menú interactivo y bucles (`while`, `for`) | 10 h | T-05 |
-| **T-07** | Lógica de Control | Estructuras de selección y bifurcación (`if-else`, `switch`) | 8 h | T-06 |
-| **T-08** | Lógica de Control | Control y tratamiento de excepciones con bloques `try-catch` | 6 h | T-07 |
-| **T-09** | Calidad y Pruebas | Depuración con IntelliJ: breakpoints e inspección de memoria | 5 h | T-07 |
-| **T-10** | Calidad y Pruebas | Diseño y ejecución de casos de prueba de valores límite | 4 h | T-08, T-09 |
-| **T-11** | Planificación y Gestión | Elaboración del cronograma, matriz de riesgos y seguimiento | 6 h | T-02 |
-| **T-12** | Consolidación Trimestral | Ensamblaje del dossier técnico y demo v0.3 | 4 h | T-10, T-11 |
+| ID Tarea | Descripción del Paquete de Trabajo | Módulo | Duración Estimada | Dependencia (Predecesora) | Hito Asociado |
+| :---: | :--- | :---: | :---: | :---: | :---: |
+| **T-01** | Catálogo de requisitos y arquitectura IPO | PI | 6 h | Ninguna | H1: Base aprobada |
+| **T-02** | Configuración de entorno Maven y Git | ED | 9 h | Ninguna | H1: Base aprobada |
+| **T-03** | Lógica con clases estándar Java | PR | 48 h | Ninguna | Incremento v0.2 |
+| **T-04** | Cronograma de fases y matriz de riesgos | PI | 3 h | T-01 | H2: Planificación |
+| **T-05** | Implementación de bucles y control condicional | PR | 24 h | T-03 | Incremento v0.3 |
+| **T-06** | Pruebas de código y depuración con breakpoints | ED | 9 h | T-05 | Incremento v0.3 |
+| **T-07** | POO modular y encapsulamiento | PR | 24 h | T-05 | Prototipo v0.4 |
+| **T-08** | Versionado de ramas y empaquetado | ED | 9 h | T-06 | Prototipo v0.4 |
+| **T-09** | Dossier técnico y defensa final Sprint 4 | PI | 3 h | T-04, T-07 | H3: Fin Trimestre 1 |
 
 ---
 
-## 3. Cronograma del proyecto y diagrama de Gantt
-Secuenciación de las fases a lo largo de las semanas lectivas del primer trimestre:
+## 3. Cronograma del proyecto (Diagrama de Gantt)
 
-```text
-Semanas Lectivas:
-[S1-S3: 14 Sep - 02 Oct]   [S4-S6: 05 Oct - 23 Oct]   [S7-S9: 26 Oct - 13 Nov]   [S10-S12: 16 Nov - 04 Dic]
+Elige una de las dos modalidades de representación técnica e incorpórala a este apartado:
 
-Fase 1: Análisis y Requisitos
-████████████ (S1-S3)
-             
-Fase 2: Arquitectura y Modelado
-             ████████████ (S4-S6)
-                          
-Fase 3: Lógica y Control (Sprint 3)
-                          ████████████ (S7-S9) [EN CURSO]
-                                       
-Fase 4: POO y Clases Propias
-                                       ████████████ (S10-S12)
-```
+### Opción A: Diagrama declarativo en código Mermaid
 
-### Hitos clave (Milestones)
-* **Hito 1 (02/10/2026):** *M1 - Incremento v0.1*: Repositorio verificado, análisis formal y primer cálculo secuencial en Java.
-* **Hito 2 (23/10/2026):** *M2 - Incremento v0.2*: Catálogo de requisitos validado, proyecto en Maven y uso de clases predefinidas.
-* **Hito 3 (13/11/2026):** *M3 - Incremento v0.3*: Algoritmos de control interactivo, captura robusta de errores y depuración formal.
-* **Hito 4 (04/12/2026):** *M4 - Congelación v0.4*: Implementación completa de clases propias y cierre previo a evaluación.
+gantt
+    title Cronograma de Desarrollo — AzaharTech Consulting
+    dateFormat  YYYY-MM-DD
+    axisFormat  %d/%m
+
+    section Fase 1: Fundamentos y Requisitos
+    Análisis y requisitos (Sprints 1 y 2)    :done, f1, 2026-09-14, 2026-10-23
+    Hito 1 - Incremento v0.2 alcanzado       :milestone, m1, 2026-10-23, 0d
+
+    section Fase 2: Lógica y Depuración
+    Planificación temporal y riesgos (PI)    :active, t_pi3, 2026-10-26, 2026-11-13
+    Estructuras de control y bucles (PR)     :active, t_pr3, 2026-10-26, 2026-11-13
+    Depuración paso a paso e incidencias (ED):active, t_ed3, 2026-10-26, 2026-11-13
+    Hito 2 - Incremento v0.3 consolidado     :milestone, m2, 2026-11-13, 0d
+
+    section Fase 3: Arquitectura de Clases
+    Diseño de clases y miembros (PR)        :t_pr4, 2026-11-16, 2026-12-04
+    Ramas en Git y documentación (ED)        :t_ed4, 2026-11-16, 2026-12-04
+    Dossier técnico y cierre T1 (PI)         :t_pi4, 2026-11-16, 2026-12-04
+    Hito 3 - Prototipo individual completo   :milestone, m3, 2026-12-04, 0d
+
+### Opción B: Diagrama exportado desde herramienta de escritorio
+
+Si has modelado tu planificación en una herramienta de escritorio como **GanttProject**, guarda la imagen recortada en `pi/docs/img/cronograma-gantt.png` y referénciala aquí:
+
+![Cronograma de Fases del Proyecto](img/cronograma.png)  
+*Figura 1. Cronograma temporal detallado y dependencias del sistema.*
 
 ---
 
-## 4. Registro ético de uso de Inteligencia Artificial (Prompt Log)
+## 4. Fuentes técnicas y estándares de gestión
+* **ISO/IEC/IEEE 12207:2017:** Systems and software engineering — Software life cycle processes.
+* **Scrum Guide (Ken Schwaber & Jeff Sutherland):** Principios de inspección, adaptación y definición del trabajo en sprints.
+* **Documentación oficial de Oracle Java SE 21:** Estructuras sintácticas de bucles y gestión de excepciones en el lenguaje Java.
+
+---
+
+## 5. Registro ético de uso de Inteligencia Artificial (Prompt Log)
+
 | Fecha | Herramienta | Objetivo de la consulta | Prompt introducido | Revisión crítica y ajuste aplicado |
 | :---: | :---: | :--- | :--- | :--- |
-| 30/10/2026 | ChatGPT / Claude | Identificar tareas y dependencias para estructuras de control en Java | *"Actúa como jefe de proyectos y genera una lista de 5 tareas atómicas con dependencias para programar un menú con bucles y excepciones..."* | Se adaptaron las tareas para reflejar exactamente las horas lectivas del módulo y las sesiones de depuración en IntelliJ. |
+| 30/10/2026 | ChatGPT / Claude | Estructurar dependencias del proyecto | *"Actúa como jefe de proyectos y sugiere una secuencia de dependencias lógicas para una aplicación Java que requiere validación de datos en consola..."* | Se ajustaron las duraciones al calendario de 3 semanas por sprint y se eliminaron tareas de base de datos no aplicables a esta fase. |
 ```
 
 ---
 
 ##### Paso 2. Creación del Sprint Backlog 3 (`pi/backlog/sprint3-backlog.md`)
 
-1. En tu carpeta `azahartech/nombre-equipo/apellidos-nombre/pi/backlog/`, crea el archivo `sprint3-backlog.md`.
-2. Define la lista coordinada de tareas para el **Sprint 3 (26 oct – 13 nov)** abarcando los tres módulos:
+1. En la carpeta `azahartech/nombre-equipo/apellidos-nombre/pi/backlog/`, crea el archivo `sprint3-backlog.md`.
+2. Registra los compromisos de trabajo del **Sprint 3 (26 oct – 13 nov)** coordinando los tres módulos:
 
 ```markdown
-# Sprint Backlog 3 — [Nombre de tu proyecto]
+# Sprint Backlog 3 — [nombre de tu proyecto]
 **Periodo:** 26 de octubre – 13 de noviembre de 2026  
-**Responsable:** [Tu nombre y apellidos]  
+**Responsable:** [tu nombre]  
 
 ## Objetivo general del Sprint 3
-Construir el incremento v0.3: estructurar la planificación temporal mediante el cronograma formal del proyecto, implementar algoritmos de control interactivos robustos con bucles, condiciones y excepciones en Programación, y aplicar técnicas de depuración paso a paso e inspección de variables en Entornos de Desarrollo.
+Construir el incremento v0.3: definir la secuenciación temporal y matriz de riesgos en Proyecto Intermodular, dominar el uso de puntos de ruptura y seguimiento de variables en Entornos de Desarrollo, e implementar estructuras de control condicionales y repetitivas robustas en Programación.
 
 ---
 
-## Tareas del Sprint
+## Tareas
 
 ### Módulo: Proyecto Intermodular (PI)
-- [ ] T-PI-10: Elaborar la EDT, secuenciación de tareas y cronograma del proyecto (`pi/docs/cronograma-proyecto.md`) (Semana 7)
-- [ ] T-PI-11: Definir la matriz de riesgos técnicos y organizativos con planes de contingencia (Semana 8)
-- [ ] T-PI-12: Establecer el protocolo de gestión y registro de incidencias técnicas (Semana 9)
-- [ ] T-PI-13: Consolidar el dossier del Sprint 3 y preparar la demo técnica v0.3 (Semana 9)
+- [ ] T-PI-10: Elaborar la EDT, matriz de dependencias y Diagrama de Gantt (`pi/docs/cronograma.md` o `pi/docs/img/cronograma.png`)
+- [ ] T-PI-11: Registrar el uso ético de IA (*Prompt Log*) en la planificación temporal
+- [ ] T-PI-12: Redactar la matriz de riesgos técnicos y planes de contingencia (Semana 8)
+- [ ] T-PI-13: Consolidar el Capítulo 3 de la memoria y ensayar la demo técnica v0.3 (Semana 9)
 
 ### Módulo: Entornos de Desarrollo (ED)
-- [ ] T-ED-08: Configurar y ejecutar pruebas con puntos de ruptura (*breakpoints*) condicionales en IntelliJ IDEA (Semana 7)
-- [ ] T-ED-09: Practicar la navegación paso a paso (*Step Over F8 / Step Into F7*) e inspección del panel de variables (Semana 8)
-- [ ] T-ED-10: Diseñar matriz de casos de prueba de valores límite y clases de equivalencia (Semana 9)
+- [ ] T-ED-08: Diseñar casos de prueba de caja negra aplicando particiones de equivalencia y valores límite
+- [ ] T-ED-09: Configurar puntos de ruptura (*breakpoints*) condicionales en IntelliJ IDEA para inspección de memoria
+- [ ] T-ED-10: Documentar el procedimiento formal de recogida y registro de incidencias técnicas (Semana 8)
 
 ### Módulo: Programación (PR)
-- [ ] T-PR-07: Implementar menú cíclico mediante estructuras de repetición (`while`, `do-while`, `for`) (Semana 7)
-- [ ] T-PR-08: Programar lógica de bifurcación mediante condicionales complejos (`if-else`, `switch`) (Semana 8)
-- [ ] T-PR-09: Blindar la entrada de datos frente a fallos de usuario mediante bloques `try-catch` (`InputMismatchException`) (Semana 9)
+- [ ] T-PR-07: Implementar lógica condicional mediante bloques `if / else if / else` y selector `switch`
+- [ ] T-PR-08: Construir bucles iterativos controlados (`while`, `for`) para la captura repetitiva de datos
+- [ ] T-PR-09: Incorporar gestión de excepciones básica con bloques `try-catch` frente a entradas erróneas del usuario
 ```
 
 ---
 
 ##### Paso 3. Confirmación y sincronización en GitHub
 
-1. Abre el panel **Commit** en IntelliJ IDEA (`Ctrl + K`).
-2. Verifica que están seleccionados los dos nuevos archivos:
-    * `pi/docs/cronograma-proyecto.md`
+1. En IntelliJ IDEA, abre el panel de control de versiones **Commit** mediante el atajo de teclado (`Ctrl + K`).
+2. Verifica que se encuentran seleccionados los archivos creados durante la sesión:
+    * *(Opcion A)*`pi/docs/cronograma.md` si has utilizado la opción de modelado declarativo.
     * `pi/backlog/sprint3-backlog.md`
-3. Redacta el mensaje de confirmación siguiendo el formato de **Conventional Commits**:
+    * *(Opcion B)* `pi/docs/img/cronograma.png` si has utilizado la opción modelado visual.
+3. Escribe el mensaje de confirmación siguiendo el formato estandarizado de **Conventional Commits**:
+
 ```text
-docs(pi): elaborar cronograma de fases y tareas y abrir sprint backlog 3
+docs(pi): definir secuenciacion de tareas, cronograma y abrir sprint backlog 3
 ```
-4. Haz clic en **Commit and Push** para subir los cambios a la rama principal de tu repositorio en GitHub.
-5. Accede a tu repositorio en la web de GitHub y comprueba que tanto la tabla del cronograma como las listas de tareas del nuevo sprint se visualizan correctamente con su formato Markdown maquetado.
+
+4. Pulsa sobre el botón **Commit and Push**.
+5. Accede a tu repositorio remoto en GitHub desde el navegador y verifica que los archivos aparecen estructurados correctamente y que el diagrama se visualiza con absoluta nitidez.
+
+---
+
+## Semana 9. Consolidación de la memoria técnica y demo del incremento v0.3
+
+---
+
+### Día 9 - 1 sesión
+
+#### Teoría. Cierre del incremento de producto, consolidación documental y defensa técnica
+
+#### 1. Caso guía en AzaharTech
+
+Es viernes 13 de noviembre de 2026 por la tarde en la sede de **AzaharTech** en Castellón de la Plana. Tras tres semanas de trabajo continuado, el equipo alcanza el cierre del **Sprint 3**.
+
+En el proyector de la sala de reuniones, **Alba Torres** ejecuta la versión actualizada del lector QR para el **IES El Caminàs**. Introduce deliberadamente datos incorrectos, códigos en blanco y entradas no numéricas en la consola: el sistema responde con mensajes claros de advertencia, solicita de nuevo los datos mediante un bucle controlado y jamás interrumpe su ejecución. En otra pestaña, **Pau Ferrer** muestra el historial de incidencias resueltas en Entornos de Desarrollo tras localizar la causa raíz en memoria con el depurador de IntelliJ IDEA.
+
+**Laia Claramunt** asiente satisfecha y toma el control de la sesión:
+
+> *«Habéis logrado transformar un código frágil en una solución robusta. En Programación vuestro algoritmo valida y controla cualquier entrada imprevista; en Entornos de Desarrollo habéis verificado con breakpoints que el flujo en memoria es el adecuado y habéis registrado formalmente las incidencias técnicas; y en Proyecto Intermodular tenéis el proyecto secuenciado en el cronograma y los riesgos bajo control con planes de contingencia reales.*
+>
+> *Sin embargo, el incremento técnico no está terminado hasta que se consolida documentalmente en la memoria global y se defiende con profesionalidad ante el cliente. Igual que hicimos al cierre del Sprint 1 y del Sprint 2, no podemos dejar documentos técnicos fragmentados y aislados.*
+>
+> *Hoy unificaremos el trabajo de las semanas 7 y 8 dentro de nuestro documento maestro **`memoria.md`** incorporando el **Capítulo 3**, cerraremos al 100 % el **Sprint Backlog 3**, estructuraremos el guion de la demostración oral de 3 minutos y marcaremos en nuestro repositorio la versión formal mediante la etiqueta **`v0.3`** utilizando la interfaz visual de IntelliJ IDEA con su correspondiente sincronización de tags»*.
+
+---
+
+#### 2. Fundamentos de consolidación y comunicación técnica
+
+```
+┌────────────────────────────────────────────────────────────────────────────────────────┐
+│                        EL CIERRE DEL INCREMENTO DE SPRINT                              │
+├──────────────────────────┬─────────────────────────────┬───────────────────────────────┤
+│ 1. Consolidación Memoria │ 2. Cierre de Backlog        │ 3. Sprint Review (3 minutos)  │
+├──────────────────────────┼─────────────────────────────┼───────────────────────────────┤
+│ Integrar cronograma,     │ Verificar que todas las     │ Demostrar el valor en vivo:   │
+│ matriz de riesgos e      │ tareas cumplen la DoD y     │ lógica robusta, depuración y  │
+│ incidencias en memoria.md│ registrar el 100 % de éxito.│ cumplimiento del cronograma.  │
+└──────────────────────────┴─────────────────────────────┴───────────────────────────────┘
+```
+
+##### A. Integración documental acumulativa en la memoria técnica
+
+La memoria técnica del proyecto es un documento vivo que crece con cada sprint de forma incremental. Al finalizar el Sprint 3, se incorpora el **Capítulo 3 (Planificación temporal, gestión de riesgos y control de incidencias)** a continuación de los capítulos ya consolidados:
+
+* **Capítulo 1 (Sprint 1).** Análisis de necesidades, problemática operativa del cliente, vinculación con ODS y viabilidad técnica inicial.
+* **Capítulo 2 (Sprint 2).** Catálogo formal de requisitos funcionales y no funcionales, modelado visual de arquitectura y previsión de recursos.
+* **Capítulo 3 (Sprint 3).** Secuenciación de fases (EDT/WBS), cronograma y dependencias (Gantt), matriz de evaluación de riesgos con planes de contingencia y procedimiento formal de registro y resolución de incidencias.
+
+Integrar estos contenidos en `memoria.md` garantiza que cualquier revisor, cliente o tribunal disponga de un documento técnico único, coherente y trazable.
+
+##### B. Criterio de Hecho (*Definition of Done* - DoD) y cierre de sprint
+
+Antes de dar por concluido el sprint, cada tarea debe cumplir unos requisitos innegociables:
+* Código Java compilable sin advertencias ni dependencias rotas.
+* Algoritmos de control ejecutables con excepciones capturadas de forma preventiva.
+* Memoria técnica consolidada en `memoria.md` sin enlaces rotos ni inconsistencias de formato.
+* Pruebas manuales superadas y registradas en el cuaderno de incidencias.
+
+##### C. Estructura de la demostración técnica en 3 minutos (*Pitch*)
+
+Una defensa técnica ante un cliente o un tribunal evaluador debe ser precisa, estructurada y basada en hechos verificables:
+
+* **Minuto 1. Contexto, hito alcanzado y cumplimiento temporal.** Presentar el proyecto, indicar en qué punto del cronograma se encuentra el equipo y destacar el principal riesgo mitigado durante el sprint.
+* **Minuto 2. Demostración técnica en vivo (en consola).** Ejecutar la aplicación, forzar intencionadamente una entrada errónea para evidenciar que el control de excepciones y los bucles mantienen el programa estable sin caídas de ejecución.
+* **Minuto 3. Sinergia técnica, lecciones aprendidas y próximos pasos.** Explicar cómo el depurador de IntelliJ IDEA permitió resolver incidencias en memoria y anticipar la transición hacia el Sprint 4 (diseño de clases propias y orientación a objetos).
+
+##### D. Soporte visual para la exposición: código declarativo y herramientas de escritorio
+
+Para proyectar el soporte visual de la defensa se cuenta con dos vías de trabajo:
+
+1. **Presentaciones declarativas basadas en código (Marp en Markdown).** Permite generar diapositivas directamente a partir de archivos Markdown delimitados por separadores `---`. Esta opción permite que la presentación se mantenga dentro del propio repositorio de Git y se visualice en cualquier visor web o extensión del editor de código.
+2. **Presentaciones mediante software visual de escritorio (LibreOffice Impress).** Aplicación de software libre para la creación de diapositivas con soporte multimedia y esquemas gráficos. En entornos GNU/Linux puede ejecutarse mediante su versión portable en formato AppImage descargada en la carpeta del usuario (`~/bin/` o `~/Descargas/`), otorgando permisos de ejecución y lanzándola directamente sin requerir privilegios de superusuario, exportando la presentación en formato PDF en la carpeta de documentación.
+
+##### E. Etiquetado visual de versiones en IntelliJ IDEA (*Semantic Tagging*)
+
+Al finalizar cada sprint, el repositorio debe reflejar el estado exacto del código y la documentación mediante una etiqueta anotada de Git:
+
+* La etiqueta formal `v0.3` no requiere comandos de terminal; puede generarse de forma gráfica directamente desde el entorno de desarrollo mediante los diálogos de control de versiones de IntelliJ IDEA.
+* Al enviar los cambios al repositorio remoto, se activa la opción de sincronización de etiquetas (*Push Tags*) para que la versión quede publicada inmediatamente en GitHub.
+
+---
+
+#### Laboratorio. Consolidación de la memoria técnica, cierre de backlog y demo v0.3
+
+Laia Claramunt marca los pasos para la sesión práctica:
+
+> *«Es el momento de cerrar el Sprint 3. Cada estudiante abrirá su archivo **`memoria.md`**, añadirá al final el **Capítulo 3** aunando lo trabajado en `cronograma.md` y `riesgos-incidencias.md`, verificará y marcará al 100 % las tareas de su **Sprint Backlog 3**, redactará el **guion de la defensa técnica** de 3 minutos y sellará visualmente su entrega con la etiqueta **`v0.3`** en IntelliJ IDEA»*.
+
+---
+
+##### Paso 1. Consolidación de la memoria técnica (`pi/docs/memoria.md`)
+
+1. Abre tu proyecto en **IntelliJ IDEA**.
+2. Abre el archivo maestro `azahartech/nombre-equipo/apellidos-nombre/pi/docs/memoria.md`.
+3. Al final del documento (tras el Capítulo 2), añade el **Capítulo 3**, integrando el contenido de `cronograma.md` y `riesgos-incidencias.md` adaptado a **tu proyecto de la bolsa de proyectos**:
+
+```markdown
+
+---
+
+# Capítulo 3: Planificación temporal, gestión de riesgos y control de incidencias
+
+## 3.1. Estructura de Descomposición del Trabajo (EDT)
+El desarrollo del proyecto se desglosa en cuatro fases orientadas a entregables tangibles e independientes:
+
+* **Fase 1: Análisis y Viabilidad (Semanas 1 a 6 - Sprints 1 y 2).** Definición operativa del problema, catálogo de requisitos y modelado de arquitectura IPO.
+* **Fase 2: Construcción del Núcleo y Control de Calidad (Semanas 7 a 12 - Sprints 3 y 4).** Implementación de la lógica algorítmica, validación de datos, control de excepciones y auditoría con depurador.
+* **Fase 3: Almacenamiento, Concurrencia e Interfaz Gráfica (Semanas 13 a 24 - Sprints 5 a 8).** Colecciones dinámicas, serialización y desarrollo de interfaces con Swing.
+* **Fase 4: Consolidación y Pase a Producción (Semanas 25 a 30).** Pruebas de integración, empaquetado Maven y defensa pública.
+
+---
+
+## 3.2. Cronograma de proyecto y camino crítico
+
+### Matriz de tareas y dependencias
+| ID Tarea | Descripción del Paquete de Trabajo | Módulo | Duración | Dependencia | Hito Asociado |
+| :---: | :--- | :---: | :---: | :---: | :---: |
+| **T-01** | Catálogo de requisitos y arquitectura IPO | PI | 6 h | Ninguna | H1: Base aprobada |
+| **T-02** | Configuración de entorno Maven y Git | ED | 9 h | Ninguna | H1: Base aprobada |
+| **T-03** | Lógica con clases estándar Java | PR | 48 h | Ninguna | Incremento v0.2 |
+| **T-04** | Cronograma de fases y matriz de riesgos | PI | 3 h | T-01 | H2: Planificación |
+| **T-05** | Implementación de bucles y control condicional | PR | 24 h | T-03 | Incremento v0.3 |
+| **T-06** | Pruebas de código y depuración con breakpoints | ED | 9 h | T-05 | Incremento v0.3 |
+| **T-07** | POO modular y encapsulamiento | PR | 24 h | T-05 | Prototipo v0.4 |
+| **T-08** | Versionado de ramas y empaquetado | ED | 9 h | T-06 | Prototipo v0.4 |
+| **T-09** | Dossier técnico y defensa final Sprint 4 | PI | 3 h | T-04, T-07 | H3: Fin Trimestre 1 |
+
+### Diagrama de Gantt
+*(Incluye aquí el bloque de código Mermaid con el cronograma o la referencia a la imagen `img/cronograma.png` generada con GanttProject).*
+
+---
+
+## 3.3. Evaluación de riesgos y planes de contingencia
+
+### Matriz de riesgos cuantificada
+| ID | Categoría | Descripción del Riesgo | Prob. (1-5) | Imp. (1-5) | Severidad | Nivel |
+| :---: | :---: | :--- | :---: | :---: | :---: | :---: |
+| **RSK-01** | Técnico | Bloqueo o finalización abrupta por entrada no numérica en consola | 4 | 4 | **16** | Crítico |
+| **RSK-02** | Técnico | Bucle infinito en la lógica de validación o espera | 3 | 4 | **12** | Medio |
+| **RSK-03** | Organizativo | Desviación temporal en la entrega del incremento v0.3 | 3 | 3 | **9** | Medio |
+| **RSK-04** | Alcance | Modificaciones de requisitos sin control previo de cambios | 2 | 4 | **8** | Medio |
+| **RSK-05** | Técnico | Corrupción de datos por valores fuera de rango admisible | 3 | 5 | **15** | Crítico |
+
+*(Incluye aquí el cuadrante declarativo en Mermaid o la referencia a la imagen `img/matriz-riesgos.png` exportada desde Draw.io Desktop).*
+
+### Medidas de prevención y planes de contingencia operativos
+* **Plan para RSK-01 (Entradas anómalas):** Captura preventiva mediante bloques `try-catch` y reintento guiado dentro de un bucle `while`. Si la entrada es inválida, se muestra aviso pedagógico y se restaura el flujo sin caída de la JVM.
+* **Plan para RSK-02 (Bucles infinitos):** Incorporación de contadores de seguridad (*guard clauses*) con límite de intentos y depuración paso a paso en IntelliJ IDEA inspeccionando variables centinela.
+* **Plan para RSK-03 (Desviación en cronograma):** Priorización estricta de requisitos esenciales frente a mejoras cosméticas para salvaguardar la fecha comprometida.
+
+---
+
+## 3.4. Control de calidad y protocolo de incidencias técnicas
+
+### Procedimiento formal de seguimiento
+Toda anomalía detectada en fase de pruebas o depuración sigue el ciclo: *Identificada* $\rightarrow$ *Registrada* $\rightarrow$ *En depuración* $\rightarrow$ *Resuelta* $\rightarrow$ *Cerrada*.
+
+### Registro histórico de incidencias del sprint
+* **Incidencia INC-01:** Entrada vacía o salto de línea prematuro en la lectura por consola provoca `NoSuchElementException`.
+  * **Causa técnica:** Llamada directa a lectura sin comprobación de fin de línea.
+  * **Solución aplicada:** Validación de búfer mediante `hasNextLine()` y verificación de cadena no vacía antes de procesar el dato.
+  * **Verificación:** Batería de 10 pruebas sucesivas superadas con entradas límite y caracteres no imprimibles.
+
+---
+
+## 3.5. Registro acumulativo de Inteligencia Artificial (Prompt Log)
+
+| Fecha | Herramienta | Objetivo | Prompt resumido | Ajuste crítico aplicado |
+| :---: | :---: | :--- | :--- | :--- |
+| 13/11/2026 | ChatGPT / Claude | Contrastar estructura de mitigación de riesgos | *"Revisa este plan de contingencia para excepciones en consola Java..."* | Se adaptó la respuesta a las clases estándar disponibles en Java SE 21 sin recurrir a dependencias externas. |
+```
+
+---
+
+##### Paso 2. Redacción del guion de la demostración oral (`pi/docs/guion-demo-v03.md`)
+
+1. En la carpeta `azahartech/nombre-equipo/apellidos-nombre/pi/docs/`, crea el archivo `guion-demo-v03.md`.
+2. Completa la estructura de exposición cronometrada en **3 minutos**:
+
+```markdown
+# Guion de la Sprint Review — Incremento v0.3
+**Proyecto:** [nombre de tu proyecto]  
+**Ponente:** [tu nombre]  
+**Duración límite:** 180 segundos (3 minutos)  
+**Fecha de defensa:** 13 de noviembre de 2026  
+
+---
+
+## Minuto 1: Contexto, cronograma y riesgos (00:00 - 01:00)
+* **Apertura:** Saludo profesional y presentación del proyecto en el marco de AzaharTech.
+* **Hito de planificación:** Mostrar brevemente el cronograma y confirmar que el proyecto cumple con las fechas estimadas para el Sprint 3.
+* **Gestión de riesgos:** Explicar cómo se detectó el riesgo de caídas por datos erróneos y la estrategia de mitigación adoptada.
+
+## Minuto 2: Demostración técnica en vivo (01:00 - 02:00)
+* **Ejecución en consola:** Lanzar la aplicación desde IntelliJ IDEA.
+* **Caso de uso nominal:** Introducir datos válidos y mostrar la respuesta correcta del algoritmo.
+* **Caso de prueba límite:** Introducir texto aleatorio o pulsar *Enter* repetidamente.
+* **Evidencia de robustez:** Demostrar que el programa no cae, captura la excepción, avisa al usuario y permite reintentar la operación limpiamente.
+
+## Minuto 3: Sinergia técnica y próximos pasos (02:00 - 03:00)
+* **Depuración e incidencias:** Explicar cómo el uso de puntos de ruptura en Entornos de Desarrollo permitió resolver la incidencia `INC-01`.
+* **Próximo incremento (Sprint 4):** Avanzar el salto hacia la orientación a objetos propia (creación de clases, atributos privados y constructores).
+* **Cierre:** Agradecer la atención y quedar a disposición para responder preguntas técnicas.
+```
+
+---
+
+##### Paso 3. Cierre al 100 % del Sprint Backlog 3 (`pi/backlog/sprint3-backlog.md`)
+
+1. Abre el archivo `pi/backlog/sprint3-backlog.md`.
+2. Verifica que todas las tareas están finalizadas y marca la última tarea de consolidación con `[x]`:
+
+```markdown
+# Sprint Backlog 3 — [nombre de tu proyecto]
+**Periodo:** 26 de octubre – 13 de noviembre de 2026  
+**Responsable:** [tu nombre]  
+**Estado general:** Completado al 100 %  
+
+## Objetivo general del Sprint 3
+Construir el incremento v0.3: definir la secuenciación temporal y matriz de riesgos en Proyecto Intermodular, dominar el uso de puntos de ruptura y seguimiento de variables en Entornos de Desarrollo, e implementar estructuras de control condicionales y repetitivas robustas en Programación.
+
+---
+
+## Tareas
+
+### Módulo: Proyecto Intermodular (PI)
+- [x] T-PI-10: Elaborar la EDT, matriz de dependencias y Diagrama de Gantt (`pi/docs/cronograma.md` o `pi/docs/img/cronograma.png`)
+- [x] T-PI-11: Registrar el uso ético de IA (*Prompt Log*) en la planificación temporal
+- [x] T-PI-12: Redactar la matriz de riesgos técnicos y planes de contingencia (`pi/docs/riesgos-incidencias.md` o `pi/docs/img/matriz-riesgos.png`)
+- [x] T-PI-13: Consolidar el Capítulo 3 de la memoria y ensayar la demo técnica v0.3 (`pi/docs/memoria.md` y `pi/docs/guion-demo-v03.md`)
+
+### Módulo: Entornos de Desarrollo (ED)
+- [x] T-ED-08: Diseñar casos de prueba de caja negra aplicando particiones de equivalencia y valores límite
+- [x] T-ED-09: Configurar puntos de ruptura (*breakpoints*) condicionales en IntelliJ IDEA para inspección de memoria
+- [x] T-ED-10: Documentar el procedimiento formal de recogida y registro de incidencias técnicas en coordinación con PI
+
+### Módulo: Programación (PR)
+- [x] T-PR-07: Implementar lógica condicional mediante bloques `if / else if / else` y selector `switch`
+- [x] T-PR-08: Construir bucles iterativos controlados (`while`, `for`) para la captura repetitiva de datos
+- [x] T-PR-09: Incorporar gestión de excepciones básica con bloques `try-catch` frente a entradas erróneas del usuario
+```
+
+---
+
+##### Paso 4. Confirmación, etiquetado visual y sincronización en GitHub
+
+1. En IntelliJ IDEA, abre la ventana de confirmación (`Ctrl + K`).
+2. Asegúrate de incluir los archivos modificados y creados:
+    * `pi/docs/memoria.md`
+    * `pi/docs/guion-demo-v03.md`
+    * `pi/backlog/sprint3-backlog.md`
+3. Escribe el mensaje de confirmación estandarizado:
+
+```text
+docs(pi): consolidar capitulo 3 en memoria, guion de demo oral y cerrar sprint backlog 3 al 100%
+```
+
+4. Pulsa en **Commit** (o en la flecha contigua seleccionando únicamente *Commit* para registrar el estado local antes de crear la etiqueta).
+5. Crea la etiqueta visualmente desde IntelliJ IDEA:
+    * En el menú superior, accede a **Git** $\rightarrow$ **New Tag...** (o abre la pestaña inferior **Git / Log**, haz clic derecho sobre el commit recién creado y selecciona **New Tag...**).
+    * En el campo **Tag name**, escribe exactamente: `v0.3`.
+    * En el campo **Message**, introduce la descripción del incremento:  
+      `Incremento v0.3: Planificacion temporal, matriz de riesgos, estructuras de control y depuracion formal`
+    * Haz clic sobre el botón **Create Tag**.
+6. Sincroniza el commit y la etiqueta con el repositorio remoto:
+    * Abre la ventana de envío de cambios mediante el atajo `Ctrl + Shift + K` (o desde el menú **Git** $\rightarrow$ **Push...**).
+    * En la esquina inferior izquierda del diálogo de confirmación, marca la casilla de verificación **Push Tags** (asegurándote de que indica *All* o la etiqueta `v0.3`).
+    * Haz clic en el botón **Push**.
+7. Accede a tu repositorio en GitHub desde el navegador, entra en la sección **Tags / Releases** para comprobar que la versión `v0.3` aparece publicada y verifica que `memoria.md` muestra los Capítulos 1, 2 y 3 consolidados con todas sus tablas y diagramas visibles.
 
