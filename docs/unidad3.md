@@ -227,6 +227,270 @@ docs(pi): definir secuenciacion de tareas, cronograma y abrir sprint backlog 3
 
 ---
 
+## Semana 8. Matriz de riesgos, planes de contingencia y registro de incidencias
+
+---
+
+### Día 8 - 1 sesión
+
+#### Teoría. Gestión de riesgos técnicos y procedimiento formal de incidencias
+
+#### 1. Caso guía en AzaharTech
+
+Es viernes 6 de noviembre de 2026 por la tarde en las instalaciones de **AzaharTech** en Castellón de la Plana. Durante la última semana, el equipo ha estado implementando en Programación las estructuras de control condicionales y los bucles para validar los datos que recibe la aplicación, mientras que en Entornos de Desarrollo han colocado los primeros puntos de ruptura (*breakpoints*) para inspeccionar variables en tiempo de ejecución.
+
+En la pantalla central, **Alba Torres** proyecta una anomalía descubierta durante las pruebas del prototipo del lector QR para el **IES El Caminàs**: cuando el sensor intenta leer un código en condiciones de baja iluminación en el vestíbulo o cuando el usuario introduce una cadena vacía en la consola, el hilo de ejecución se detiene abruptamente si no existe un bloque de captura adecuado. A su lado, **Pau Ferrer** muestra una libreta repleta de anotaciones dispersas sobre pequeños errores detectados durante la depuración.
+
+**Laia Claramunt** interviene de inmediato y reúne al equipo frente al tablero:
+
+> *«Lo que acaba de suceder en el lector del vestíbulo no es un caso aislado: es la realidad del desarrollo de software. Ningún proyecto transcurre exactamente como se planificó en el cronograma. Los fallos en el hardware, las entradas imprevistas de los usuarios o las desviaciones de tiempo siempre van a ocurrir.*
+>
+> *La diferencia entre un aficionado y un equipo de ingeniería profesional radica en cómo se gestiona la incertidumbre. Un **riesgo** es un evento futuro e incierto que, de materializarse, afectaría negativamente al proyecto; una **incidencia**, en cambio, es un problema real que ya ha sucedido y requiere resolución inmediata.*
+>
+> *Hoy aprenderemos a anticipar los riesgos antes de que paralicen el desarrollo mediante una **Matriz de Probabilidad e Impacto**, diseñaremos **planes de contingencia** concretos conectados con el control de excepciones de Programación, y estableceremos un **protocolo formal de registro de incidencias técnicas** para que cada fallo detectado en el depurador quede registrado, categorizado y resuelto de forma trazable»*.
+
+---
+
+#### 2. Fundamentos de gestión de riesgos e incidencias
+
+```
+┌────────────────────────────────────────────────────────────────────────────────────────┐
+│                        GESTIÓN DE INCERTIDUMBRE Y CALIDAD                              │
+├──────────────────────────┬─────────────────────────────┬───────────────────────────────┤
+│ 1. Análisis de Riesgos   │ 2. Planes de Contingencia   │ 3. Control de Incidencias     │
+├──────────────────────────┼─────────────────────────────┼───────────────────────────────┤
+│ Identificar amenazas     │ Definir acciones preventivas│ Registrar, clasificar y cerrar│
+│ técnicas, organizativas  │ y de respuesta ante la      │ los fallos detectados durante │
+│ y evaluar su severidad.  │ materialización del riesgo. │ las pruebas y la depuración.  │
+└──────────────────────────┴─────────────────────────────┴───────────────────────────────┘
+```
+
+##### A. Tipología de riesgos en proyectos de software
+
+En el desarrollo de software los riesgos se agrupan en tres categorías principales:
+
+* **Riesgos técnicos.** Derivados de la complejidad del código, dependencias externas, incompatibilidades de plataformas o falta de dominio de librerías (*por ejemplo: bloqueos algorítmicos en bucles infinitos, excepciones de puntero nulo o retardos en la respuesta de la consola*).
+* **Riesgos organizativos y de estimación.** Derivados de una mala asignación de tiempos, cuellos de botella en tareas situadas en el camino crítico o problemas en el entorno de trabajo (*por ejemplo: retrasos en la entrega del incremento por subestimar la dificultad de la lógica condicional*).
+* **Riesgos de alcance y de usuario.** Provocados por entradas anómalas no contempladas en los requisitos iniciales o ambigüedades en la operativa del cliente.
+
+##### B. Evaluación cuantitativa: la Matriz de Probabilidad e Impacto
+
+Para evitar sobredimensionar amenazas menores o descuidar peligros críticos, cada riesgo se evalúa mediante dos variables numéricas en una escala de 1 a 5:
+
+$$\text{Severidad (Nivel de Riesgo)} = \text{Probabilidad} \times \text{Impacto}$$
+
+* **Probabilidad (1 a 5).** Desde muy baja (1: evento sumamente improbable) hasta muy alta (5: casi seguro que ocurrirá sin medidas preventivas).
+* **Impacto (1 a 5).** Desde insignificante (1: molestia menor sin efecto en la entrega) hasta catastrófico (5: bloqueo absoluto de la aplicación o pérdida irrecuperable de datos).
+* **Clasificación del riesgo resultante:**
+   * **Bajo (1 - 6).** Asumible mediante buenas prácticas habituales de codificación.
+   * **Medio (8 - 12).** Requiere medidas de prevención activas durante el sprint.
+   * **Alto o Crítico (15 - 25).** Exige un plan de contingencia formal inmediato y seguimiento prioritario.
+
+##### C. Estrategias de respuesta y planes de contingencia
+
+Frente a un riesgo identificado se adoptan cuatro estrategias:
+
+1. **Mitigar.** Reducir la probabilidad o el impacto antes de que ocurra (*ejemplo: validar exhaustivamente las entradas del usuario con bucles `while` y bloques `try-catch` para que el programa nunca caiga de manera imprevista*).
+2. **Evitar.** Cambiar el diseño o la arquitectura para erradicar la condición de riesgo.
+3. **Aceptar.** Asumir las consecuencias cuando el impacto es residual y el coste de mitigarlo supera el beneficio.
+4. **Plan de contingencia.** Conjunto predefinido de pasos técnicos que se activan únicamente si el riesgo llega a materializarse, minimizando el tiempo de interrupción.
+
+##### D. Modelado de la matriz: código declarativo y software visual
+
+La visualización gráfica de la matriz de riesgos permite una interpretación inmediata de las prioridades del equipo. Para su elaboración disponemos de dos alternativas:
+
+1. **Modelado declarativo mediante código (Mermaid en Markdown).** Se describe el gráfico de cuadrantes mediante bloques de código `quadrantChart` embebidos directamente en el archivo Markdown. Esta opción permite versionar la matriz como texto plano en Git, facilitando la visualización directa en GitHub y en el editor Markdown del IDE.
+2. **Modelado visual con software de diagramación (Draw.io Desktop - https://github.com/jgraph/drawio-desktop/).** Para quienes deseen maquetar los cuadrantes con formas vectoriales, colores personalizados y etiquetas gráficas, **Draw.io** es una herramienta de software libre especializada en diseño técnico. En entornos GNU/Linux puede ejecutarse descargando su paquete portable en formato AppImage en la carpeta personal (`~/bin/` o `~/Descargas/`), asignándole permisos de ejecución con `chmod +x drawio-x86_64.AppImage` y lanzándolo directamente desde el espacio de usuario, exportando la matriz como archivo PNG optimizado.
+
+##### E. Procedimiento formal de registro y trazabilidad de incidencias técnicas
+
+Cuando un fallo se detecta durante las pruebas de caja negra o en una sesión de depuración en Entornos de Desarrollo, debe canalizarse mediante una estructura formal:
+
+* **Identificador y estado.** Código único (`INC-01`, `INC-02`) y estado de seguimiento (*Abierta*, *En depuración*, *Resuelta*, *Cerrada*).
+* **Pasos de reproducción.** Secuencia detallada de entradas que provocan el comportamiento anómalo.
+* **Comportamiento observado VS esperado.** Contraste entre el fallo obtenido en consola y lo exigido en el catálogo de requisitos.
+* **Causa raíz y solución técnica.** Línea de código o bloque modificado y verificación realizada para confirmar que el error no vuelve a reproducirse.
+
+##### F. Sinergia directa con Programación y Entornos de Desarrollo
+
+* En **Programación**, el tratamiento de excepciones básicas (`try-catch`) y los bucles de reintento son la materialización directa de los planes de mitigación ante entradas erróneas.
+* En **Entornos de Desarrollo**, el uso de puntos de ruptura condicionales y el análisis de valores límite alimentan de forma sistemática el registro formal de incidencias técnicas.
+
+---
+
+#### Laboratorio. Matriz de riesgos, plan de contingencia y protocolo de incidencias
+
+Laia Claramunt distribuye las instrucciones de trabajo:
+
+> *«Cada uno de vosotros va a crear en su repositorio el documento formal de análisis de riesgos e incidencias técnicas de su proyecto particular. Identificaréis los riesgos reales de vuestro software, calcularéis su severidad, definiréis planes de contingencia viables y formalizaréis el protocolo de registro de incidencias registrando, al menos, la primera incidencia real detectada durante las pruebas de esta semana»*.
+
+---
+
+##### Paso 1. Creación del documento de riesgos e incidencias (`pi/docs/riesgos-incidencias.md`)
+
+1. Abre tu proyecto en **IntelliJ IDEA**.
+2. En la carpeta `azahartech/nombre-equipo/apellidos-nombre/pi/docs/`, crea el archivo `riesgos-incidencias.md`.
+3. Redacta el contenido adaptando la siguiente estructura técnica a las características específicas de **tu proyecto de la bolsa de proyectos**:
+
+```markdown
+# Gestión de riesgos, planes de contingencia y control de incidencias
+**Consultora:** AzaharTech Software Consulting  
+**Proyecto Seleccionado:** [nombre de tu proyecto de la bolsa de proyectos]  
+**Cliente / Sector:** [entidad receptora o sector profesional]  
+**Desarrollador/a:** [tus apellidos, tu nombre]  
+**Fecha:** 6 de noviembre de 2026  
+**Versión:** 1.0 (Sprint 3)  
+
+---
+
+## 1. Identificación y evaluación de riesgos del proyecto
+
+| ID | Categoría | Descripción del Riesgo | Causa Origen | Probabilidad (1-5) | Impacto (1-5) | Severidad (P × I) | Nivel |
+| :---: | :---: | :--- | :--- | :---: | :---: | :---: | :---: |
+| **RSK-01** | Técnico | Bloqueo o finalización abrupta por entrada de datos no numérica en consola | Usuario introduce caracteres especiales o texto cuando se solicita un identificador | 4 | 4 | **16** | Crítico |
+| **RSK-02** | Técnico | Bucle infinito en la lógica de validación o espera de respuesta | Condición de parada del bucle mal formulada o contador no actualizado | 3 | 4 | **12** | Medio |
+| **RSK-03** | Organizativo | Desviación temporal en la entrega del incremento v0.3 | Complejidad imprevista al depurar algoritmos anidados en Entornos de Desarrollo | 3 | 3 | **9** | Medio |
+| **RSK-04** | Alcance | Introducción de funcionalidades no contempladas en el catálogo de requisitos | Peticiones no filtradas que aumentan el esfuerzo sin planificación previa | 2 | 4 | **8** | Medio |
+| **RSK-05** | Técnico | Corrupción de datos o valores fuera de rango admisible | Ausencia de validación previa en los límites inferior y superior de variables clave | 3 | 5 | **15** | Crítico |
+
+---
+
+## 2. Representación visual de la matriz de riesgos
+
+Elige una de las dos modalidades técnicas para representar la matriz de probabilidad frente a impacto:
+
+### Opción A: Cuadrante declarativo mediante código Mermaid
+
+```mermaid
+quadrantChart
+    title Matriz de Probabilidad e Impacto
+    x-axis "Bajo Impacto" --> "Alto Impacto"
+    y-axis "Baja Probabilidad" --> "Alta Probabilidad"
+    quadrant-1 "Riesgo Crítico (Acción Inmediata)"
+    quadrant-2 "Riesgo Moderado (Supervisar)"
+    quadrant-3 "Riesgo Leve (Asumible)"
+    quadrant-4 "Riesgo Severo (Contingencia)"
+    "RSK-01 Entrada anomala": [0.75, 0.75]
+    "RSK-02 Bucle infinito": [0.70, 0.55]
+    "RSK-03 Retraso temporal": [0.55, 0.55]
+    "RSK-04 Desviacion alcance": [0.75, 0.35]
+    "RSK-05 Desbordamiento limites": [0.90, 0.55]
+
+### Opción B: Matriz visual exportada desde Draw.io
+
+Si has diseñado la matriz mediante **Draw.io Desktop**, guarda la imagen exportada en `pi/docs/img/matriz-riesgos.png` y vincúlala a continuación:
+
+![Matriz de Riesgos](img/matriz-riesgos.png)  
+*Figura 1. Distribución de severidad y cuadrantes de actuación preventiva modelada con Draw.io.*
+---
+
+## 3. Planes de prevención y contingencia
+
+### Plan para RSK-01: Excepciones por entradas anómalas (Severidad: 16)
+* **Medida preventiva (Mitigación):** Envolver cada lectura por consola (`Scanner`) dentro de una estructura iterativa `while` combinada con un bloque `try-catch` que capture `InputMismatchException` o `NumberFormatException`, impidiendo que el error llegue a la máquina virtual.
+* **Plan de contingencia:** Si una entrada corrompe el estado del programa, la aplicación captura el error, muestra un mensaje instructivo al usuario indicando el formato correcto y reinicia el menú de opciones sin perder la sesión.
+
+### Plan para RSK-02: Bucles infinitos en algoritmos de control (Severidad: 12)
+* **Medida preventiva (Mitigación):** Limitar el número máximo de iteraciones mediante una constante de seguridad (*guard clause*) que interrumpa la ejecución tras un número determinado de reintentos fallidos.
+* **Plan de contingencia:** Uso de puntos de ruptura condicionales en el depurador de IntelliJ IDEA para inspeccionar el valor de las variables centinela y corregir la condición de salida.
+
+### Plan para RSK-03: Desviación temporal en el cronograma (Severidad: 9)
+* **Medida preventiva (Mitigación):** Realizar revisiones intermedias semanales comparando el avance real frente al Diagrama de Gantt aprobado.
+* **Plan de contingencia:** Priorizar los requisitos marcados como esenciales en el catálogo funcional y posponer mejoras secundarias para el Sprint 4.
+
+---
+
+## 4. Protocolo formal de recogida, registro y seguimiento de incidencias técnicas
+
+### Flujo de estados de una incidencia
+1. **Identificada:** Se detecta un comportamiento anómalo durante la codificación o la ejecución de pruebas.
+2. **Registrada:** Se cumplimenta la ficha técnica en este documento con los datos exactos de reproducción.
+3. **En depuración:** Se localiza la causa raíz en el código mediante el depurador y puntos de ruptura.
+4. **Resuelta:** Se aplica la corrección técnica en el repositorio y se ejecuta una prueba de regresión.
+5. **Cerrada:** Se documenta la solución aplicada y se verifica que no genera efectos colaterales.
+
+### Registro histórico de incidencias del sprint
+
+#### Incidencia INC-01
+* **Fecha de detección:** 05/11/2026
+* **Severidad:** Alta
+* **Módulo afectado:** Programación (PR) / Entornos de Desarrollo (ED)
+* **Estado:** Resuelta
+* **Descripción del error:** Al pulsar la tecla *Enter* sin introducir ningún valor en la solicitud de código por consola, el método de lectura lanza una excepción no controlada (`NoSuchElementException`) y la aplicación finaliza abruptamente.
+* **Pasos para reproducir:**
+    1. Ejecutar la clase principal de la aplicación.
+    2. Seleccionar la opción de lectura en el menú inicial.
+    3. Presionar inmediatamente la tecla *Enter* con la línea en blanco.
+* **Comportamiento esperado:** La aplicación debe rechazar la entrada, advertir de que la cadena no puede estar vacía y volver a solicitar el dato sin interrumpir el programa.
+* **Causa técnica identificada:** Llamada directa a lectura de enteros sin comprobación previa mediante `hasNextLine()` o validación de longitud de cadena.
+* **Solución aplicada:** Se introdujo una estructura `while (!scanner.hasNextLine())` complementada con limpieza de búfer y validación de cadena vacía previa al parseo.
+* **Verificación:** Ejecución de 10 pruebas consecutivas con cadenas vacías, espacios en blanco y caracteres de escape, confirmando el comportamiento correcto sin caídas del entorno.
+
+---
+
+## 5. Registro ético de uso de Inteligencia Artificial (Prompt Log)
+
+| Fecha | Herramienta | Objetivo de la consulta | Prompt introducido | Revisión crítica y ajuste aplicado |
+| :---: | :---: | :--- | :--- | :--- |
+| 06/11/2026 | ChatGPT / Claude | Identificar posibles riesgos técnicos en algoritmos de consola | *"Enumera los 5 fallos técnicos más comunes al implementar bucles de lectura y menús interactivos en Java por consola y cómo mitigarlos..."* | Se seleccionaron únicamente los riesgos aplicables a la arquitectura actual y se descartaron los relativos a interfaces gráficas o redes, que corresponden a sprints posteriores. |
+```
+
+---
+
+##### Paso 2. Actualización del Sprint Backlog 3 (`pi/backlog/sprint3-backlog.md`)
+
+1. Abre el archivo `pi/backlog/sprint3-backlog.md`.
+2. Actualiza el estado de las tareas correspondientes a la **Semana 8**, marcando con `[x]` las actividades completadas:
+
+```markdown
+# Sprint Backlog 3 — [nombre de tu proyecto]
+**Periodo:** 26 de octubre – 13 de noviembre de 2026  
+**Responsable:** [tu nombre]  
+
+## Objetivo general del Sprint 3
+Construir el incremento v0.3: definir la secuenciación temporal y matriz de riesgos en Proyecto Intermodular, dominar el uso de puntos de ruptura y seguimiento de variables en Entornos de Desarrollo, e implementar estructuras de control condicionales y repetitivas robustas en Programación.
+
+---
+
+## Tareas
+
+### Módulo: Proyecto Intermodular (PI)
+- [x] T-PI-10: Elaborar la EDT, matriz de dependencias y Diagrama de Gantt (`pi/docs/cronograma.md` o `pi/docs/img/cronograma.png`)
+- [x] T-PI-11: Registrar el uso ético de IA (*Prompt Log*) en la planificación temporal
+- [x] T-PI-12: Redactar la matriz de riesgos técnicos y planes de contingencia (`pi/docs/riesgos-incidencias.md` o `pi/docs/img/matriz-riesgos.png`)
+- [ ] T-PI-13: Consolidar el Capítulo 3 de la memoria y ensayar la demo técnica v0.3 (Semana 9)
+
+### Módulo: Entornos de Desarrollo (ED)
+- [x] T-ED-08: Diseñar casos de prueba de caja negra aplicando particiones de equivalencia y valores límite
+- [x] T-ED-09: Configurar puntos de ruptura (*breakpoints*) condicionales en IntelliJ IDEA para inspección de memoria
+- [x] T-ED-10: Documentar el procedimiento formal de recogida y registro de incidencias técnicas en coordinación con PI
+
+### Módulo: Programación (PR)
+- [x] T-PR-07: Implementar lógica condicional mediante bloques `if / else if / else` y selector `switch`
+- [x] T-PR-08: Construir bucles iterativos controlados (`while`, `for`) para la captura repetitiva de datos
+- [x] T-PR-09: Incorporar gestión de excepciones básica con bloques `try-catch` frente a entradas erróneas del usuario
+```
+
+---
+
+##### Paso 3. Confirmación y sincronización en GitHub
+
+1. En IntelliJ IDEA, abre la herramienta de confirmación mediante el atajo `Ctrl + K`.
+2. Comprueba que los archivos correspondientes a la sesión se encuentran seleccionados:
+   * *(Opción A)*`pi/docs/riesgos-incidencias.md` si has utilizado la opción de modelado declarativo.
+   * `pi/backlog/sprint3-backlog.md`
+   * *(Opción B)*`pi/docs/img/riesgos-incidencias.md` si has utilizado la opción de modelado visual.
+3. Escribe el mensaje de confirmación conforme al estándar de **Conventional Commits**:
+
+```text
+docs(pi): definir matriz de riesgos planes de contingencia y registro de incidencias
+```
+
+4. Ejecuta la operación mediante **Commit and Push**.
+5. Abre el navegador, accede a tu repositorio remoto en GitHub y comprueba que la matriz de riesgos, el protocolo de incidencias y el backlog actualizado se visualizan con total nitidez y coherencia técnica.
+
+---
+
 ## Semana 9. Consolidación de la memoria técnica y demo del incremento v0.3
 
 ---
