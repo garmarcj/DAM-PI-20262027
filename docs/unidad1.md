@@ -2,7 +2,7 @@
 
 ---
 
-## Semana 1. Análisis de necesidades, ODS y Sprint Backlog 1  
+## Semana 1. Análisis de necesidades y Sprint Backlog 1  
 
 ---
 
