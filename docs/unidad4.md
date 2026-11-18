@@ -14,7 +14,7 @@
 
 Es viernes 20 de noviembre de 2026 por la tarde en las instalaciones de **AzaharTech** en Castellón de la Plana. El equipo arranca oficialmente el **Sprint 4**, el último ciclo de trabajo de la fase individual con el que se cerrará el primer trimestre.
 
-En la sala de reuniones, **Alba Torres** proyecta el código fuente del prototipo `v0.3` para el sistema de control de acceso por QR del **IES El Caminàs**. Aunque los bucles de validación y el control de excepciones funcionan con firmeza, toda la lógica de la aplicación sigue amontonada en un único archivo monolítico (`Main.java`) donde se entremezclan la captura de datos, las reglas del centro y los informes por consola. A su lado, **Pau Ferrer** compara las fechas planificadas en el Diagrama de Gantt del sprint anterior frente al progreso real acumulado hasta la fecha.
+En la sala de reuniones, **Alba Torres** proyecta el código fuente del prototipo `v0.3` para el sistema de control de acceso por QR del **IES El Caminàs**. Aunque los bucles de validación y el control de excepciones funcionan adecuadamente, toda la lógica de la aplicación sigue amontonada en un único archivo monolítico (`Main.java`) donde se entremezclan la captura de datos, las reglas del centro y los informes por consola. A su lado, **Pau Ferrer** compara las fechas planificadas en el Diagrama de Gantt del sprint anterior frente al progreso real acumulado hasta la fecha.
 
 **Laia Claramunt** toma la palabra dirigiéndose al equipo:
 
@@ -32,7 +32,7 @@ En la sala de reuniones, **Alba Torres** proyecta el código fuente del prototip
 ┌────────────────────────────────────────────────────────────────────────────────────────┐
 │                      TRANSICIÓN HACIA LA ARQUITECTURA MODULAR                          │
 ├──────────────────────────┬─────────────────────────────┬───────────────────────────────┤
-│ 1. Control de Seguimiento│ 2. Tarjetas CRC y Entidades │ 3. Mapa Modular del Sistema   │
+│ 1. Control de seguimiento│ 2. Tarjetas CRC y entidades │ 3. Mapa modular del sistema   │
 ├──────────────────────────┼─────────────────────────────┼───────────────────────────────┤
 │ Contrastar avance real   │ Definir cada componente     │ Representar gráficamente los  │
 │ frente al cronograma     │ mediante sus datos propios, │ módulos independientes y las  │
@@ -52,9 +52,9 @@ La planificación temporal elaborada en el Sprint 3 es una línea base de refere
 
 Para pasar de un código monolítico en `Main.java` a un diseño modular ordenado sin necesidad de recurrir a notaciones formales complejas, resulta sumamente eficaz emplear la técnica ágil de las **Tarjetas CRC**:
 
-* **Entidad o Módulo (Clase):** El concepto sustantivo del negocio que agrupará información y lógica propia (*ejemplo en el IES El Caminàs: `UsuarioCentro`, `LectorQR`, `RegistroAcceso`*).
-* **Responsabilidades:** Qué datos encapsula (estado interno que deberá protegerse como privado) y qué operaciones sabe ejecutar de forma autónoma (*por ejemplo: validar su identificador, comprobar vigencia o formatear un registro*).
-* **Colaboradores:** Con qué otras entidades necesita comunicarse para cumplir un caso de uso completo (*por ejemplo: `LectorQR` colabora con `UsuarioCentro` para validar el permiso y genera un `RegistroAcceso`*).
+* **Entidad o módulo (clase).** El concepto sustantivo del negocio que agrupará información y lógica propia (*por ejemplo: `UsuarioCentro`, `LectorQR`, `Fichaje`*).
+* **Responsabilidades.** Qué datos encapsula (estado interno que deberá protegerse como privado) y qué operaciones sabe ejecutar de forma autónoma (*por ejemplo: validar su identificador, comprobar vigencia o formatear un registro*).
+* **Colaboradores.** Con qué otras entidades necesita comunicarse para cumplir un caso de uso completo (*por ejemplo: `LectorQR` colabora con `UsuarioCentro` para validar el permiso y genera un `Fichaje`*).
 
 Este ejercicio evita el anti-patrón *God Class* (una clase que acapara toda la lógica) y sirve como guía directa para implementar los constructores, *getters* y *setters* en Programación.
 
@@ -76,7 +76,7 @@ Para representar el mapa de módulos, responsabilidades y colaboraciones dentro 
 
 Laia Claramunt presenta la hoja de ruta para la sesión práctica:
 
-> *«Cada estudiante abrirá su repositorio para documentar el seguimiento del cronograma tras el Sprint 3 y diseñar la arquitectura modular de su proyecto de la bolsa de proyectos. Definiréis las entidades y sus tarjetas CRC, dibujaréis el mapa modular de colaboraciones que guiará vuestras clases en Programación y abriréis formalmente el **`sprint4-backlog.md`**»*.
+> *«Cada estudiante abrirá su repositorio para documentar el seguimiento del cronograma tras el Sprint 3 y diseñar la arquitectura modular de su proyecto de la bolsa de proyectos. Definiréis las entidades y sus tarjetas CRC, dibujaréis el mapa modular de colaboraciones y abriréis formalmente el **`sprint4-backlog.md`**»*.
 
 ---
 
@@ -166,7 +166,7 @@ Si has diseñado las tarjetas CRC o el mapa de módulos mediante **Draw.io Deskt
 ##### Paso 2. Creación del Sprint Backlog 4 (`pi/backlog/sprint4-backlog.md`)
 
 1. En la carpeta `azahartech/nombre-equipo/apellidos-nombre/pi/backlog/`, crea el archivo `sprint4-backlog.md`.
-2. Registra los compromisos de trabajo del **Sprint 4 (16 nov – 4 dic)** coordinando los tres módulos:
+2. Registra los compromisos de trabajo del **Sprint 4** coordinando los tres módulos:
 
 ```markdown
 # Sprint Backlog 4 — [nombre de tu proyecto]
