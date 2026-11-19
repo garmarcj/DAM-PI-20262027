@@ -127,6 +127,7 @@ Elige una de las dos modalidades de representación técnica e incorpórala a es
 
 ### Opción A: Diagrama declarativo en código Mermaid
 
+```mermaid
 gantt
     title Cronograma de Desarrollo — AzaharTech Consulting
     dateFormat  YYYY-MM-DD
@@ -150,9 +151,9 @@ gantt
 
 ### Opción B: Diagrama exportado desde herramienta de escritorio
 
-Si has modelado tu planificación en una herramienta de escritorio como **GanttProject**, guarda la imagen recortada en `pi/docs/img/cronograma-gantt.png` y referénciala aquí:
+Si has modelado tu planificación en una herramienta de escritorio como **GanttProject**, guarda la imagen recortada en `pi/docs/img/cronograma.png` y referénciala aquí:
 
-![Cronograma de Fases del Proyecto](img/cronograma.png)  
+![Cronograma de fases del proyecto](img/cronograma.png)  
 *Figura 1. Cronograma temporal detallado y dependencias del sistema.*
 
 ---
@@ -382,7 +383,7 @@ quadrantChart
 
 Si has diseñado la matriz mediante **Draw.io Desktop**, guarda la imagen exportada en `pi/docs/img/matriz-riesgos.png` y vincúlala a continuación:
 
-![Matriz de Riesgos](img/matriz-riesgos.png)  
+![Matriz de riesgos](img/matriz-riesgos.png)  
 *Figura 1. Distribución de severidad y cuadrantes de actuación preventiva modelada con Draw.io.*
 ---
 
@@ -656,7 +657,7 @@ Toda anomalía detectada en fase de pruebas o depuración sigue el ciclo: *Ident
 
 ---
 
-## 3.5. Registro acumulativo de Inteligencia Artificial (Prompt Log)
+## 3.5. Registro acumulativo de inteligencia artificial (Prompt Log)
 
 | Fecha | Herramienta | Objetivo | Prompt resumido | Ajuste crítico aplicado |
 | :---: | :---: | :--- | :--- | :--- |
