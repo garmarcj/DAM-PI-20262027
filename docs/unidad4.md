@@ -555,7 +555,7 @@ Laia Claramunt imparte las directrices finales del trimestre:
 
 1. Abre tu proyecto en **IntelliJ IDEA**.
 2. Abre el documento maestro `azahartech/nombre-equipo/apellidos-nombre/pi/docs/memoria.md`.
-3. Al final del documento (a continuación del Capítulo 3), añade el **Capítulo 4**, integrando y resumiendo de forma coherente los contenidos de `arquitectura-modular.md` y `manual-usuario-calidad.md` adaptados a **tu proyecto de la bolsa de proyectos**:
+3. Al final del documento (a continuación del Capítulo 3), añade el Capítulo 4, integrando de forma completa los contenidos elaborados en arquitectura-modular.md y manual-usuario-calidad.md (incluyendo los pasos de arranque, el ejemplo de sesión en consola, la resolución de avisos frecuentes, la estructura de paquetes Java, las fuentes técnicas oficiales y el Prompt Log literal) adaptados a tu proyecto de la bolsa de proyectos:
 
 ````markdown
 
@@ -587,19 +587,33 @@ Para superar el diseño monolítico inicial, la lógica de la aplicación se ha 
 
 ---
 
-## 4.3. Síntesis de documentación de producto (Usuario y Técnica)
+## 4.3. Documentación de producto (Manual de Usuario y Guía Técnica)
 
 ### Operación para el usuario final
-El sistema ofrece un menú numérico interactivo en consola con validación guiada de entradas y mensajes de error claros sin tecnicismos.
-
-*(Incluye aquí el flujo de menús en Mermaid o la referencia a la captura anotada `img/flujo-usuario.png` realizada con Flameshot o Draw.io Desktop).*
+* **Arranque de la aplicación:** Abrir la terminal en la carpeta raíz del proyecto, ejecutar el lanzador configurado en el entorno de trabajo y seleccionar la opción deseada en el menú numérico principal.
+* **Mapa de navegación:** *(Incluye aquí el flujo de menús en Mermaid o la referencia a la imagen `img/flujo-usuario.png` generada con Flameshot o Draw.io Desktop).*
+* **Ejemplo de sesión operativa en consola:**
+  ```text
+  =========================================
+     SISTEMA DE GESTIÓN — [TU PROYECTO]
+  =========================================
+  1. Registrar nuevo elemento
+  2. Procesar operación
+  3. Mostrar resumen de actividad
+  0. Salir
+  Seleccione una opción: 2
+  > Introduzca el código identificativo: ID-104
+  [OK] Operación registrada correctamente.
+  ```
+* **Resolución de avisos frecuentes:**
+   * *"Formato de entrada no válido. Introduzca un número entero":* Se han introducido letras o símbolos en un campo numérico; basta con volver a teclear el número sin perder los datos previos.
+   * *"El campo no puede estar vacío":* Se pulsó *Enter* sin escribir el código requerido; debe introducirse el identificador completo antes de confirmar.
 
 ### Despliegue técnico y mantenimiento
-* **Entorno:** OpenJDK 21 LTS y construcción automatizada mediante Apache Maven (`mvn clean compile`).
-* **Documentación de código:** Generada mediante etiquetas estándar **Javadoc** en `target/site/apidocs/`.
-* **Control de versiones:** Desarrollo modular sobre ramas `feature/*` integradas en `main` con mensajes *Conventional Commits*.
-
----
+* **Entorno y construcción:** Java Development Kit **OpenJDK 21 LTS** y gestión de ciclo de compilación mediante **Apache Maven** (`mvn clean compile` y `mvn exec:java`).
+* **Estructura de paquetes y clases propias:** En `src/main/java/` reside la clase controladora `Main.java` junto con las clases de dominio encapsuladas (`[EntidadPrincipal]`, `[EntidadOperativa]`, `[EntidadRegistro]`).
+* **Documentación de código:** Generada automáticamente en formato HTML mediante etiquetas estándar **Javadoc** (`@param`, `@return`) en `target/site/apidocs/`.
+* **Control de versiones:** Desarrollo modular sobre ramas `feature/*` integradas en la rama principal `main` mediante *merge* y mensajes *Conventional Commits*.---
 
 ## 4.4. Auditoría final de trazabilidad (Requisitos vs. Prototipo v0.4)
 
@@ -616,9 +630,16 @@ El sistema ofrece un menú numérico interactivo en consola con validación guia
 
 ## 4.5. Registro acumulativo de Inteligencia Artificial (Prompt Log)
 
-| Fecha | Herramienta | Objetivo | Prompt resumido | Ajuste crítico aplicado |
+| Fecha | Herramienta | Objetivo | Prompt introducido (literal) | Ajuste crítico aplicado |
 | :---: | :---: | :--- | :--- | :--- |
 | 04/12/2026 | ChatGPT / Claude | Revisar coherencia entre capítulos de la memoria | *"Revisa la transición entre los requisitos del Sprint 2 y la auditoría de trazabilidad del Sprint 4 para detectar incoherencias de alcance..."* | Se ajustaron los estados de los requisitos de persistencia como *Pendientes para Fase 2* para reflejar con honestidad el alcance real del incremento `v0.4`. |
+
+---
+
+## Referencias y fuentes técnicas oficiales
+* **Oracle Java SE 21 Documentation:** Guía oficial sobre definición de clases, encapsulamiento, constructores y modificadores de acceso.
+* **Javadoc Tool Guide (Oracle):** Estándar oficial de comentarios y etiquetas (`@param`, `@return`) para documentación técnica del código fuente.
+* **ISO/IEC/IEEE 12207:** Procesos de seguimiento, control de cambios y trazabilidad en el ciclo de vida del software.
 ````
 
 ---
